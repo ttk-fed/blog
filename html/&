@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" />
+    <title>404</title>
+    <link rel="icon" href="http://www.zhufengpeixun.cn/files/system/2016/02-02/124619b1ad4a134241.png?6.16.3"
+          type="image/x-icon"/>
+    <link rel="shortcut icon" href="http://www.zhufengpeixun.cn/files/system/2016/02-02/124619b1ad4a134241.png?6.16.3"
+          type="image/x-icon" media="screen"/>
+    <style type="text/css">
+        html{overflow: hidden;}
+        body{margin: 0; background-color: #67ace4; font-family: "\5FAE\8F6F\96C5\9ED1"; _padding-top: 100px;}
+        ::selection{background: none;}
+        ::-moz-selection{background: none;}
+        #wrap{margin: 60px auto 0; width: 399px;}
+        #text{text-align: center; padding-top: 20px;}
+        #text strong{display: inline-block; font-size: 14px; font-weight: normal;}
+        #text strong *{float: left;}
+        #text span{width: 128px; height: 29px; background: url(img/info.png) no-repeat;}
+        #text a{line-height: 14px; color: #fff; text-decoration: none; padding: 6px 14px; margin: 1px 0 0 10px; border: 1px solid #fff; border-radius: 14px;
+            user-select: none;
+            -webkit-user-select: none;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            transition: 0.2s ease-out;
+            -o-transition: 0.2s ease-out;
+            -moz-transition: 0.2s ease-out;
+            -webkit-transition: 0.2s ease-out;
+        }
+        #text a:hover, #text a:active{background: #fff; color: #000;}
+        @media screen and (max-width: 414px) {
+            #wrap, #wrap img, #text span{width: 200px;}
+            #text span{background-position: center; margin-bottom: 16px;}
+            #text a:nth-of-type(1){margin-left: 0;}
+        }
+
+        .animate{
+            animation: 20s animate linear infinite alternate;
+            -o-animation: 20s animate linear infinite alternate;
+            -moz-animation: 20s animate linear infinite alternate;
+            -webkit-animation: 20s animate linear infinite alternate;
+        }
+        .below, .above{position: absolute; bottom: 0; left: 0; z-index: -1; width: 100%;}
+        .below{height: 173px; background: url(img/below.png) no-repeat;}
+        .above{height: 149px; background: url(img/above.png) no-repeat -60px 0;
+            animation-name: animate-above;
+            -o-animation-name: animate-above;
+            -moz-animation-name: animate-above;
+            -webkit-animation-name: animate-above;
+        }
+        @keyframes animate{
+            0%{background-position: 0 0;}
+            10%{background-position: -10px 1px;}
+            20%{background-position: -10px 3px;}
+            30%{background-position: -20px 1px;}
+            40%{background-position: -40px 2px;}
+            50%{background-position: -60px 4px;}
+            60%{background-position: -40px 2px;}
+            70%{background-position: -20px 4px;}
+            80%{background-position: -10px 3px;}
+            90%{background-position: -10px 1px;}
+            100%{background-position: 0 0;}
+        }
+        @-o-keyframes animate{
+            0%{background-position: 0 0;}
+            10%{background-position: -10px 1px;}
+            20%{background-position: -10px 3px;}
+            30%{background-position: -20px 1px;}
+            40%{background-position: -40px 2px;}
+            50%{background-position: -60px 4px;}
+            60%{background-position: -40px 2px;}
+            70%{background-position: -20px 4px;}
+            80%{background-position: -10px 3px;}
+            90%{background-position: -10px 1px;}
+            100%{background-position: 0 0;}
+        }
+        @-moz-keyframes animate{
+            0%{background-position: 0 0;}
+            10%{background-position: -10px 1px;}
+            20%{background-position: -10px 3px;}
+            30%{background-position: -20px 1px;}
+            40%{background-position: -40px 2px;}
+            50%{background-position: -60px 4px;}
+            60%{background-position: -40px 2px;}
+            70%{background-position: -20px 4px;}
+            80%{background-position: -10px 3px;}
+            90%{background-position: -10px 1px;}
+            100%{background-position: 0 0;}
+        }
+        @-webkit-keyframes animate{
+            0%{background-position: 0 0;}
+            10%{background-position: -10px 1px;}
+            20%{background-position: -10px 3px;}
+            30%{background-position: -20px 1px;}
+            40%{background-position: -40px 2px;}
+            50%{background-position: -60px 4px;}
+            60%{background-position: -40px 2px;}
+            70%{background-position: -20px 4px;}
+            80%{background-position: -10px 3px;}
+            90%{background-position: -10px 1px;}
+            100%{background-position: 0 0;}
+        }
+        @keyframes animate-above{
+            0%{background-position: -60px 0;}
+            10%{background-position: -50px 8px;}
+            20%{background-position: -35px 10px;}
+            30%{background-position: -20px 10px;}
+            40%{background-position: -30px 16px;}
+            50%{background-position: -10px 20px;}
+            60%{background-position: -20px 20px;}
+            70%{background-position: -30px 12px;}
+            80%{background-position: -40px 10px;}
+            90%{background-position: -50px 10px;}
+            100%{background-position: -60px 0;}
+        }
+        @-o-keyframes animate-above{
+            0%{background-position: -60px 0;}
+            10%{background-position: -50px 8px;}
+            20%{background-position: -35px 10px;}
+            30%{background-position: -20px 10px;}
+            40%{background-position: -30px 16px;}
+            50%{background-position: -10px 20px;}
+            60%{background-position: -20px 20px;}
+            70%{background-position: -30px 12px;}
+            80%{background-position: -40px 10px;}
+            90%{background-position: -50px 10px;}
+            100%{background-position: -60px 0;}
+        }
+        @-moz-keyframes animate-above{
+            0%{background-position: -60px 0;}
+            10%{background-position: -50px 8px;}
+            20%{background-position: -35px 10px;}
+            30%{background-position: -20px 10px;}
+            40%{background-position: -30px 16px;}
+            50%{background-position: -10px 20px;}
+            60%{background-position: -20px 20px;}
+            70%{background-position: -30px 12px;}
+            80%{background-position: -40px 10px;}
+            90%{background-position: -50px 10px;}
+            100%{background-position: -60px 0;}
+        }
+        @-webkit-keyframes animate-above{
+            0%{background-position: -60px 0;}
+            10%{background-position: -50px 8px;}
+            20%{background-position: -35px 10px;}
+            30%{background-position: -20px 10px;}
+            40%{background-position: -30px 16px;}
+            50%{background-position: -10px 20px;}
+            60%{background-position: -20px 20px;}
+            70%{background-position: -30px 12px;}
+            80%{background-position: -40px 10px;}
+            90%{background-position: -50px 10px;}
+            100%{background-position: -60px 0;}
+        }
+        #wrap{
+            font-family: "Microsoft YaHei";
+            color: #fff;
+            width: 450px;
+        }
+        .wrapInfo{
+            position: relative;
+
+        }
+        #wrap p.title{
+            font-size: 40px;
+
+        }
+        #wrap p {
+            font-size: 20px;
+            line-height: 40px;
+        }
+        #wrap p a{
+            color: #fff;
+            text-decoration: none;
+        }
+        #wrap p.course a{
+            color: yellow;
+        }
+        .wPic{
+            width: 200px;
+            height:200px;
+            position: absolute;
+            left:-250px;
+            top:0;
+
+        }
+        .wPic img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+</head>
+<body>
+
+<div id="wrap">
+    <div class="wrapInfo">
+      
+        <p class="title">你要找的页面飞了!</p>
+        <p style="font-size: 20px">你要看什么?</p>
+        <p><a href="/main/company/teachers.html" target="_blank">看看珠峰的老师好不好看？</a></p>
+        <p><a href="/" target="_blank">珠峰的发展历程感不感人？</a></p>
+        <p><a href="http://www.zhufengpeixun.cn/main/index.html" target="_blank">了解下珠峰的三大课程牛不牛？</a></p>
+        <p class="course"><a href="http://www.zhufengpeixun.cn/customize/js/index.html" target="_blank">前端全栈就业课</a>
+            <a href="http://www.zhufengpeixun.cn/customize/node/index.html" target="_blank">前端框架node提高课</a>
+            <a href="http://www.zhufengpeixun.cn/main/course/index.html" target="_blank">前端架构课</a>
+        </p>
+    </div>
+    <div id="text">
+        <strong>
+            <a href="http://www.zhufengpeixun.cn/">我要飞回首页</a>
+        </strong>
+    </div>
+</div>
+
+<div class="animate below"></div>
+<div class="animate above"></div>
+
+
+</body>
+</html>
+<script>
+    //百度统计
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?418b1c90fa35dc210dd5d2284d9f9f29";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+    //链接提交代码
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script charset="utf-8" type="text/javascript" src="https://wpa.b.qq.com/cgi/wpa.php?key=XzkzODAxNTU3NF8yNTcxNTFfNDAwMTgwNjk2MF8"></script>
+
+
+

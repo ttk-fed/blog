@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+</head>
+<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  12/02/19 14:55:01.<br>
+<b>Address:</b> <a class="info" href="http://www.zhufengpeixun.cn/ahead/html/75.webpack-1.文件分析.html">http://www.zhufengpeixun.cn/ahead/html/75.webpack-1.文件分析.html</a><br>
+<b>Title:</b> 珠峰架构师成长计划 &nbsp;&bull;&nbsp; <b>Size:</b> 81975 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Sun, 01 Dec 2019 11:37:12 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<div class="nav">
+    <div class="logo">
+        
+            珠峰架构师成长计划
+        
+    </div>
+<ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3.tapable.html">26.webpack-3.tapable</a></li><li><a href="../html/26.webpack-4-AST.html">26.webpack-4-AST</a></li><li><a href="../html/26.webpack-5-sources.html">26.webpack-5-sources</a></li><li><a href="../html/26.webpack-6-loader.html">26.webpack-6-loader</a></li><li><a href="../html/26.webpack-7-plugin.html">26.webpack-7-plugin</a></li><li><a href="../html/26.webpack-8-hand.html">26.webpack-8-hand</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/51.typescript.html">51.typescript</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li class="active"><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.源码准备.html">75.webpack-5.源码准备</a></li><li><a href="../html/75.webpack-6.实现.html">75.webpack-6.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/82.2.react.html">82.2.react</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.5.connected.html">82.5.connected</a></li><li><a href="../html/82.6.saga.html">82.6.saga</a></li><li><a href="../html/82.7.dva.html">82.7.dva</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/82.8.roadhog.html">82.8.roadhog</a></li><li><a href="../html/82.9.umi.html">82.9.umi</a></li><li><a href="../html/82.10.antdesign.html">82.10.antdesign</a></li></ul></div>
+
+
+<div class="warpper">
+
+    <div class="page-toc">
+        <ul><li><a href="#t01. webpack介绍">1. webpack介绍</a></li><li><a href="#t12. 预备知识">2. 预备知识</a><ul><li><a href="#t22.1 toStringTag">2.1 toStringTag</a></li><li><a href="#t32.2 Object.create(null)">2.2 Object.create(null)</a></li><li><a href="#t42.3 getter">2.3 getter</a></li><li><a href="#t52.3.1 描述符可同时具有的键值">2.3.1 描述符可同时具有的键值</a></li><li><a href="#t62.3.2 示例">2.3.2 示例</a></li></ul></li><li><a href="#t72. 同步加载">2. 同步加载</a><ul><li><a href="#t82.1 webpack.config.js">2.1 webpack.config.js</a></li><li><a href="#t92.2 index.js">2.2 index.js</a></li><li><a href="#t102.3 title.js">2.3 title.js</a></li><li><a href="#t112.4 打包文件分析">2.4 打包文件分析</a></li><li><a href="#t122.5 实现">2.5 实现</a></li></ul></li><li><a href="#t133. harmony">3. harmony</a><ul><li><a href="#t143.1 common.js加载 common.js">3.1 common.js加载 common.js</a><ul><li><a href="#t153.1.1 index.js">3.1.1 index.js</a></li><li><a href="#t163.1.2 title.js">3.1.2 title.js</a></li><li><a href="#t173.1.3 bundle.js">3.1.3 bundle.js</a></li></ul></li><li><a href="#t183.2 common.js加载 ES6 modules">3.2 common.js加载 ES6 modules</a><ul><li><a href="#t193.2.1 index.js">3.2.1 index.js</a></li><li><a href="#t203.2.2 title.js">3.2.2 title.js</a></li><li><a href="#t213.2.3 bundle.js">3.2.3 bundle.js</a></li></ul></li><li><a href="#t223.3 ES6 modules 加载 ES6 modules">3.3 ES6 modules 加载 ES6 modules</a><ul><li><a href="#t233.3.1 index.js">3.3.1 index.js</a></li><li><a href="#t243.3.2 title.js">3.3.2 title.js</a></li><li><a href="#t253.3.3 bundle.js">3.3.3 bundle.js</a></li></ul></li><li><a href="#t263.4 ES6 modules 加载 common.js">3.4 ES6 modules 加载 common.js</a><ul><li><a href="#t273.4.1 index.js">3.4.1 index.js</a></li><li><a href="#t283.4.2 title.js">3.4.2 title.js</a></li><li><a href="#t293.4.3 bundle.js">3.4.3 bundle.js</a></li></ul></li></ul></li><li><a href="#t304. 异步加载">4. 异步加载</a><ul><li><a href="#t314.1 index.html">4.1 index.html</a></li><li><a href="#t324.2 entry1.js">4.2 entry1.js</a></li><li><a href="#t334.3 entry2.js">4.3 entry2.js</a></li><li><a href="#t344.4 title.js">4.4 title.js</a></li><li><a href="#t354.5 bundle.js">4.5 bundle.js</a></li><li><a href="#t364.6 title.bundle.js">4.6 title.bundle.js</a></li><li><a href="#t374.7 实现bundle.js">4.7 实现bundle.js</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h2 id="t01. webpack&#x4ECB;&#x7ECD;">1. webpack&#x4ECB;&#x7ECD; <a href="#t01. webpack&#x4ECB;&#x7ECD;"> # </a></h2>
+<ul>
+<li><code>Webpack</code>&#x662F;&#x4E00;&#x4E2A;&#x524D;&#x7AEF;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;/&#x6253;&#x5305;&#x5DE5;&#x5177;&#x3002;&#x5B83;&#x5C06;&#x6839;&#x636E;&#x6A21;&#x5757;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x8FDB;&#x884C;&#x9759;&#x6001;&#x5206;&#x6790;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x8FD9;&#x4E9B;&#x6A21;&#x5757;&#x6309;&#x7167;&#x6307;&#x5B9A;&#x7684;&#x89C4;&#x5219;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x7684;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x3002;</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/webpack_intro.gif" alt="webpack_intro"></p>
+<h2 id="t12. &#x9884;&#x5907;&#x77E5;&#x8BC6;">2. &#x9884;&#x5907;&#x77E5;&#x8BC6; <a href="#t12. &#x9884;&#x5907;&#x77E5;&#x8BC6;"> # </a></h2>
+<h3 id="t22.1 toStringTag">2.1 toStringTag <a href="#t22.1 toStringTag"> # </a></h3>
+<ul>
+<li><code>Symbol.toStringTag</code> &#x662F;&#x4E00;&#x4E2A;&#x5185;&#x7F6E; symbol&#xFF0C;&#x5B83;&#x901A;&#x5E38;&#x4F5C;&#x4E3A;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x952E;&#x4F7F;&#x7528;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x5E94;&#x8BE5;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#xFF0C;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7528;&#x6765;&#x8868;&#x793A;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#x6807;&#x7B7E;&#xFF0C;&#x901A;&#x5E38;&#x53EA;&#x6709;&#x5185;&#x7F6E;&#x7684; <code>Object.prototype.toString()</code> &#x65B9;&#x6CD5;&#x4F1A;&#x53BB;&#x8BFB;&#x53D6;&#x8FD9;&#x4E2A;&#x6807;&#x7B7E;&#x5E76;&#x628A;&#x5B83;&#x5305;&#x542B;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x91CC;&#x3002;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-string">&apos;foo&apos;</span>));     <span class="hljs-comment">// &quot;[object String]&quot;</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]));    <span class="hljs-comment">// &quot;[object Array]&quot;</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-number">3</span>));         <span class="hljs-comment">// &quot;[object Number]&quot;</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-literal">true</span>));      <span class="hljs-comment">// &quot;[object Boolean]&quot;</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-literal">undefined</span>)); <span class="hljs-comment">// &quot;[object Undefined]&quot;</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-literal">null</span>));      <span class="hljs-comment">// &quot;[object Null]&quot;</span>
+<span class="hljs-keyword">let</span> myExports={};
+<span class="hljs-built_in">Object</span>.defineProperty(myExports, <span class="hljs-built_in">Symbol</span>.toStringTag, { <span class="hljs-attr">value</span>: <span class="hljs-string">&apos;Module&apos;</span> });
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call(myExports));
+</code></pre>
+<h3 id="t32.2 Object.create(null)">2.2 Object.create(null) <a href="#t32.2 Object.create(null)"> # </a></h3>
+<ul>
+<li>&#x4F7F;&#x7528;<code>create</code>&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5C5E;&#x6027;,&#x628A;&#x5B83;&#x5F53;&#x4F5C;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7EAF;&#x51C0;&#x7684;map&#x6765;&#x4F7F;&#x7528;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;<code>hasOwnProperty</code>&#x3001;<code>toString</code>&#x65B9;&#x6CD5;,&#x5B8C;&#x5168;&#x4E0D;&#x5FC5;&#x62C5;&#x5FC3;&#x4F1A;&#x5C06;&#x539F;&#x578B;&#x94FE;&#x4E0A;&#x7684;&#x540C;&#x540D;&#x65B9;&#x6CD5;&#x8986;&#x76D6;&#x6389;</li>
+<li>&#x5728;&#x6211;&#x4EEC;&#x4F7F;&#x7528;<code>for..in</code>&#x5FAA;&#x73AF;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x904D;&#x5386;&#x5BF9;&#x8C61;&#x539F;&#x578B;&#x94FE;&#x4E0A;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x4F7F;&#x7528;<code>create(null)</code>&#x5C31;&#x4E0D;&#x5FC5;&#x518D;&#x5BF9;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x68C0;&#x67E5;&#x4E86;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> ns = <span class="hljs-built_in">Object</span>.create(<span class="hljs-literal">null</span>);
+<span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> <span class="hljs-built_in">Object</span>.create !== <span class="hljs-string">&quot;function&quot;</span>) {
+    <span class="hljs-built_in">Object</span>.create = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">proto</span>) </span>{
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">F</span>(<span class="hljs-params"></span>) </span>{}
+        F.prototype = proto;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> F();
+    };
+}
+<span class="hljs-built_in">console</span>.log(ns)
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.getPrototypeOf(ns));
+</code></pre>
+<h3 id="t42.3 getter">2.3 getter <a href="#t42.3 getter"> # </a></h3>
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">defineProperty</a> &#x65B9;&#x6CD5;&#x4F1A;&#x76F4;&#x63A5;&#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E0A;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x65B0;&#x5C5E;&#x6027;&#xFF0C;&#x6216;&#x8005;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x73B0;&#x6709;&#x5C5E;&#x6027;&#xFF0C; &#x5E76;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;<ul>
+<li>obj &#x8981;&#x5728;&#x5176;&#x4E0A;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x7684;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>prop &#x8981;&#x5B9A;&#x4E49;&#x6216;&#x4FEE;&#x6539;&#x7684;&#x5C5E;&#x6027;&#x7684;&#x540D;&#x79F0;&#x3002;</li>
+<li>descriptor &#x5C06;&#x88AB;&#x5B9A;&#x4E49;&#x6216;&#x4FEE;&#x6539;&#x7684;&#x5C5E;&#x6027;&#x63CF;&#x8FF0;&#x7B26;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h3 id="t52.3.1 &#x63CF;&#x8FF0;&#x7B26;&#x53EF;&#x540C;&#x65F6;&#x5177;&#x6709;&#x7684;&#x952E;&#x503C;">2.3.1 &#x63CF;&#x8FF0;&#x7B26;&#x53EF;&#x540C;&#x65F6;&#x5177;&#x6709;&#x7684;&#x952E;&#x503C; <a href="#t52.3.1 &#x63CF;&#x8FF0;&#x7B26;&#x53EF;&#x540C;&#x65F6;&#x5177;&#x6709;&#x7684;&#x952E;&#x503C;"> # </a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left">configurable</th>
+<th style="text-align:left">enumerable</th>
+<th style="text-align:left">value</th>
+<th style="text-align:left">writable</th>
+<th style="text-align:left">get</th>
+<th style="text-align:left">set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x6570;&#x636E;&#x63CF;&#x8FF0;&#x7B26;</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">No</td>
+<td style="text-align:left">No</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x5B58;&#x53D6;&#x63CF;&#x8FF0;&#x7B26;</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">Yes    No</td>
+<td style="text-align:left">No</td>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">Yes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="t62.3.2 &#x793A;&#x4F8B;">2.3.2 &#x793A;&#x4F8B; <a href="#t62.3.2 &#x793A;&#x4F8B;"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> ageValue;
+<span class="hljs-built_in">Object</span>.defineProperty(obj, <span class="hljs-string">&quot;age&quot;</span>, {
+  <span class="hljs-attr">value</span> : <span class="hljs-number">10</span>,<span class="hljs-comment">//&#x6570;&#x636E;&#x63CF;&#x8FF0;&#x7B26;&#x548C;&#x5B58;&#x53D6;&#x63CF;&#x8FF0;&#x7B26;&#x4E0D;&#x80FD;&#x6DF7;&#x5408;&#x4F7F;&#x7528;</span>
+  get(){
+    <span class="hljs-keyword">return</span> ageValue;
+  },
+  set(newValue){
+    ageValue = newValue;
+  }
+  writable : <span class="hljs-literal">true</span>,<span class="hljs-comment">//&#x662F;&#x5426;&#x53EF;&#x4FEE;&#x6539;</span>
+  enumerable : <span class="hljs-literal">true</span>,<span class="hljs-comment">//&#x662F;&#x5426;&#x53EF;&#x679A;&#x4E3E;</span>
+  configurable : <span class="hljs-literal">true</span><span class="hljs-comment">//&#x662F;&#x5426;&#x53EF;&#x914D;&#x7F6E;&#x53EF;&#x5220;&#x9664;</span>
+});
+</code></pre>
+<h2 id="t72. &#x540C;&#x6B65;&#x52A0;&#x8F7D;">2. &#x540C;&#x6B65;&#x52A0;&#x8F7D; <a href="#t72. &#x540C;&#x6B65;&#x52A0;&#x8F7D;"> # </a></h2>
+<h3 id="t82.1 webpack.config.js">2.1 webpack.config.js <a href="#t82.1 webpack.config.js"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
+<span class="hljs-keyword">const</span> HtmlWebpackPlugin=<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;html-webpack-plugin&apos;</span>);
+<span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-attr">mode</span>:<span class="hljs-string">&apos;development&apos;</span>,
+  <span class="hljs-attr">devtool</span>:<span class="hljs-string">&quot;none&quot;</span>,
+  <span class="hljs-attr">context</span>: process.cwd(),
+  <span class="hljs-attr">entry</span>: <span class="hljs-string">&apos;./src/index.js&apos;</span>,
+  <span class="hljs-attr">output</span>: {
+    <span class="hljs-attr">filename</span>: <span class="hljs-string">&apos;bundle.js&apos;</span>
+  },
+  <span class="hljs-attr">devServer</span>:{
+    <span class="hljs-attr">contentBase</span>:path.resolve(__dirname,<span class="hljs-string">&apos;./dist&apos;</span>)
+  },
+  <span class="hljs-attr">module</span>: {
+    <span class="hljs-attr">rules</span>: [
+
+      {
+        <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.js$/</span>,
+        <span class="hljs-attr">use</span>: {
+          <span class="hljs-attr">loader</span>: <span class="hljs-string">&quot;babel-loader&quot;</span>,
+          <span class="hljs-attr">options</span>: {
+            <span class="hljs-attr">presets</span>:[<span class="hljs-string">&quot;@babel/preset-env&quot;</span>]
+          }
+        },
+        <span class="hljs-attr">include</span>: path.join(__dirname, <span class="hljs-string">&quot;src&quot;</span>),
+        <span class="hljs-attr">exclude</span>: <span class="hljs-regexp">/node_modules/</span>
+      }
+    ]
+  },
+  <span class="hljs-attr">plugins</span>: []
+};
+</code></pre>
+<h3 id="t92.2 index.js">2.2 index.js <a href="#t92.2 index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> title = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./title.js&apos;</span>);
+<span class="hljs-built_in">console</span>.log(title);
+</code></pre>
+<h3 id="t102.3 title.js">2.3 title.js <a href="#t102.3 title.js"> # </a></h3>
+<p>src\title.js</p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-string">&quot;title&quot;</span>;
+</code></pre>
+<h3 id="t112.4 &#x6253;&#x5305;&#x6587;&#x4EF6;&#x5206;&#x6790;">2.4 &#x6253;&#x5305;&#x6587;&#x4EF6;&#x5206;&#x6790; <a href="#t112.4 &#x6253;&#x5305;&#x6587;&#x4EF6;&#x5206;&#x6790;"> # </a></h3>
+<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">modules</span>) </span>{
+  <span class="hljs-comment">// webpack&#x7684;&#x542F;&#x52A8;&#x51FD;&#x6570;</span>
+  <span class="hljs-comment">//&#x6A21;&#x5757;&#x7684;&#x7F13;&#x5B58;</span>
+  <span class="hljs-keyword">var</span> installedModules = {};
+
+  <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x4F7F;&#x7528;&#x7684;require&#x65B9;&#x6CD5;</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__webpack_require__</span>(<span class="hljs-params">moduleId</span>) </span>{
+    <span class="hljs-comment">//&#x68C0;&#x67E5;&#x6A21;&#x5757;&#x662F;&#x5426;&#x5728;&#x7F13;&#x5B58;&#x4E2D;</span>
+    <span class="hljs-keyword">if</span> (installedModules[moduleId]) {
+      <span class="hljs-keyword">return</span> installedModules[moduleId].exports;
+    }
+    <span class="hljs-comment">//&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6A21;&#x5757;&#x5E76;&#x4E14;&#x653E;&#x5230;&#x6A21;&#x5757;&#x7684;&#x7F13;&#x5B58;&#x4E2D;</span>
+    <span class="hljs-keyword">var</span> <span class="hljs-built_in">module</span> = (installedModules[moduleId] = {
+      <span class="hljs-attr">i</span>: moduleId,
+      <span class="hljs-attr">l</span>: <span class="hljs-literal">false</span>,
+      <span class="hljs-attr">exports</span>: {}
+    });
+
+    <span class="hljs-comment">//&#x6267;&#x884C;&#x6A21;&#x5757;&#x51FD;&#x6570;</span>
+    modules[moduleId].call(
+      <span class="hljs-built_in">module</span>.exports,
+      <span class="hljs-built_in">module</span>,
+      <span class="hljs-built_in">module</span>.exports,
+      __webpack_require__
+    );
+
+    <span class="hljs-comment">//&#x628A;&#x6A21;&#x5757;&#x8BBE;&#x7F6E;&#x4E3A;&#x5DF2;&#x7ECF;&#x52A0;&#x8F7D;</span>
+    <span class="hljs-built_in">module</span>.l = <span class="hljs-literal">true</span>;
+
+    <span class="hljs-comment">//&#x8FD4;&#x56DE;&#x6A21;&#x5757;&#x7684;&#x5BFC;&#x51FA;&#x5BF9;&#x8C61;</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">module</span>.exports;
+  }
+
+  <span class="hljs-comment">//&#x66B4;&#x9732;&#x51FA;&#x6A21;&#x5757;&#x5BF9;&#x8C61;</span>
+  __webpack_require__.m = modules;
+
+  <span class="hljs-comment">//&#x66B4;&#x9732;&#x51FA;&#x6A21;&#x5757;&#x7F13;&#x5B58;</span>
+  __webpack_require__.c = installedModules;
+
+  <span class="hljs-comment">//&#x4E3A;harmony&#x5BFC;&#x51FA;&#x5B9A;&#x4E49;getter&#x51FD;&#x6570;</span>
+  __webpack_require__.d = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">exports, name, getter</span>) </span>{
+    <span class="hljs-keyword">if</span> (!__webpack_require__.o(exports, name)) {
+      <span class="hljs-built_in">Object</span>.defineProperty(exports, name, { <span class="hljs-attr">enumerable</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">get</span>: getter });
+    }
+  };
+
+  <span class="hljs-comment">//&#x5728;&#x5BFC;&#x51FA;&#x5BF9;&#x8C61;&#x4E0A;&#x5B9A;&#x4E49;__esModule&#x5C5E;&#x6027;</span>
+  __webpack_require__.r = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">exports</span>) </span>{
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> <span class="hljs-built_in">Symbol</span> !== <span class="hljs-string">&quot;undefined&quot;</span> &amp;&amp; <span class="hljs-built_in">Symbol</span>.toStringTag) {
+      <span class="hljs-built_in">Object</span>.defineProperty(exports, <span class="hljs-built_in">Symbol</span>.toStringTag, { <span class="hljs-attr">value</span>: <span class="hljs-string">&quot;Module&quot;</span> });
+    }
+    <span class="hljs-built_in">Object</span>.defineProperty(exports, <span class="hljs-string">&quot;__esModule&quot;</span>, { <span class="hljs-attr">value</span>: <span class="hljs-literal">true</span> });
+  };
+
+  <span class="hljs-comment">/**
+   * &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6A21;&#x62DF;&#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x5BF9;&#x8C61;
+   * mode &amp; 1 value&#x662F;&#x6A21;&#x5757;ID&#x76F4;&#x63A5;&#x7528;__webpack_require__&#x52A0;&#x8F7D;
+   * mode &amp; 2 &#x628A;&#x6240;&#x6709;&#x7684;&#x5C5E;&#x6027;&#x5408;&#x5E76;&#x5230;&#x547D;&#x540D;&#x7A7A;&#x95F4;ns&#x4E0A;
+   * mode &amp; 4 &#x5F53;&#x5DF2;&#x7ECF;&#x662F;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x7684;&#x65F6;&#x5019;(__esModule=true)&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x503C;
+   * mode &amp; 8|1 &#x884C;&#x4E3A;&#x7C7B;&#x4F3C;&#x4E8E;require
+   */</span>
+  __webpack_require__.t = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value, mode</span>) </span>{
+    <span class="hljs-keyword">if</span> (mode &amp; <span class="hljs-number">1</span>) value = __webpack_require__(value);
+    <span class="hljs-keyword">if</span> (mode &amp; <span class="hljs-number">8</span>) <span class="hljs-keyword">return</span> value;
+    <span class="hljs-keyword">if</span> (mode &amp; <span class="hljs-number">4</span> &amp;&amp; <span class="hljs-keyword">typeof</span> value === <span class="hljs-string">&quot;object&quot;</span> &amp;&amp; value &amp;&amp; value.__esModule)
+      <span class="hljs-keyword">return</span> value;
+    <span class="hljs-keyword">var</span> ns = <span class="hljs-built_in">Object</span>.create(<span class="hljs-literal">null</span>); <span class="hljs-comment">//&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7A7A;&#x5BF9;&#x8C61;</span>
+    __webpack_require__.r(ns);
+    <span class="hljs-built_in">Object</span>.defineProperty(ns, <span class="hljs-string">&quot;default&quot;</span>, { <span class="hljs-attr">enumerable</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">value</span>: value });
+    <span class="hljs-keyword">if</span> (mode &amp; <span class="hljs-number">2</span> &amp;&amp; <span class="hljs-keyword">typeof</span> value != <span class="hljs-string">&quot;string&quot;</span>)
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> key <span class="hljs-keyword">in</span> value)
+        __webpack_require__.d(
+          ns,
+          key,
+          <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">key</span>) </span>{
+            <span class="hljs-keyword">return</span> value[key];
+          }.bind(<span class="hljs-literal">null</span>, key)
+        );
+    <span class="hljs-keyword">return</span> ns;
+  };
+
+  <span class="hljs-comment">// getDefaultExport&#x51FD;&#x6570;&#x4E3A;&#x4E86;&#x517C;&#x5BB9;&#x90A3;&#x4E9B;&#x975E;non-harmony&#x6A21;&#x5757;</span>
+  __webpack_require__.n = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module</span>) </span>{
+    <span class="hljs-keyword">var</span> getter =
+      <span class="hljs-built_in">module</span> &amp;&amp; <span class="hljs-built_in">module</span>.__esModule
+        ? <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getDefault</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-built_in">module</span>[<span class="hljs-string">&quot;default&quot;</span>];
+          }
+        : <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getModuleExports</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-built_in">module</span>;
+          };
+    __webpack_require__.d(getter, <span class="hljs-string">&quot;a&quot;</span>, getter);
+    <span class="hljs-keyword">return</span> getter;
+  };
+
+  <span class="hljs-comment">//&#x5224;&#x65AD;&#x5BF9;&#x8C61;&#x8EAB;&#x4E0A;&#x662F;&#x5426;&#x62E5;&#x6709;&#x6B64;&#x5C5E;&#x6027;</span>
+  __webpack_require__.o = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">object, property</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Object</span>.prototype.hasOwnProperty.call(object, property);
+  };
+
+  <span class="hljs-comment">//&#x516C;&#x5171;&#x8DEF;&#x5F84;</span>
+  __webpack_require__.p = <span class="hljs-string">&quot;&quot;</span>;
+
+  <span class="hljs-comment">//&#x52A0;&#x8F7D;&#x5165;&#x53E3;&#x6A21;&#x5757;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x5BFC;&#x51FA;&#x5BF9;&#x8C61;</span>
+  <span class="hljs-keyword">return</span> __webpack_require__((__webpack_require__.s = <span class="hljs-string">&quot;./src/index.js&quot;</span>));
+})({
+  <span class="hljs-string">&quot;./src/index.js&quot;</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, exports, __webpack_require__</span>) </span>{
+    <span class="hljs-keyword">var</span> title = __webpack_require__(<span class="hljs-string">&quot;./src/title.js&quot;</span>);
+    <span class="hljs-built_in">console</span>.log(title);
+  },
+  <span class="hljs-string">&quot;./src/title.js&quot;</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, exports</span>) </span>{
+    <span class="hljs-built_in">module</span>.exports = <span class="hljs-string">&quot;title&quot;</span>;
+  }
+});
+</code></pre>
+<h3 id="t122.5 &#x5B9E;&#x73B0;">2.5 &#x5B9E;&#x73B0; <a href="#t122.5 &#x5B9E;&#x73B0;"> # </a></h3>
+<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">modules</span>)</span>{
+    <span class="hljs-keyword">var</span> installedModules = {};
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__webpack_require__</span>(<span class="hljs-params">moduleId</span>)</span>{
+        <span class="hljs-keyword">if</span>(installedModules[moduleId]){
+            <span class="hljs-keyword">return</span> installedModules[moduleId];
+        }
+        <span class="hljs-keyword">var</span> <span class="hljs-built_in">module</span> = installedModules[moduleId] = {
+            <span class="hljs-attr">i</span>:moduleId,
+            <span class="hljs-attr">l</span>:<span class="hljs-literal">false</span>,
+            <span class="hljs-attr">exports</span>:{}
+        }
+        modules[moduleId].call(modules.exports,<span class="hljs-built_in">module</span>,<span class="hljs-built_in">module</span>.exports,__webpack_require__);
+        <span class="hljs-built_in">module</span>.l = <span class="hljs-literal">true</span>;
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">module</span>.exports;
+    }
+    <span class="hljs-keyword">return</span> __webpack_require__((__webpack_require__.s = <span class="hljs-string">&quot;./src/index.js&quot;</span>));
+})({
+    <span class="hljs-string">&quot;./src/index.js&quot;</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module,exports,__webpack_require__</span>)</span>{
+        <span class="hljs-keyword">var</span> title = __webpack_require__(<span class="hljs-string">&apos;./src/title.js&apos;</span>);
+        <span class="hljs-built_in">console</span>.log(title);
+    },
+    <span class="hljs-string">&quot;./src/title.js&quot;</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module,exports</span>)</span>{
+       <span class="hljs-built_in">module</span>.exports = <span class="hljs-string">&quot;title&quot;</span>;
+    }
+})
+</code></pre>
+<h2 id="t133. harmony">3. harmony <a href="#t133. harmony"> # </a></h2>
+<h3 id="t143.1 common.js&#x52A0;&#x8F7D; common.js">3.1 common.js&#x52A0;&#x8F7D; common.js <a href="#t143.1 common.js&#x52A0;&#x8F7D; common.js"> # </a></h3>
+<h4 id="t153.1.1 index.js">3.1.1 index.js <a href="#t153.1.1 index.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> title = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./title&apos;</span>);
+<span class="hljs-built_in">console</span>.log(title.name);
+<span class="hljs-built_in">console</span>.log(title.age);
+</code></pre>
+<h4 id="t163.1.2 title.js">3.1.2 title.js <a href="#t163.1.2 title.js"> # </a></h4>
+<pre><code class="lang-js">exports.name = <span class="hljs-string">&apos;title_name&apos;</span>;
+exports.age = <span class="hljs-string">&apos;title_age&apos;</span>;
+</code></pre>
+<h4 id="t173.1.3 bundle.js">3.1.3 bundle.js <a href="#t173.1.3 bundle.js"> # </a></h4>
+<pre><code class="lang-js">{
+<span class="hljs-string">&quot;./src/index.js&quot;</span>:
+  (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, exports, __webpack_require__</span>) </span>{
+    <span class="hljs-keyword">var</span> title = __webpack_require__(<span class="hljs-string">&quot;./src/title.js&quot;</span>);
+    <span class="hljs-built_in">console</span>.log(title.name);
+    <span class="hljs-built_in">console</span>.log(title.age);
+  }),
+<span class="hljs-string">&quot;./src/title.js&quot;</span>:
+  (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, exports</span>) </span>{
+    exports.name = <span class="hljs-string">&apos;title_name&apos;</span>;
+    exports.age = <span class="hljs-string">&apos;title_age&apos;</span>;
+  })
+}
+</code></pre>
+<h3 id="t183.2 common.js&#x52A0;&#x8F7D; ES6 modules">3.2 common.js&#x52A0;&#x8F7D; ES6 modules <a href="#t183.2 common.js&#x52A0;&#x8F7D; ES6 modules"> # </a></h3>
+<h4 id="t193.2.1 index.js">3.2.1 index.js <a href="#t193.2.1 index.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> title = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./title&apos;</span>);
+<span class="hljs-built_in">console</span>.log(title.name);
+<span class="hljs-built_in">console</span>.log(title.age);
+</code></pre>
+<h4 id="t203.2.2 title.js">3.2.2 title.js <a href="#t203.2.2 title.js"> # </a></h4>
+<pre><code class="lang-js">exports.name = <span class="hljs-string">&apos;title_name&apos;</span>;
+exports.age = <span class="hljs-string">&apos;title_age&apos;</span>;
+</code></pre>
+<h4 id="t213.2.3 bundle.js">3.2.3 bundle.js <a href="#t213.2.3 bundle.js"> # </a></h4>
+<pre><code class="lang-js">{
+ <span class="hljs-string">&quot;./src/index.js&quot;</span>:
+ (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, exports, __webpack_require__</span>) </span>{
+    <span class="hljs-keyword">var</span> title = __webpack_require__(<span class="hljs-string">&quot;./src/title.js&quot;</span>);
+    <span class="hljs-built_in">console</span>.log(title[<span class="hljs-string">&quot;default&quot;</span>]);
+    <span class="hljs-built_in">console</span>.log(title.age);
+ }),
+ <span class="hljs-string">&quot;./src/title.js&quot;</span>:
+ (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, __webpack_exports__, __webpack_require__</span>) </span>{
+    __webpack_require__.r(__webpack_exports__);<span class="hljs-comment">//__esModule=true</span>
+    __webpack_require__.d(__webpack_exports__, <span class="hljs-string">&quot;age&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">return</span> age; });
+    __webpack_exports__[<span class="hljs-string">&quot;default&quot;</span>] = <span class="hljs-string">&apos;title_name&apos;</span>;
+    <span class="hljs-keyword">var</span> age = <span class="hljs-string">&apos;title_age&apos;</span>;
+ })
+}
+</code></pre>
+<h3 id="t223.3 ES6 modules &#x52A0;&#x8F7D; ES6 modules">3.3 ES6 modules &#x52A0;&#x8F7D; ES6 modules <a href="#t223.3 ES6 modules &#x52A0;&#x8F7D; ES6 modules"> # </a></h3>
+<h4 id="t233.3.1 index.js">3.3.1 index.js <a href="#t233.3.1 index.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> name,{age} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./title&apos;</span>;
+<span class="hljs-built_in">console</span>.log(name);
+<span class="hljs-built_in">console</span>.log(age);
+</code></pre>
+<h4 id="t243.3.2 title.js">3.3.2 title.js <a href="#t243.3.2 title.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> name  = <span class="hljs-string">&apos;title_name&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> age = <span class="hljs-string">&apos;title_age&apos;</span>;
+</code></pre>
+<h4 id="t253.3.3 bundle.js">3.3.3 bundle.js <a href="#t253.3.3 bundle.js"> # </a></h4>
+<pre><code class="lang-js">{
+ <span class="hljs-string">&quot;./src/index.js&quot;</span>:
+ (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, __webpack_exports__, __webpack_require__</span>) </span>{
+    __webpack_require__.r(__webpack_exports__);<span class="hljs-comment">//__esModule=true</span>
+    <span class="hljs-keyword">var</span> _title__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(<span class="hljs-string">&quot;./src/title.js&quot;</span>);
+    <span class="hljs-built_in">console</span>.log(_title__WEBPACK_IMPORTED_MODULE_0__[<span class="hljs-string">&quot;default&quot;</span>]);
+    <span class="hljs-built_in">console</span>.log(_title__WEBPACK_IMPORTED_MODULE_0__[<span class="hljs-string">&quot;age&quot;</span>]);
+ }),
+ <span class="hljs-string">&quot;./src/title.js&quot;</span>:
+ (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, __webpack_exports__, __webpack_require__</span>) </span>{
+    __webpack_require__.r(__webpack_exports__);<span class="hljs-comment">//__esModule=true</span>
+    __webpack_require__.d(__webpack_exports__, <span class="hljs-string">&quot;age&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">return</span> age; });
+    __webpack_exports__[<span class="hljs-string">&quot;default&quot;</span>] = <span class="hljs-string">&apos;title_name&apos;</span>;
+    <span class="hljs-keyword">var</span> age = <span class="hljs-string">&apos;title_age&apos;</span>;
+ })
+}
+</code></pre>
+<h3 id="t263.4 ES6 modules &#x52A0;&#x8F7D; common.js">3.4 ES6 modules &#x52A0;&#x8F7D; common.js <a href="#t263.4 ES6 modules &#x52A0;&#x8F7D; common.js"> # </a></h3>
+<h4 id="t273.4.1 index.js">3.4.1 index.js <a href="#t273.4.1 index.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> name,{age} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./title&apos;</span>;
+<span class="hljs-built_in">console</span>.log(name);
+<span class="hljs-built_in">console</span>.log(age);
+</code></pre>
+<h4 id="t283.4.2 title.js">3.4.2 title.js <a href="#t283.4.2 title.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> name  = <span class="hljs-string">&apos;title_name&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> age = <span class="hljs-string">&apos;title_age&apos;</span>;
+</code></pre>
+<h4 id="t293.4.3 bundle.js">3.4.3 bundle.js <a href="#t293.4.3 bundle.js"> # </a></h4>
+<pre><code class="lang-js">{
+<span class="hljs-string">&quot;./src/index.js&quot;</span>:
+(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, __webpack_exports__, __webpack_require__</span>) </span>{
+  __webpack_require__.r(__webpack_exports__);<span class="hljs-comment">//__esModule=true</span>
+  <span class="hljs-comment">/* &#x517C;&#x5BB9;common.js&#x5BFC;&#x51FA; */</span> <span class="hljs-keyword">var</span> _title__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(<span class="hljs-string">&quot;./src/title.js&quot;</span>);
+  <span class="hljs-comment">/* &#x517C;&#x5BB9;common.js&#x5BFC;&#x51FA; */</span> <span class="hljs-keyword">var</span> _title__WEBPACK_IMPORTED_MODULE_0___default = __webpack_require__.n(_title__WEBPACK_IMPORTED_MODULE_0__);
+  <span class="hljs-built_in">console</span>.log(_title__WEBPACK_IMPORTED_MODULE_0___default.a.name);
+  <span class="hljs-built_in">console</span>.log(_title__WEBPACK_IMPORTED_MODULE_0___default.a.age);
+}),
+<span class="hljs-string">&quot;./src/title.js&quot;</span>:
+(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, __webpack_exports__,__webpack_require__</span>) </span>{
+  __webpack_exports__.name = <span class="hljs-string">&apos;title_name&apos;</span>;
+  __webpack_exports__.age = <span class="hljs-string">&apos;title_age&apos;</span>;
+}),
+<span class="hljs-string">&quot;./src/title_esm.js&quot;</span>:
+(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, __webpack_exports__,__webpack_require__</span>) </span>{
+  __webpack_require__.r(__webpack_exports__);<span class="hljs-comment">//__esModule=true</span>
+  __webpack_exports__.name = <span class="hljs-string">&apos;title_name&apos;</span>;
+  __webpack_exports__.age = <span class="hljs-string">&apos;title_age&apos;</span>;
+  __webpack_exports__.default = {<span class="hljs-attr">name</span>:<span class="hljs-string">&apos;default_name&apos;</span>,<span class="hljs-attr">age</span>:<span class="hljs-string">&apos;default_age&apos;</span>};
+})
+}
+</code></pre>
+<h2 id="t304. &#x5F02;&#x6B65;&#x52A0;&#x8F7D;">4. &#x5F02;&#x6B65;&#x52A0;&#x8F7D; <a href="#t304. &#x5F02;&#x6B65;&#x52A0;&#x8F7D;"> # </a></h2>
+<h3 id="t314.1 index.html">4.1 index.html <a href="#t314.1 index.html"> # </a></h3>
+<pre><code class="lang-js">&lt;body&gt;
+    &lt;script src=&quot;entry1.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+   setTimeout(function(){
+    let script = document.createElement(&apos;script&apos;);
+    script.src = &apos;entry2.js&apos;;
+    document.body.appendChild(script);
+   },3000);
+&lt;/script&gt;   
+&lt;/body&gt;
+</code></pre>
+<h3 id="t324.2 entry1.js">4.2 entry1.js <a href="#t324.2 entry1.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> button = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;button&quot;</span>);
+button.innerHTML = <span class="hljs-string">&quot;&#x70B9;&#x6211;1&quot;</span>;
+button.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">import</span>(<span class="hljs-comment">/*webpackChunkName: &apos;title&apos;*/</span><span class="hljs-string">&apos;./title.js&apos;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>)</span>{
+        <span class="hljs-built_in">console</span>.log(result.default);
+    });
+};
+<span class="hljs-built_in">document</span>.body.appendChild(button);
+</code></pre>
+<h3 id="t334.3 entry2.js">4.3 entry2.js <a href="#t334.3 entry2.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> button = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;button&quot;</span>);
+button.innerHTML = <span class="hljs-string">&quot;&#x70B9;&#x6211;2&quot;</span>;
+button.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">import</span>(<span class="hljs-comment">/*webpackChunkName: &apos;title&apos;*/</span><span class="hljs-string">&apos;./title.js&apos;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>)</span>{
+        <span class="hljs-built_in">console</span>.log(result.default);
+    });
+};
+<span class="hljs-built_in">document</span>.body.appendChild(button);
+
+</code></pre>
+<h3 id="t344.4 title.js">4.4 title.js <a href="#t344.4 title.js"> # </a></h3>
+<p>src\title.js</p>
+<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-string">&apos;title&apos;</span>;
+</code></pre>
+<h3 id="t354.5 bundle.js">4.5 bundle.js <a href="#t354.5 bundle.js"> # </a></h3>
+<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">modules</span>) </span>{
+ <span class="hljs-comment">//&#x901A;&#x8FC7;JSONP&#x52A0;&#x8F7D;&#x989D;&#x5916;&#x7684;&#x6A21;&#x5757;</span>
+ <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">webpackJsonpCallback</span>(<span class="hljs-params">data</span>) </span>{
+    <span class="hljs-keyword">var</span> chunkIds = data[<span class="hljs-number">0</span>];<span class="hljs-comment">//&#x4EE3;&#x7801;&#x5757;&#x7684;IDS</span>
+    <span class="hljs-keyword">var</span> moreModules = data[<span class="hljs-number">1</span>];<span class="hljs-comment">//&#x989D;&#x5916;&#x7684;&#x6A21;&#x5757;</span>
+  <span class="hljs-comment">//&#x628A;moreModules&#x6DFB;&#x52A0;&#x5230;modules&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x6240;&#x6709;&#x7684;chunkIds&#x8BBE;&#x7F6E;&#x4E3A;&#x5DF2;&#x52A0;&#x8F7D;&#x5E76;&#x89E6;&#x53D1;callback&#x51FD;&#x6570;</span>
+    <span class="hljs-keyword">var</span> moduleId, chunkId, i = <span class="hljs-number">0</span>, resolves = [];
+    <span class="hljs-keyword">for</span>(;i &lt; chunkIds.length; i++) {
+        chunkId = chunkIds[i];
+        <span class="hljs-keyword">if</span>(<span class="hljs-built_in">Object</span>.prototype.hasOwnProperty.call(installedChunks, chunkId) &amp;&amp; installedChunks[chunkId]) {
+            resolves.push(installedChunks[chunkId][<span class="hljs-number">0</span>]);
+        }
+        installedChunks[chunkId] = <span class="hljs-number">0</span>;
+    }
+    <span class="hljs-keyword">for</span>(moduleId <span class="hljs-keyword">in</span> moreModules) {
+        <span class="hljs-keyword">if</span>(<span class="hljs-built_in">Object</span>.prototype.hasOwnProperty.call(moreModules, moduleId)) {
+            modules[moduleId] = moreModules[moduleId];
+        }
+    }
+    <span class="hljs-keyword">if</span>(parentJsonpFunction) parentJsonpFunction(data);
+    <span class="hljs-keyword">while</span>(resolves.length) {
+        resolves.shift()();
+    }
+};
+
+<span class="hljs-comment">//&#x6A21;&#x5757;&#x7F13;&#x5B58;</span>
+<span class="hljs-keyword">var</span> installedModules = {};
+<span class="hljs-comment">// &#x5B58;&#x50A8;&#x52A0;&#x8F7D;&#x4E2D;&#x548C;&#x52A0;&#x8F7D;&#x8FC7;&#x7684;chunks&#x5BF9;&#x8C61;</span>
+<span class="hljs-comment">// &#x5B58;&#x50A8;&#x52A0;&#x8F7D;&#x4E2D;&#x548C;&#x52A0;&#x8F7D;&#x8FC7;&#x7684;chunks&#x5BF9;&#x8C61;</span>
+<span class="hljs-comment">// chunk undefined(&#x672A;&#x52A0;&#x8F7D;)  null (&#x9884;&#x52A0;&#x8F7D;/&#x9884;&#x83B7;&#x53D6;) Promise (&#x52A0;&#x8F7D;&#x4E2D;)  0 &#x52A0;&#x8F7D;&#x5B8C;&#x6210;</span>
+<span class="hljs-keyword">var</span> installedChunks = {
+    <span class="hljs-string">&quot;main&quot;</span>: <span class="hljs-number">0</span> <span class="hljs-comment">//&#x521A;&#x5F00;&#x59CB;&#x53EA;&#x52A0;&#x8F7D;main</span>
+};
+
+
+<span class="hljs-comment">//&#x8FD4;&#x56DE;&#x8981;&#x52A0;&#x8F7D;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x7684;&#x8DEF;&#x5F84;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">jsonpScriptSrc</span>(<span class="hljs-params">chunkId</span>) </span>{
+    <span class="hljs-keyword">return</span> __webpack_require__.p + <span class="hljs-string">&quot;&quot;</span> + chunkId + <span class="hljs-string">&quot;.bundle.js&quot;</span>
+}
+
+<span class="hljs-comment">// webpack&#x81EA;&#x5DF2;&#x5B9E;&#x73B0;&#x7684; require&#x65B9;&#x6CD5;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__webpack_require__</span>(<span class="hljs-params">moduleId</span>) </span>{
+    <span class="hljs-keyword">if</span>(installedModules[moduleId]) {
+        <span class="hljs-keyword">return</span> installedModules[moduleId].exports;
+    }
+    <span class="hljs-keyword">var</span> <span class="hljs-built_in">module</span> = installedModules[moduleId] = {
+        <span class="hljs-attr">i</span>: moduleId,
+        <span class="hljs-attr">l</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-attr">exports</span>: {}
+    };
+
+    modules[moduleId].call(<span class="hljs-built_in">module</span>.exports, <span class="hljs-built_in">module</span>, <span class="hljs-built_in">module</span>.exports, __webpack_require__);
+
+    <span class="hljs-built_in">module</span>.l = <span class="hljs-literal">true</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">module</span>.exports;
+}
+
+<span class="hljs-comment">//&#x5F02;&#x6B65;&#x6A21;&#x5757;&#x52A0;&#x8F7D;&#x51FD;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x518D;&#x7F13;&#x5B58;&#x6A21;&#x5757;&#x4E2D; &#x5219;&#x7528;jsonscriptsrc &#x52A0;&#x8F7D;</span>
+<span class="hljs-comment">//&#x6B64;&#x4E3B;&#x6587;&#x4EF6;&#x4E2D;&#x53EA;&#x5305;&#x542B;&#x5165;&#x53E3;&#x4EE3;&#x7801;&#x5757;&#xFF0C;&#x6B64;&#x51FD;&#x6570;&#x7528;&#x6765;&#x52A0;&#x8F7D;&#x989D;&#x5916;&#x7684;&#x4EE3;&#x7801;&#x5757;</span>
+__webpack_require__.e = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">requireEnsure</span>(<span class="hljs-params">chunkId</span>) </span>{
+    <span class="hljs-keyword">var</span> promises = [];
+  <span class="hljs-comment">//JSONP&#x4EE3;&#x7801;&#x5757;&#x52A0;&#x8F7D;</span>
+    <span class="hljs-keyword">var</span> installedChunkData = installedChunks[chunkId];
+    <span class="hljs-keyword">if</span>(installedChunkData !== <span class="hljs-number">0</span>) { <span class="hljs-comment">//0&#x8868;&#x793A;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;</span>
+        <span class="hljs-comment">//&#x5982;&#x679C;&#x662F;&#x4E00;&#x4E2A;Promise&#x8868;&#x793A;&#x6B63;&#x5728;&#x5B89;&#x88C5;&#x6216;&#x52A0;&#x8F7D;,&#x6DFB;&#x52A0;&#x5230;promises&#x6570;&#x7EC4;&#x4E2D;</span>
+        <span class="hljs-keyword">if</span>(installedChunkData) {
+            promises.push(installedChunkData[<span class="hljs-number">2</span>]);
+        } <span class="hljs-keyword">else</span> {<span class="hljs-comment">//&#x5426;&#x5219;&#x5C31;&#x662F;&#x672A;&#x52A0;&#x8F7D;</span>
+            <span class="hljs-comment">//&#x5728;chunk&#x7F13;&#x5B58;&#x4E2D;&#x8BBE;&#x7F6E;Promise</span>
+            <span class="hljs-keyword">var</span> promise = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+                installedChunkData = installedChunks[chunkId] = [resolve, reject];
+            });
+            promises.push(installedChunkData[<span class="hljs-number">2</span>] = promise);
+
+            <span class="hljs-comment">//&#x5F00;&#x59CB;&#x52A0;&#x8F7D;&#x4EE3;&#x7801;&#x5757;</span>
+            <span class="hljs-keyword">var</span> script = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;script&apos;</span>);
+            <span class="hljs-keyword">var</span> onScriptComplete;
+
+            script.charset = <span class="hljs-string">&apos;utf-8&apos;</span>;
+            script.timeout = <span class="hljs-number">120</span>;
+      <span class="hljs-comment">//&#x8868;&#x660E;&#x811A;&#x672C;&#x9700;&#x8981;&#x5B89;&#x5168;&#x52A0;&#x8F7D; CSP &#x7B56;&#x7565;</span>
+            <span class="hljs-keyword">if</span> (__webpack_require__.nc) {
+                script.setAttribute(<span class="hljs-string">&quot;nonce&quot;</span>, __webpack_require__.nc);
+            }
+            script.src = jsonpScriptSrc(chunkId);
+
+            <span class="hljs-comment">// create error before stack unwound to get useful stacktrace later</span>
+            <span class="hljs-keyword">var</span> error = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>();
+            onScriptComplete = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event</span>) </span>{
+                <span class="hljs-comment">// avoid mem leaks in IE.</span>
+                script.onerror = script.onload = <span class="hljs-literal">null</span>;
+                clearTimeout(timeout);
+                <span class="hljs-keyword">var</span> chunk = installedChunks[chunkId];
+                <span class="hljs-keyword">if</span>(chunk !== <span class="hljs-number">0</span>) {
+                    <span class="hljs-keyword">if</span>(chunk) {
+                        <span class="hljs-keyword">var</span> errorType = event &amp;&amp; (event.type === <span class="hljs-string">&apos;load&apos;</span> ? <span class="hljs-string">&apos;missing&apos;</span> : event.type);
+                        <span class="hljs-keyword">var</span> realSrc = event &amp;&amp; event.target &amp;&amp; event.target.src;
+                        error.message = <span class="hljs-string">&apos;Loading chunk &apos;</span> + chunkId + <span class="hljs-string">&apos; failed.\n(&apos;</span> + errorType + <span class="hljs-string">&apos;: &apos;</span> + realSrc + <span class="hljs-string">&apos;)&apos;</span>;
+                        error.name = <span class="hljs-string">&apos;ChunkLoadError&apos;</span>;
+                        error.type = errorType;
+                        error.request = realSrc;
+                        chunk[<span class="hljs-number">1</span>](error);
+                    }
+                    installedChunks[chunkId] = <span class="hljs-literal">undefined</span>;
+                }
+            };
+            <span class="hljs-keyword">var</span> timeout = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+                onScriptComplete({ <span class="hljs-attr">type</span>: <span class="hljs-string">&apos;timeout&apos;</span>, <span class="hljs-attr">target</span>: script });
+            }, <span class="hljs-number">120000</span>);
+            script.onerror = script.onload = onScriptComplete;
+            <span class="hljs-built_in">document</span>.head.appendChild(script);
+        }
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.all(promises);
+};
+
+<span class="hljs-comment">// &#x6240;&#x6709;&#x6784;&#x5EFA;&#x751F;&#x6210;&#x7684;&#x6A21;&#x5757;</span>
+__webpack_require__.m = modules;
+
+<span class="hljs-comment">// expose the module cache</span>
+__webpack_require__.c = installedModules;
+
+<span class="hljs-comment">// &#x8BBE;&#x5B9A;getter &#x8F85;&#x52A9;&#x51FD;&#x6570;</span>
+__webpack_require__.d = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">exports, name, getter</span>) </span>{
+    <span class="hljs-keyword">if</span>(!__webpack_require__.o(exports, name)) {
+        <span class="hljs-built_in">Object</span>.defineProperty(exports, name, { <span class="hljs-attr">enumerable</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">get</span>: getter });
+    }
+};
+
+<span class="hljs-comment">// &#x7ED9;exports&#x8BBE;&#x5B9A;__esModule&#x5C5E;&#x6027;</span>
+__webpack_require__.r = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">exports</span>) </span>{
+    <span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span> <span class="hljs-built_in">Symbol</span> !== <span class="hljs-string">&apos;undefined&apos;</span> &amp;&amp; <span class="hljs-built_in">Symbol</span>.toStringTag) {
+        <span class="hljs-built_in">Object</span>.defineProperty(exports, <span class="hljs-built_in">Symbol</span>.toStringTag, { <span class="hljs-attr">value</span>: <span class="hljs-string">&apos;Module&apos;</span> });
+    }
+    <span class="hljs-built_in">Object</span>.defineProperty(exports, <span class="hljs-string">&apos;__esModule&apos;</span>, { <span class="hljs-attr">value</span>: <span class="hljs-literal">true</span> });
+};
+
+<span class="hljs-comment">// &#x7528;&#x4E8E;&#x53D6;&#x503C;&#xFF0C;&#x4F2A;&#x9020;namespace</span>
+<span class="hljs-comment">// mode &amp; 1: &#x503C;&#x662F;&#x4E00;&#x4E2A;&#x6A21;&#x5757;ID&#xFF0C;&#x52A0;&#x8F7D;&#x5B83;</span>
+<span class="hljs-comment">// mode &amp; 2: &#x628A;value&#x6240;&#x6709;&#x7684;&#x5C5E;&#x6027;&#x5408;&#x5E76;&#x5230;ns&#x4E0A;</span>
+<span class="hljs-comment">// mode &amp; 4: &#x5982;&#x679C;ns&#x5BF9;&#x8C61;&#x5DF2;&#x7ECF;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4E86;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x503C;</span>
+<span class="hljs-comment">// mode &amp; 8|1: &#x7C7B;&#x4F3C;&#x4E8E;require</span>
+__webpack_require__.t = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value, mode</span>) </span>{
+    <span class="hljs-keyword">if</span>(mode &amp; <span class="hljs-number">1</span>) value = __webpack_require__(value);
+    <span class="hljs-keyword">if</span>(mode &amp; <span class="hljs-number">8</span>) <span class="hljs-keyword">return</span> value;
+    <span class="hljs-keyword">if</span>((mode &amp; <span class="hljs-number">4</span>) &amp;&amp; <span class="hljs-keyword">typeof</span> value === <span class="hljs-string">&apos;object&apos;</span> &amp;&amp; value &amp;&amp; value.__esModule) <span class="hljs-keyword">return</span> value;
+    <span class="hljs-keyword">var</span> ns = <span class="hljs-built_in">Object</span>.create(<span class="hljs-literal">null</span>);
+    __webpack_require__.r(ns);
+    <span class="hljs-built_in">Object</span>.defineProperty(ns, <span class="hljs-string">&apos;default&apos;</span>, { <span class="hljs-attr">enumerable</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">value</span>: value });
+    <span class="hljs-keyword">if</span>(mode &amp; <span class="hljs-number">2</span> &amp;&amp; <span class="hljs-keyword">typeof</span> value != <span class="hljs-string">&apos;string&apos;</span>) <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> key <span class="hljs-keyword">in</span> value) __webpack_require__.d(ns, key, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">key</span>) </span>{ <span class="hljs-keyword">return</span> value[key]; }.bind(<span class="hljs-literal">null</span>, key));
+    <span class="hljs-keyword">return</span> ns;
+};
+
+<span class="hljs-comment">//&#x7528;&#x4E8E;&#x517C;&#x5BB9;&#x6027;&#x53D6;&#x503C;&#xFF08;es module &#x53D6;default&#xFF0C; &#x975E;es module &#x76F4;&#x63A5;&#x8FD4;&#x56DE;module)</span>
+__webpack_require__.n = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module</span>) </span>{
+    <span class="hljs-keyword">var</span> getter = <span class="hljs-built_in">module</span> &amp;&amp; <span class="hljs-built_in">module</span>.__esModule ?
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getDefault</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-built_in">module</span>[<span class="hljs-string">&apos;default&apos;</span>]; } :
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getModuleExports</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-built_in">module</span>; };
+    __webpack_require__.d(getter, <span class="hljs-string">&apos;a&apos;</span>, getter);
+    <span class="hljs-keyword">return</span> getter;
+};
+
+<span class="hljs-comment">// &#x8F85;&#x52A9;&#x51FD;&#x6570; Object.prototype.hasOwnProperty.call</span>
+__webpack_require__.o = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">object, property</span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-built_in">Object</span>.prototype.hasOwnProperty.call(object, property); };
+
+<span class="hljs-comment">//&#x516C;&#x5171;&#x8DEF;&#x5F84;&#xFF0C;&#x4E3A;&#x6240;&#x6709;&#x8D44;&#x6E90;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x57FA;&#x7840;&#x8DEF;&#x5F84;</span>
+__webpack_require__.p = <span class="hljs-string">&quot;&quot;</span>;
+
+<span class="hljs-comment">// &#x5F02;&#x6B65;&#x52A0;&#x8F7D;&#x5931;&#x8D25;&#x5904;&#x7406;&#x51FD;&#x6570; &#x8F85;&#x52A9;&#x51FD;&#x6570;</span>
+__webpack_require__.oe = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{ <span class="hljs-built_in">console</span>.error(err); <span class="hljs-keyword">throw</span> err; };
+<span class="hljs-comment">//&#x83B7;&#x53D6;&#x5168;&#x5C40;&#x7684;webpackJsonp&#x51FD;&#x6570;,&#x7B2C;&#x4E00;&#x6B21;&#x6267;&#x884C;&#x6B64;&#x51FD;&#x6570;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;&#x6570;&#x7EC4;</span>
+<span class="hljs-keyword">var</span> jsonpArray = <span class="hljs-built_in">window</span>[<span class="hljs-string">&quot;webpackJsonp&quot;</span>] = <span class="hljs-built_in">window</span>[<span class="hljs-string">&quot;webpackJsonp&quot;</span>] || [];
+<span class="hljs-comment">//&#x5728;&#x66FF;&#x6362;&#x5176;push&#x51FD;&#x6570;&#x4E4B;&#x524D;&#x4F1A;&#x5C06;&#x539F;&#x6709;&#x7684;push&#x65B9;&#x6CD5;&#x4FDD;&#x5B58;&#x4E3A;oldJsonpFunction,&#x540C;&#x65F6;</span>
+<span class="hljs-keyword">var</span> oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
+<span class="hljs-comment">//&#x628A;jsonpArray&#x7684;push&#x7B49;&#x4E8E;&#x5F53;&#x524D;&#x7684;webpackJsonpCallback</span>
+jsonpArray.push = webpackJsonpCallback;
+<span class="hljs-comment">//&#x628A;&#x6570;&#x7EC4;&#x514B;&#x9686;&#x4E00;&#x4EFD;</span>
+jsonpArray = jsonpArray.slice();
+<span class="hljs-comment">//&#x5FAA;&#x73AF;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x628A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;&#x4F20;&#x7ED9;webpackJsonpCallback</span>
+<span class="hljs-comment">//&#x5982;&#x679C;&#x628A;&#x4EE5;&#x524D;&#x61D2;&#x52A0;&#x8F7D;&#x8FC7;&#x7684;&#x6A21;&#x5757;&#x5728;&#x81EA;&#x5DF1;&#x8EAB;&#x4E0A;&#x5B89;&#x88C5;&#x4E00;&#x4E0B;&#xFF0C;&#x5C31;&#x4E0D;&#x7528;&#x518D;&#x5F02;&#x6B65;&#x52A0;&#x8F7D;&#x4E86;</span>
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; jsonpArray.length; i++) 
+   webpackJsonpCallback(jsonpArray[i]);
+<span class="hljs-comment">//&#x628A;&#x4E0A;&#x4E00;&#x4E2A;oldJsonpFunction&#x8D4B;&#x7ED9;parentJsonpFunction,&#x7B2C;&#x4E00;&#x6B21;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x662F;push&#x65B9;&#x6CD5;</span>
+<span class="hljs-keyword">var</span> parentJsonpFunction = oldJsonpFunction;
+<span class="hljs-comment">//&#x52A0;&#x8F7D;&#x5165;&#x53E3;&#x6A21;&#x5757;&#x5E76;&#x8FD4;&#x56DE;exports&#x5BFC;&#x51FA;&#x5BF9;&#x8C61;</span>
+<span class="hljs-keyword">return</span> __webpack_require__(__webpack_require__.s = <span class="hljs-string">&quot;./src/index.js&quot;</span>);
+})
+({
+<span class="hljs-string">&quot;./src/index.js&quot;</span>:
+(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, exports, __webpack_require__</span>) </span>{
+
+<span class="hljs-keyword">var</span> button = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;button&quot;</span>);
+button.innerHTML = <span class="hljs-string">&quot;&#x70B9;&#x6211;&quot;</span>;
+
+button.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  __webpack_require__.e(<span class="hljs-comment">/*! import() | title */</span> <span class="hljs-string">&quot;title&quot;</span>).then(__webpack_require__.t.bind(<span class="hljs-literal">null</span>, <span class="hljs-comment">/*! ./title.js */</span> <span class="hljs-string">&quot;./src/title.js&quot;</span>, <span class="hljs-number">7</span>)).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">result</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(result[<span class="hljs-string">&quot;default&quot;</span>]);
+  });
+};
+<span class="hljs-built_in">document</span>.body.appendChild(button);
+})
+});
+</code></pre>
+<h3 id="t364.6 title.bundle.js">4.6 title.bundle.js <a href="#t364.6 title.bundle.js"> # </a></h3>
+<pre><code class="lang-js">(<span class="hljs-built_in">window</span>[<span class="hljs-string">&quot;webpackJsonp&quot;</span>] = <span class="hljs-built_in">window</span>[<span class="hljs-string">&quot;webpackJsonp&quot;</span>] || []).push([[<span class="hljs-string">&quot;title&quot;</span>],{
+<span class="hljs-string">&quot;./src/title.js&quot;</span>:
+  (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, exports</span>) </span>{
+    <span class="hljs-built_in">module</span>.exports = <span class="hljs-string">&apos;title&apos;</span>;
+  })
+}]);
+</code></pre>
+<h3 id="t374.7 &#x5B9E;&#x73B0;bundle.js">4.7 &#x5B9E;&#x73B0;bundle.js <a href="#t374.7 &#x5B9E;&#x73B0;bundle.js"> # </a></h3>
+<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">modules</span>) </span>{
+   <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">webpackJsonpCallback</span>(<span class="hljs-params">data</span>) </span>{
+    <span class="hljs-keyword">var</span> chunkIds = data[<span class="hljs-number">0</span>];
+    <span class="hljs-keyword">var</span> moreModules = data[<span class="hljs-number">1</span>];
+    <span class="hljs-keyword">var</span> moduleId,chunkId,i = <span class="hljs-number">0</span>,resolves = [];
+    <span class="hljs-keyword">for</span> (; i &lt; chunkIds.length; i++) {
+        chunkId = chunkIds[i];
+        <span class="hljs-keyword">if</span> (installedChunks[chunkId]) {
+          resolves.push(installedChunks[chunkId][<span class="hljs-number">0</span>]);
+        }
+        installedChunks[chunkId] = <span class="hljs-number">0</span>;
+    }
+    <span class="hljs-keyword">for</span> (moduleId <span class="hljs-keyword">in</span> moreModules) {
+      modules[moduleId] = moreModules[moduleId];
+    }
+    <span class="hljs-keyword">if</span> (parentJsonpFunction) parentJsonpFunction(data);
+    <span class="hljs-keyword">while</span> (resolves.length) {
+      resolves.shift()();
+    }
+   }
+   <span class="hljs-keyword">var</span> installedModules = {};
+   <span class="hljs-keyword">var</span> installedChunks = {<span class="hljs-attr">main</span>: <span class="hljs-number">0</span>};
+   __webpack_require__.p=<span class="hljs-string">&quot;&quot;</span>;
+   <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">jsonpScriptSrc</span>(<span class="hljs-params">chunkId</span>) </span>{
+     <span class="hljs-keyword">return</span> __webpack_require__.p + <span class="hljs-string">&quot;&quot;</span> + chunkId + <span class="hljs-string">&quot;.bundle.js&quot;</span>;
+   }
+   <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__webpack_require__</span>(<span class="hljs-params">moduleId</span>) </span>{
+    <span class="hljs-keyword">if</span> (installedModules[moduleId]) {
+      <span class="hljs-keyword">return</span> installedModules[moduleId].exports;
+    }
+    <span class="hljs-keyword">var</span> <span class="hljs-built_in">module</span> = (installedModules[moduleId] = {<span class="hljs-attr">i</span>: moduleId,<span class="hljs-attr">l</span>: <span class="hljs-literal">false</span>,<span class="hljs-attr">exports</span>: {}});
+    modules[moduleId].call(<span class="hljs-built_in">module</span>.exports,<span class="hljs-built_in">module</span>,<span class="hljs-built_in">module</span>.exports,__webpack_require__);
+    <span class="hljs-built_in">module</span>.l = <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">module</span>.exports;
+  }
+  __webpack_require__.t = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value, mode</span>) </span>{
+      value = __webpack_require__(value);
+      <span class="hljs-keyword">var</span> ns = <span class="hljs-built_in">Object</span>.create(<span class="hljs-literal">null</span>);
+      <span class="hljs-built_in">Object</span>.defineProperty(ns, <span class="hljs-string">&quot;__esModule&quot;</span>, { <span class="hljs-attr">value</span>: <span class="hljs-literal">true</span> });
+      <span class="hljs-built_in">Object</span>.defineProperty(ns, <span class="hljs-string">&quot;default&quot;</span>, { <span class="hljs-attr">enumerable</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">value</span>: value });
+      <span class="hljs-keyword">return</span> ns;
+  };
+
+  __webpack_require__.e = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">requireEnsure</span>(<span class="hljs-params">chunkId</span>) </span>{
+      <span class="hljs-keyword">var</span> promises = [];
+      <span class="hljs-keyword">var</span> installedChunkData = installedChunks[chunkId];
+      <span class="hljs-keyword">var</span> promise = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+          installedChunkData = installedChunks[chunkId] = [resolve, reject];
+      });
+      promises.push((installedChunkData[<span class="hljs-number">2</span>] = promise));
+      <span class="hljs-keyword">var</span> script = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;script&quot;</span>);
+      script.src = jsonpScriptSrc(chunkId);
+      <span class="hljs-built_in">document</span>.head.appendChild(script);
+      <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.all(promises);
+  }
+  <span class="hljs-keyword">var</span> jsonpArray = (<span class="hljs-built_in">window</span>[<span class="hljs-string">&quot;webpackJsonp&quot;</span>] = <span class="hljs-built_in">window</span>[<span class="hljs-string">&quot;webpackJsonp&quot;</span>] || []);
+  <span class="hljs-keyword">var</span> oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
+  jsonpArray.push = webpackJsonpCallback;
+  <span class="hljs-keyword">var</span> parentJsonpFunction = oldJsonpFunction;
+  <span class="hljs-keyword">return</span> __webpack_require__((__webpack_require__.s = <span class="hljs-string">&quot;./src/index.js&quot;</span>));
+})({
+  <span class="hljs-string">&quot;./src/index.js&quot;</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">module, exports, __webpack_require__</span>) </span>{
+    <span class="hljs-keyword">let</span> button = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;button&quot;</span>);
+    button.innerHTML = <span class="hljs-string">&quot;&#x70B9;&#x6211;1&quot;</span>;
+    button.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        __webpack_require__.e(<span class="hljs-string">&quot;title&quot;</span>).then(
+        __webpack_require__.t.bind(<span class="hljs-literal">null</span>,<span class="hljs-string">&quot;./src/title.js&quot;</span>,<span class="hljs-number">7</span>)
+        ).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>) </span>{
+          <span class="hljs-built_in">console</span>.log(result.default);
+        });
+    };
+    <span class="hljs-built_in">document</span>.body.appendChild(button);
+  }
+});
+</code></pre>
+
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org/">Node.js</a> run.</div>
+    </div>
+    
+</div>
+
+<script src="../../../cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+<script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+// if (!$('.understand-me').length) {
+  //   var bar = $(window).height() - $('.navbar ').height() - $('.page-toc').position().top;
+  //   var count = bar / 26 / 2;
+  //   var barHeight = $('.page-toc').outerHeight();
+  //   $('.page-toc li').eq(0).children('a').addClass('red');
+  //   var arr = [];
+  //   $("h1,h2,h3,h4,h5,h6").each(function () {
+  //     arr.push($(this).position().top);
+  //   });
+  //   var timer
+  //   function dark() {
+  //     clearTimeout(timer)
+  //      timer = setTimeout(function () {
+  //      var top = Math.abs($('.page-toc > ul').position().top);
+  //      var cur = $('.content').scrollTop();
+  //      for (var i = arr.length; i >= 0; i--) {
+  //        if (arr[i] <= cur) {
+  //          break;
+  //        }
+  //      }
+  //      if (i === -1) {
+  //        i = 0;
+  //      }
+  //      $('.page-toc li a').removeClass('red');
+  //      $('.page-toc li').eq(i).children('a').addClass('red');
+  //      let height = $('.page-toc li').eq(i).position().top-$('.page-toc').height(); // 如果当前的offset出去了 回到中间可好？
+  //      $('.page-toc').scrollTop(height+$('.page-toc').height()/2);
+  //    },200)
+  //   }
+
+  //   $('.content').on('scroll', dark);
+  // }
+</script>
+<style>
+
+    /* ::-webkit-scrollbar{width:14px;}
+    ::-webkit-scrollbar-track{background-color:transparent;}
+    ::-webkit-scrollbar-thumb{background-color:transparent;}
+    ::-webkit-scrollbar-thumb:hover {background-color:transparent}
+    ::-webkit-scrollbar-thumb:active {background-color:transparent} */
+
+    .page-toc > ul .red {
+        background: #f3f3f3;
+        z-index: 1;
+        border-left: 3px solid #009a61;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        color: #000
+    }
+
+
+
+
+
+</style>
+</body>
+</html>

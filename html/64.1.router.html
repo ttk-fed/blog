@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+</head>
+<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  12/02/19 14:55:01.<br>
+<b>Address:</b> <a class="info" href="http://www.zhufengpeixun.cn/ahead/html/64.1.router.html">http://www.zhufengpeixun.cn/ahead/html/64.1.router.html</a><br>
+<b>Title:</b> 珠峰架构师成长计划 &nbsp;&bull;&nbsp; <b>Size:</b> 113874 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Sun, 01 Dec 2019 11:37:09 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<div class="nav">
+    <div class="logo">
+        
+            珠峰架构师成长计划
+        
+    </div>
+<ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3.tapable.html">26.webpack-3.tapable</a></li><li><a href="../html/26.webpack-4-AST.html">26.webpack-4-AST</a></li><li><a href="../html/26.webpack-5-sources.html">26.webpack-5-sources</a></li><li><a href="../html/26.webpack-6-loader.html">26.webpack-6-loader</a></li><li><a href="../html/26.webpack-7-plugin.html">26.webpack-7-plugin</a></li><li><a href="../html/26.webpack-8-hand.html">26.webpack-8-hand</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/51.typescript.html">51.typescript</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li class="active"><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.源码准备.html">75.webpack-5.源码准备</a></li><li><a href="../html/75.webpack-6.实现.html">75.webpack-6.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/82.2.react.html">82.2.react</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.5.connected.html">82.5.connected</a></li><li><a href="../html/82.6.saga.html">82.6.saga</a></li><li><a href="../html/82.7.dva.html">82.7.dva</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/82.8.roadhog.html">82.8.roadhog</a></li><li><a href="../html/82.9.umi.html">82.9.umi</a></li><li><a href="../html/82.10.antdesign.html">82.10.antdesign</a></li></ul></div>
+
+
+<div class="warpper">
+
+    <div class="page-toc">
+        <ul><li><a href="#t01. React路由">1. React路由</a><ul><li><a href="#t11.1 HashRouter">1.1 HashRouter</a></li><li><a href="#t21.2 BrowserRouter">1.2 BrowserRouter</a><ul><li><a href="#t31.2.1 history">1.2.1 history</a></li><li><a href="#t41.2.2 pushState">1.2.2 pushState</a></li></ul></li></ul></li><li><a href="#t52. 跑通路由">2. 跑通路由</a><ul><li><a href="#t62.1 src\index.js">2.1 src\index.js</a></li><li><a href="#t72.2 components\Home.js">2.2 components\Home.js</a></li><li><a href="#t82.3 components\User.js">2.3 components\User.js</a></li><li><a href="#t92.4 components\Profile.js">2.4 components\Profile.js</a></li></ul></li><li><a href="#t103. 实现路由">3. 实现路由</a><ul><li><a href="#t113.1 index.js">3.1 index.js</a></li><li><a href="#t123.2 HashRouter.js">3.2 HashRouter.js</a></li><li><a href="#t133.4 Route.js">3.4 Route.js</a></li><li><a href="#t143.4 context.js">3.4 context.js</a></li></ul></li><li><a href="#t154.path-to-regexp">4.path-to-regexp</a><ul><li><a href="#t164.1 /home结束">4.1 /home结束</a></li><li><a href="#t174.2 /home非结束">4.2 /home非结束</a></li><li><a href="#t184.3 路径参数">4.3 路径参数</a></li><li><a href="#t194.4 正则匹配">4.4 正则匹配</a></li></ul></li><li><a href="#t205.正则匹配">5.正则匹配</a><ul><li><a href="#t215.1 Route.js">5.1 Route.js</a></li></ul></li><li><a href="#t226. 实现Link">6. 实现Link</a><ul><li><a href="#t236.1 src/index.js">6.1 src/index.js</a></li><li><a href="#t246.2 Link.js">6.2 Link.js</a></li><li><a href="#t256.3 index.js">6.3 index.js</a></li><li><a href="#t266.4 HashRouter.js">6.4 HashRouter.js</a></li></ul></li><li><a href="#t277. 引入bootstrap">7. 引入bootstrap</a><ul><li><a href="#t287.1 src\index.js">7.1 src\index.js</a></li></ul></li><li><a href="#t298. Redirect&Switch">8. Redirect&Switch</a><ul><li><a href="#t308.1 src\index.js">8.1 src\index.js</a></li><li><a href="#t318.2 index.js">8.2 index.js</a></li><li><a href="#t328.3 Link.js">8.3 Link.js</a></li><li><a href="#t338.4 Route.js">8.4 Route.js</a></li><li><a href="#t348.5 Redirect.js">8.5 Redirect.js</a></li><li><a href="#t358.6 Switch.js">8.6 Switch.js</a></li></ul></li><li><a href="#t369. 路径参数">9. 路径参数</a><ul><li><a href="#t379.1 User.js">9.1 User.js</a></li><li><a href="#t389.2 UserAdd.js">9.2 UserAdd.js</a></li><li><a href="#t399.3 UserList.js">9.3 UserList.js</a></li><li><a href="#t409.3 UserDetail.js">9.3 UserDetail.js</a></li><li><a href="#t419.4 HashRouter.js">9.4 HashRouter.js</a></li><li><a href="#t429.5 Route.js">9.5 Route.js</a></li><li><a href="#t439.6 Switch.js">9.6 Switch.js</a></li></ul></li><li><a href="#t4410. 受保护的路由">10. 受保护的路由</a><ul><li><a href="#t4510.1 src/index.js">10.1 src/index.js</a></li><li><a href="#t4610.2 Route.js">10.2 Route.js</a></li><li><a href="#t4710.3 Protected.js">10.3 Protected.js</a></li><li><a href="#t4810.4 Login.js">10.4 Login.js</a></li></ul></li><li><a href="#t4911. 自定义导航">11. 自定义导航</a><ul><li><a href="#t5011.1 index.js">11.1 index.js</a></li><li><a href="#t5111.2 MenuLink.js">11.2 MenuLink.js</a></li><li><a href="#t5211.3 MenuLink.css">11.3 MenuLink.css</a></li><li><a href="#t5311.4 Link.js">11.4 Link.js</a></li><li><a href="#t5411.5 Route.js">11.5 Route.js</a></li></ul></li><li><a href="#t5512. withRouter">12. withRouter</a><ul><li><a href="#t5612.1 src/index.js">12.1 src/index.js</a></li><li><a href="#t5712.2 NavHeader.js">12.2 NavHeader.js</a></li><li><a href="#t5812.3 withRouter.js">12.3 withRouter.js</a></li><li><a href="#t5912.4 index.js">12.4 index.js</a></li></ul></li><li><a href="#t6013. 阻止跳转">13. 阻止跳转</a><ul><li><a href="#t6113.1 UserAdd.js">13.1 UserAdd.js</a></li><li><a href="#t6213.2 HashRouter.js">13.2 HashRouter.js</a></li><li><a href="#t6313.3 index.js">13.3 index.js</a></li><li><a href="#t6413.4 Prompt.js">13.4 Prompt.js</a></li></ul></li><li><a href="#t6514. BrowserRouter">14. BrowserRouter</a><ul><li><a href="#t6614.1 index.js">14.1 index.js</a></li><li><a href="#t6714.2 BrowserRouter.js">14.2 BrowserRouter.js</a></li><li><a href="#t6814.3 index.js">14.3 index.js</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h2 id="t01. React&#x8DEF;&#x7531;">1. React&#x8DEF;&#x7531; <a href="#t01. React&#x8DEF;&#x7531;"> # </a></h2>
+<ul>
+<li>&#x4E0D;&#x540C;&#x7684;&#x8DEF;&#x5F84;&#x6E32;&#x67D3;&#x4E0D;&#x540C;&#x7684;&#x7EC4;&#x4EF6;</li>
+<li>&#x6709;&#x4E24;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;<ul>
+<li>HashRouter:&#x5229;&#x7528;hash&#x5B9E;&#x73B0;&#x8DEF;&#x7531;&#x5207;&#x6362;</li>
+<li>BrowserRouter:&#x5B9E;&#x73B0;h5 Api&#x5B9E;&#x73B0;&#x8DEF;&#x7531;&#x7684;&#x5207;&#x6362;</li>
+</ul>
+</li>
+</ul>
+<h3 id="t11.1 HashRouter">1.1 HashRouter <a href="#t11.1 HashRouter"> # </a></h3>
+<ul>
+<li>&#x5229;&#x7528;hash&#x5B9E;&#x73B0;&#x8DEF;&#x7531;&#x5207;&#x6362;</li>
+</ul>
+<pre><code class="lang-js">    &lt;a href=&quot;#/a&quot;&gt;&#x53BB;a&lt;/a&gt;
+    &lt;a href=&quot;#/b&quot;&gt;&#x53BB;b&lt;/a&gt;
+    &lt;script&gt;
+      window.addEventListener(&apos;hashchange&apos;,()=&gt;{
+          console.log(window.location.hash);
+      });
+    &lt;/script&gt;
+</code></pre>
+<h3 id="t21.2 BrowserRouter">1.2 BrowserRouter <a href="#t21.2 BrowserRouter"> # </a></h3>
+<ul>
+<li>&#x5229;&#x7528;h5 Api&#x5B9E;&#x73B0;&#x8DEF;&#x7531;&#x7684;&#x5207;&#x6362;</li>
+</ul>
+<h4 id="t31.2.1 history">1.2.1 history <a href="#t31.2.1 history"> # </a></h4>
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/history">history</a>&#x5BF9;&#x8C61;&#x63D0;&#x4F9B;&#x4E86;&#x64CD;&#x4F5C;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x8BDD;&#x5386;&#x53F2;&#x7684;&#x63A5;&#x53E3;&#x3002;</li>
+<li>historylength &#x5C5E;&#x6027;&#x58F0;&#x660E;&#x4E86;&#x6D4F;&#x89C8;&#x5668;&#x5386;&#x53F2;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x6570;&#x91CF;</li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/History_API">pushState</a> HTML5&#x5F15;&#x5165;&#x4E86; history.pushState() &#x548C; history.replaceState() &#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x4EEC;&#x5206;&#x522B;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x548C;&#x4FEE;&#x6539;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x6761;&#x76EE;&#x3002;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x901A;&#x5E38;&#x4E0E;window.onpopstate &#x914D;&#x5408;&#x4F7F;&#x7528;</li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/onpopstate">onpopstate</a> window.onpopstate&#x662F;popstate&#x4E8B;&#x4EF6;&#x5728;window&#x5BF9;&#x8C61;&#x4E0A;&#x7684;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;</li>
+</ul>
+<h4 id="t41.2.2 pushState">1.2.2 pushState <a href="#t41.2.2 pushState"> # </a></h4>
+<ul>
+<li>pushState&#x4F1A;&#x5F80;History&#x4E2D;&#x5199;&#x5165;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x4ED6;&#x9020;&#x6210;&#x7684;&#x7ED3;&#x679C;&#x4FBF;&#x662F;,History length +1&#x3001;url &#x6539;&#x53D8;&#x3001;&#x8BE5;&#x7D22;&#x5F15;History&#x5BF9;&#x5E94;&#x6709;&#x4E00;&#x4E2A;State&#x5BF9;&#x8C61;,&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x82E5;&#x662F;&#x70B9;&#x51FB;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x540E;&#x9000;&#xFF0C;&#x4FBF;&#x4F1A;&#x89E6;&#x53D1;popstate&#x4E8B;&#x4EF6;&#xFF0C;&#x5C06;&#x521A;&#x521A;&#x7684;&#x5B58;&#x5165;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#x8BFB;&#x51FA;</li>
+<li>pushState &#x4F1A;&#x6539;&#x53D8;History</li>
+<li>&#x6BCF;&#x6B21;&#x4F7F;&#x7528;&#x65F6;&#x5019;&#x4F1A;&#x4E3A;&#x8BE5;&#x7D22;&#x5F15;&#x7684;State&#x52A0;&#x5165;&#x6211;&#x4EEC;&#x81EA;&#x5B9A;&#x4E49;&#x6570;&#x636E;</li>
+<li>&#x6BCF;&#x6B21;&#x6211;&#x4EEC;&#x4F1A;&#x6839;&#x636E;State&#x7684;&#x4FE1;&#x606F;&#x8FD8;&#x539F;&#x5F53;&#x524D;&#x7684;view&#xFF0C;&#x4E8E;&#x662F;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x540E;&#x9000;&#x4FBF;&#x6709;&#x4E86;&#x4E0E;&#x6D4F;&#x89C8;&#x5668;&#x540E;&#x9000;&#x524D;&#x8FDB;&#x4E00;&#x81F4;&#x7684;&#x611F;&#x53D7;</li>
+<li>pushState() &#x9700;&#x8981;&#x4E09;&#x4E2A;&#x53C2;&#x6570;: &#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x5BF9;&#x8C61;, &#x4E00;&#x4E2A;&#x6807;&#x9898; (&#x76EE;&#x524D;&#x88AB;&#x5FFD;&#x7565;), &#x548C; (&#x53EF;&#x9009;&#x7684;) &#x4E00;&#x4E2A;URL</li>
+<li>&#x8C03;&#x7528;history.pushState()&#x6216;&#x8005;history.replaceState()&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;popstate&#x4E8B;&#x4EF6;. popstate&#x4E8B;&#x4EF6;&#x53EA;&#x4F1A;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x67D0;&#x4E9B;&#x884C;&#x4E3A;&#x4E0B;&#x89E6;&#x53D1;, &#x6BD4;&#x5982;&#x70B9;&#x51FB;&#x540E;&#x9000;&#x3001;&#x524D;&#x8FDB;&#x6309;&#x94AE;(&#x6216;&#x8005;&#x5728;JavaScript&#x4E2D;&#x8C03;&#x7528;history.back()&#x3001;history.forward()&#x3001;history.go()&#x65B9;&#x6CD5;)</li>
+</ul>
+<pre><code class="lang-js">&lt;script&gt;
+<span class="hljs-built_in">window</span>.onpopstate = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log({<span class="hljs-attr">state</span>:event.state,<span class="hljs-attr">pathname</span>:<span class="hljs-built_in">window</span>.location.pathname,<span class="hljs-attr">type</span>:<span class="hljs-string">&apos;popstate&apos;</span>});
+};
+<span class="hljs-built_in">window</span>.onpushstate = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(event);
+};
+(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">history</span>) </span>{
+    <span class="hljs-keyword">var</span> pushState = history.pushState;
+    history.pushState = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state,title,pathname</span>) </span>{
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> <span class="hljs-built_in">window</span>.onpushstate == <span class="hljs-string">&quot;function&quot;</span>) {
+            <span class="hljs-built_in">window</span>.onpushstate({state,pathname,<span class="hljs-attr">type</span>:<span class="hljs-string">&apos;pushstate&apos;</span>});
+        }
+        <span class="hljs-keyword">return</span> pushState.apply(history, <span class="hljs-built_in">arguments</span>);
+    };
+})(<span class="hljs-built_in">window</span>.history);
+
+<span class="hljs-comment">//&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x51FD;&#x6570;. </span>
+setTimeout(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{
+    history.pushState({<span class="hljs-attr">page</span>: <span class="hljs-number">1</span>}, <span class="hljs-string">&quot;title 1&quot;</span>, <span class="hljs-string">&quot;/page1&quot;</span>); 
+},<span class="hljs-number">1000</span>);
+setTimeout(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{
+    history.pushState({<span class="hljs-attr">page</span>: <span class="hljs-number">2</span>}, <span class="hljs-string">&quot;title 2&quot;</span>, <span class="hljs-string">&quot;/page2&quot;</span>);   
+},<span class="hljs-number">2000</span>);
+
+setTimeout(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{
+    history.replaceState({<span class="hljs-attr">page</span>: <span class="hljs-number">3</span>}, <span class="hljs-string">&quot;title 3&quot;</span>, <span class="hljs-string">&quot;/page3&quot;</span>); 
+},<span class="hljs-number">3000</span>);
+
+setTimeout(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{
+    history.back(); 
+},<span class="hljs-number">4000</span>);
+
+setTimeout(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{
+    history.go(<span class="hljs-number">1</span>);
+},<span class="hljs-number">5000</span>);
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre>
+<h2 id="t52. &#x8DD1;&#x901A;&#x8DEF;&#x7531;">2. &#x8DD1;&#x901A;&#x8DEF;&#x7531; <a href="#t52. &#x8DD1;&#x901A;&#x8DEF;&#x7531;"> # </a></h2>
+<p><img src="http://img.zhufengpeixun.cn/routeprops.png" alt="routeprops"></p>
+<h3 id="t62.1 src\index.js">2.1 src\index.js <a href="#t62.1 src\index.js"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> {HashRouter <span class="hljs-keyword">as</span> Router,Route} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-router-dom&apos;</span>;
+<span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Home&apos;</span>;
+<span class="hljs-keyword">import</span> User <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/User&apos;</span>;
+<span class="hljs-keyword">import</span> Profile <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Profile&apos;</span>;
+ReactDOM.render(
+    &lt;Router&gt;
+        &lt;div&gt;
+          &lt;Route path=&quot;/&quot; component={Home} /&gt;
+          &lt;Route path=&quot;/user&quot; component={User} /&gt;
+          &lt;Route path=&quot;/profile&quot; component={Profile}/&gt;
+        &lt;/div&gt;
+    &lt;/Router&gt;
+,document.getElementById(&apos;root&apos;));
+</code></pre>
+<h3 id="t72.2 components\Home.js">2.2 components\Home.js <a href="#t72.2 components\Home.js"> # </a></h3>
+<p>src\components\Home.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Home</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
+    render() {
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+        )
+    }
+}
+</code></pre>
+<h3 id="t82.3 components\User.js">2.3 components\User.js <a href="#t82.3 components\User.js"> # </a></h3>
+<p>src\components\User.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
+    render() {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">JSON</span>.stringify(<span class="hljs-keyword">this</span>.props));
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>User<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+        )
+    }
+}
+
+<span class="hljs-comment">/**
+{
+    &quot;history&quot;: {
+        &quot;length&quot;: 4,
+        &quot;action&quot;: &quot;POP&quot;,
+        &quot;location&quot;: {
+            &quot;pathname&quot;: &quot;/user&quot;,
+            &quot;search&quot;: &quot;?name=zfpx&quot;,
+            &quot;hash&quot;: &quot;#top&quot;
+        }
+    },
+    &quot;location&quot;: {
+        &quot;pathname&quot;: &quot;/user&quot;,
+        &quot;search&quot;: &quot;?name=zfpx&quot;,
+        &quot;hash&quot;: &quot;#top&quot;
+    },
+    &quot;match&quot;: {
+        &quot;path&quot;: &quot;/user&quot;,
+        &quot;url&quot;: &quot;/user&quot;,
+        &quot;isExact&quot;: true,
+        &quot;params&quot;: {}
+    }
+}
+ */</span>
+</code></pre>
+<h3 id="t92.4 components\Profile.js">2.4 components\Profile.js <a href="#t92.4 components\Profile.js"> # </a></h3>
+<p>src\components\Profile.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Profile</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
+    render() {
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+        )
+    }
+}
+</code></pre>
+<h2 id="t103. &#x5B9E;&#x73B0;&#x8DEF;&#x7531;">3. &#x5B9E;&#x73B0;&#x8DEF;&#x7531; <a href="#t103. &#x5B9E;&#x73B0;&#x8DEF;&#x7531;"> # </a></h2>
+<h3 id="t113.1 index.js">3.1 index.js <a href="#t113.1 index.js"> # </a></h3>
+<p>src\react-router-dom\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> HashRouter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./HashRouter&apos;</span>;
+<span class="hljs-keyword">import</span> Route <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Route&apos;</span>;
+<span class="hljs-keyword">export</span> {
+    HashRouter,
+    Route
+}
+</code></pre>
+<h3 id="t123.2 HashRouter.js">3.2 HashRouter.js <a href="#t123.2 HashRouter.js"> # </a></h3>
+<p>src\react-router-dom\HashRouter.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> Context <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./context&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HashRouter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  state = {
+      <span class="hljs-attr">location</span>:{<span class="hljs-attr">pathname</span>:<span class="hljs-built_in">window</span>.location.hash.slice(<span class="hljs-number">1</span>)}
+  }  
+  componentWillMount(){
+      <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&apos;hashchange&apos;</span>,()=&gt;{
+          <span class="hljs-keyword">this</span>.setState({
+              <span class="hljs-attr">location</span>:{
+                  ...this.state.location,
+                  <span class="hljs-attr">pathname</span>:<span class="hljs-built_in">window</span>.location.hash.slice(<span class="hljs-number">1</span>) || <span class="hljs-string">&apos;/&apos;</span>
+              }
+          });
+      });
+      <span class="hljs-built_in">window</span>.location.hash = <span class="hljs-built_in">window</span>.location.hash || <span class="hljs-string">&apos;/&apos;</span>;
+  }
+  render() {
+    <span class="hljs-keyword">let</span> value = {
+        <span class="hljs-attr">location</span>:<span class="hljs-keyword">this</span>.state.location
+    }
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Context.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{value}</span>&gt;</span>
+        {this.props.children}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Context.Provider</span>&gt;</span>
+    )
+  }
+}
+</span></code></pre>
+<h3 id="t133.4 Route.js">3.4 Route.js <a href="#t133.4 Route.js"> # </a></h3>
+<p>src\react-router-dom\Route.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> Context <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./context&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Route</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
+    <span class="hljs-keyword">static</span> contextType =  Context;  
+    render() {
+        <span class="hljs-keyword">let</span> {path,<span class="hljs-attr">component</span>: Component}=<span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">let</span> pathname = <span class="hljs-keyword">this</span>.context.location.pathname;
+        <span class="hljs-keyword">if</span> (path == pathname) {
+            <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Component</span>/&gt;</span></span>
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+        }
+    }
+}
+</code></pre>
+<h3 id="t143.4 context.js">3.4 context.js <a href="#t143.4 context.js"> # </a></h3>
+<p>src\react-router-dom\context.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {createContext} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span>  createContext();
+</code></pre>
+<h2 id="t154.path-to-regexp">4.path-to-regexp <a href="#t154.path-to-regexp"> # </a></h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/path-to-regexp">path-to-regexp</a></li>
+<li><a href="https://jex.im/regulex">regulex</a></li>
+</ul>
+<h3 id="t164.1 /home&#x7ED3;&#x675F;">4.1 /home&#x7ED3;&#x675F; <a href="#t164.1 /home&#x7ED3;&#x675F;"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> pathToRegExp = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path-to-regexp&apos;</span>);
+<span class="hljs-keyword">let</span> regx = pathToRegExp(<span class="hljs-string">&apos;/home&apos;</span>,[],{<span class="hljs-attr">end</span>:<span class="hljs-literal">true</span>});
+<span class="hljs-built_in">console</span>.log(regx);<span class="hljs-comment">//   /^\/home\/?$/i</span>
+<span class="hljs-built_in">console</span>.log(regx.test(<span class="hljs-string">&apos;/home&apos;</span>));
+<span class="hljs-built_in">console</span>.log(regx.test(<span class="hljs-string">&apos;/home/2&apos;</span>));
+</code></pre>
+<p><img src="http://img.zhufengpeixun.cn/homereg.png" alt="homereg"></p>
+<h3 id="t174.2 /home&#x975E;&#x7ED3;&#x675F;">4.2 /home&#x975E;&#x7ED3;&#x675F; <a href="#t174.2 /home&#x975E;&#x7ED3;&#x675F;"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> pathToRegExp = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path-to-regexp&apos;</span>);
+<span class="hljs-keyword">let</span> regx2 = pathToRegExp(<span class="hljs-string">&apos;/home&apos;</span>,[],{<span class="hljs-attr">end</span>:<span class="hljs-literal">false</span>});
+<span class="hljs-built_in">console</span>.log(regx2);<span class="hljs-comment">//   /^\/home\/?(?=\/|$)/i</span>
+<span class="hljs-built_in">console</span>.log(regx2.test(<span class="hljs-string">&apos;/home&apos;</span>));
+<span class="hljs-built_in">console</span>.log(regx2.test(<span class="hljs-string">&apos;/home/&apos;</span>));
+<span class="hljs-built_in">console</span>.log(regx2.test(<span class="hljs-string">&apos;/home//&apos;</span>));
+<span class="hljs-built_in">console</span>.log(regx2.test(<span class="hljs-string">&apos;/home/2&apos;</span>));
+</code></pre>
+<p><img src="http://img.zhufengpeixun.cn/homereg2.png" alt="homereg2"></p>
+<h3 id="t184.3 &#x8DEF;&#x5F84;&#x53C2;&#x6570;">4.3 &#x8DEF;&#x5F84;&#x53C2;&#x6570; <a href="#t184.3 &#x8DEF;&#x5F84;&#x53C2;&#x6570;"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> params = [];
+<span class="hljs-keyword">let</span> regx3 = pathToRegExp(<span class="hljs-string">&apos;/user/:id&apos;</span>,params,{<span class="hljs-attr">end</span>:<span class="hljs-literal">true</span>});
+<span class="hljs-built_in">console</span>.log(regx3,params);
+<span class="hljs-comment">/**
+/^\/user\/(?:([^\/]+?))\/?$/i
+[ { name: &apos;id&apos;, optional: false, offset: 7 } ]
+**/</span>
+</code></pre>
+<p><img src="http://img.zhufengpeixun.cn/uerreg.png" alt="uerreg"></p>
+<h3 id="t194.4 &#x6B63;&#x5219;&#x5339;&#x914D;">4.4 &#x6B63;&#x5219;&#x5339;&#x914D; <a href="#t194.4 &#x6B63;&#x5219;&#x5339;&#x914D;"> # </a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x8868;&#x8FBE;&#x5F0F;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">()</td>
+<td style="text-align:left">&#x8868;&#x793A;&#x6355;&#x83B7;&#x5206;&#x7EC4;&#xFF0C;()&#x4F1A;&#x628A;&#x6BCF;&#x4E2A;&#x5206;&#x7EC4;&#x91CC;&#x7684;&#x5339;&#x914D;&#x7684;&#x503C;&#x4FDD;&#x5B58;&#x8D77;&#x6765;&#xFF0C;&#x4F7F;&#x7528;$n(n&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x8868;&#x793A;&#x7B2C;n&#x4E2A;&#x6355;&#x83B7;&#x7EC4;&#x7684;&#x5185;&#x5BB9;)</td>
+</tr>
+<tr>
+<td style="text-align:left">(?:)</td>
+<td style="text-align:left">&#x8868;&#x793A;&#x975E;&#x6355;&#x83B7;&#x5206;&#x7EC4;&#xFF0C;&#x548C;&#x6355;&#x83B7;&#x5206;&#x7EC4;&#x552F;&#x4E00;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#xFF0C;&#x975E;&#x6355;&#x83B7;&#x5206;&#x7EC4;&#x5339;&#x914D;&#x7684;&#x503C;&#x4E0D;&#x4F1A;&#x4FDD;&#x5B58;&#x8D77;&#x6765;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x6B63;&#x5219;&#x5339;&#x914D;&#x7684;&#x524D;&#x77BB;&#x5C31;&#x662F;&#x7ED9;&#x6B63;&#x5219;&#x5339;&#x914D;&#x7684;&#x9009;&#x9879;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x65AD;&#x8A00;&#xFF0C;&#x6216;&#x8005;&#x8BF4;&#x662F;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x6BD4;&#x5982;&#xFF1A;&#x6211;&#x8981;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x7684;&#x9700;&#x6C42;&#x662F;&#x5B57;&#x6BCD;&#x540E;&#x9762;&#x5FC5;&#x987B;&#x662F;&#x8DDF;&#x7740;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x79CD;&#x573A;&#x666F;&#x662F;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x4E86;&#xFF0C;&#x5C31;&#x662F;&#x7528;&#x5230;&#x524D;&#x77BB;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x60F3;&#x8981;&#x4ED6;&#x7684;&#x524D;&#x9762;&#x4E5F;&#x8981;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x600E;&#x4E48;&#x529E;&#x4E86;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x540E;&#x987E;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x8868;&#x8FBE;&#x5F0F;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">(?=pattern)</td>
+<td style="text-align:left">&#x6B63;&#x5411;&#x80AF;&#x5B9A;&#x67E5;&#x627E;(&#x524D;&#x77BB;),&#x540E;&#x9762;&#x5FC5;&#x987B;&#x8DDF;&#x7740;&#x4EC0;&#x4E48;</td>
+</tr>
+<tr>
+<td style="text-align:left">(?!pattern)</td>
+<td style="text-align:left">&#x6B63;&#x5411;&#x5426;&#x5B9A;&#x67E5;&#x627E;(&#x524D;&#x77BB;)&#xFF0C;&#x540E;&#x9762;&#x4E0D;&#x80FD;&#x8DDF;&#x7740;&#x4EC0;&#x4E48;</td>
+</tr>
+<tr>
+<td style="text-align:left">(?&lt;=pattern)</td>
+<td style="text-align:left">&#x53CD;&#x5411;&#x80AF;&#x5B9A;&#x6761;&#x4EF6;&#x67E5;&#x627E;(&#x540E;&#x987E;),&#x4E0D;&#x6355;&#x83B7;</td>
+</tr>
+<tr>
+<td style="text-align:left">(?&lt;!pattern)</td>
+<td style="text-align:left">&#x53CD;&#x5411;&#x5426;&#x5B9A;&#x6761;&#x4EF6;&#x67E5;&#x627E;&#xFF08;&#x540E;&#x987E;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;1a&apos;</span>.match(<span class="hljs-regexp">/\d(?=[a-z])/</span>));
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;<a href="http://www.zhufengpeixun.cn/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="261766">[email&#160;protected]</a>&apos;</span>.match(<span class="hljs-regexp">/\d(?![a-z])/</span>));
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;a1&apos;</span>.match(<span class="hljs-regexp">/(?&lt;=[a-z])\d/</span>));
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;$1&apos;</span>.match(<span class="hljs-regexp">/(?&lt;![a-z])\d/</span>));
+</code></pre>
+<h2 id="t205.&#x6B63;&#x5219;&#x5339;&#x914D;">5.&#x6B63;&#x5219;&#x5339;&#x914D; <a href="#t205.&#x6B63;&#x5219;&#x5339;&#x914D;"> # </a></h2>
+<h3 id="t215.1 Route.js">5.1 Route.js <a href="#t215.1 Route.js"> # </a></h3>
+<p>src\react-router-dom\Route.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> Context <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./context&apos;</span>;
+<span class="hljs-keyword">import</span> pathToRegexp <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;path-to-regexp&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Route</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">static</span> contextType =  Context;  
+  render() {
+    <span class="hljs-keyword">let</span> {path,<span class="hljs-attr">component</span>:Component,exact=<span class="hljs-literal">false</span>} = <span class="hljs-keyword">this</span>.props;
+    <span class="hljs-keyword">let</span> pathname = <span class="hljs-keyword">this</span>.context.location.pathname;
+    <span class="hljs-keyword">let</span> regxp = pathToRegexp(path,[],{<span class="hljs-attr">end</span>:exact});
+    <span class="hljs-keyword">let</span> result = pathname.match(regxp);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;regxp,pathname,result&apos;</span>,regxp,pathname,result);
+    <span class="hljs-keyword">if</span>(result){
+        <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Component</span>/&gt;</span></span>;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+  }
+}
+
+</code></pre>
+<h2 id="t226. &#x5B9E;&#x73B0;Link">6. &#x5B9E;&#x73B0;Link <a href="#t226. &#x5B9E;&#x73B0;Link"> # </a></h2>
+<h3 id="t236.1 src/index.js">6.1 src/index.js <a href="#t236.1 src/index.js"> # </a></h3>
+<p>src/index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> {HashRouter <span class="hljs-keyword">as</span> Router,Route,Link} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react-router-dom&apos;</span>;
+<span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Home&apos;</span>;
+<span class="hljs-keyword">import</span> User <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/User&apos;</span>;
+<span class="hljs-keyword">import</span> Profile <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Profile&apos;</span>;
+ReactDOM.render(
+    &lt;Router&gt;
+        &lt;&gt;
+          &lt;Link to=&quot;/&quot;&gt;Home&lt;/Link&gt;&lt;Link to=&quot;/user&quot;&gt;User&lt;/Link&gt;&lt;Link to=&quot;/profile&quot;&gt;Profile&lt;/Link&gt;
+          &lt;Route path=&quot;/&quot; exact component={Home} /&gt;
+          &lt;Route path=&quot;/user&quot; component={User} /&gt;
+          &lt;Route path=&quot;/profile&quot; component={Profile}/&gt;
+        &lt;/&gt;
+    &lt;/Router&gt;
+,document.getElementById(&apos;root&apos;));
+</code></pre>
+<h3 id="t246.2 Link.js">6.2 Link.js <a href="#t246.2 Link.js"> # </a></h3>
+<p>src/react-router-dom/Link.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> Context <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./context&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Link</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">static</span> contextType =  Context;  
+  render() {
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span>=&gt;</span>this.context.history.push(this.props.to)}&gt;{this.props.children}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
+    )
+  }
+}
+</code></pre>
+<h3 id="t256.3 index.js">6.3 index.js <a href="#t256.3 index.js"> # </a></h3>
+<p>src/react-router-dom/index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> HashRouter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./HashRouter&apos;</span>;
+<span class="hljs-keyword">import</span> Route <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Route&apos;</span>;
+<span class="hljs-keyword">import</span> Link <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Link&apos;</span>;
+<span class="hljs-keyword">export</span> {
+    HashRouter,
+    Route,
+    Link
+}
+</code></pre>
+<h3 id="t266.4 HashRouter.js">6.4 HashRouter.js <a href="#t266.4 HashRouter.js"> # </a></h3>
+<p>src/react-router-dom/HashRouter.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> Context <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./context&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HashRouter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  state = {
+      <span class="hljs-attr">location</span>:{<span class="hljs-attr">pathname</span>:<span class="hljs-built_in">window</span>.location.hash.slice(<span class="hljs-number">1</span>) || <span class="hljs-string">&apos;/&apos;</span>},
+  }  
+  componentDidMount(){
+      <span class="hljs-built_in">window</span>.location.hash = <span class="hljs-built_in">window</span>.location.hash || <span class="hljs-string">&apos;/&apos;</span>;
+      <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&apos;hashchange&apos;</span>,()=&gt;{
+          <span class="hljs-keyword">this</span>.setState({
+              <span class="hljs-attr">location</span>:{
+                  ...this.state.location,
+                  <span class="hljs-attr">pathname</span>:<span class="hljs-built_in">window</span>.location.hash.slice(<span class="hljs-number">1</span>) || <span class="hljs-string">&apos;/&apos;</span>
+              }
+          });
+      });
+  }
+  render() {
+     <span class="hljs-keyword">let</span> value={
+            <span class="hljs-attr">location</span>: <span class="hljs-keyword">this</span>.state.location,
+            <span class="hljs-attr">history</span>: {
+                push(to) {
+                    <span class="hljs-built_in">window</span>.location.hash=to;
+                }
+            }
+    }
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Context.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{value}</span>&gt;</span>
+        {this.props.children}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Context.Provider</span>&gt;</span>
+    )
+  }
+}
+</span></code></pre>
+<h2 id="t277. &#x5F15;&#x5165;bootstrap">7. &#x5F15;&#x5165;bootstrap <a href="#t277. &#x5F15;&#x5165;bootstrap"> # </a></h2>
+<h3 id="t287.1 src\index.js">7.1 src\index.js <a href="#t287.1 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> {HashRouter <span class="hljs-keyword">as</span> Router,Route,Link} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react-router-dom&apos;</span>;
+<span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Home&apos;</span>;
+<span class="hljs-keyword">import</span> User <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/User&apos;</span>;
+<span class="hljs-keyword">import</span> Profile <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Profile&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;bootstrap/dist/css/bootstrap.css&apos;</span>;
+ReactDOM.render(
+    &lt;Router&gt;
+        &lt;&gt;
+          &lt;div className=&quot;navbar navbar-inverse&quot;&gt;
+            &lt;div className=&quot;container-fluid&quot;&gt;
+              &lt;div className=&quot;navbar-heading&quot;&gt;
+                  &lt;div className=&quot;navbar-brand&quot;&gt;&#x73E0;&#x5CF0;&#x67B6;&#x6784;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;ul className=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;Link to=&quot;/&quot;&gt;Home&lt;/Link&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;Link to=&quot;/user&quot;&gt;User&lt;/Link&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;Link to=&quot;/profile&quot;&gt;Profile&lt;/Link&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div className=&quot;container&quot;&gt;
+            &lt;div className=&quot;row&quot;&gt;
+              &lt;div className=&quot;col-md-12&quot;&gt;
+                &lt;Route path=&quot;/&quot; exact component={Home} /&gt;
+                &lt;Route path=&quot;/user&quot; component={User} /&gt;
+                &lt;Route path=&quot;/profile&quot; component={Profile}/&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/&gt;
+    &lt;/Router&gt;
+,document.getElementById(&apos;root&apos;));
+</code></pre>
+<h2 id="t298. Redirect&amp;Switch">8. Redirect&amp;Switch <a href="#t298. Redirect&amp;Switch"> # </a></h2>
+<h3 id="t308.1 src\index.js">8.1 src\index.js <a href="#t308.1 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> {HashRouter <span class="hljs-keyword">as</span> Router,Route,Link,Redirect,Switch} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react-router-dom&apos;</span>;
+<span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Home&apos;</span>;
+<span class="hljs-keyword">import</span> User <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/User&apos;</span>;
+<span class="hljs-keyword">import</span> Profile <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Profile&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;bootstrap/dist/css/bootstrap.css&apos;</span>;
+ReactDOM.render(
+    &lt;Router&gt;
+        &lt;&gt;
+          &lt;div className=&quot;navbar navbar-inverse&quot;&gt;
+            &lt;div className=&quot;container-fluid&quot;&gt;
+              &lt;div className=&quot;navbar-heading&quot;&gt;
+                  &lt;div className=&quot;navbar-brand&quot;&gt;&#x73E0;&#x5CF0;&#x67B6;&#x6784;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;ul className=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;Link to=&quot;/&quot;&gt;Home&lt;/Link&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;Link to=&quot;/user&quot;&gt;User&lt;/Link&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;Link to=&quot;/profile&quot;&gt;Profile&lt;/Link&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div className=&quot;container&quot;&gt;
+            &lt;div className=&quot;row&quot;&gt;
+              &lt;div className=&quot;col-md-12&quot;&gt;
+                &lt;Switch&gt;
+                  &lt;Route path=&quot;/&quot; exact component={Home} /&gt;
+                  &lt;Route path=&quot;/user&quot; component={User} /&gt;
+                  &lt;Route path=&quot;/profile&quot; component={Profile}/&gt;
+                  &lt;Redirect to=&quot;/&quot; /&gt;
+                &lt;/Switch&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/&gt;
+    &lt;/Router&gt;
+,document.getElementById(&apos;root&apos;));
+</code></pre>
+<h3 id="t318.2 index.js">8.2 index.js <a href="#t318.2 index.js"> # </a></h3>
+<p>src/react-router-dom/index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> HashRouter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./HashRouter&apos;</span>;
+<span class="hljs-keyword">import</span> Route <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Route&apos;</span>;
+<span class="hljs-keyword">import</span> Link <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Link&apos;</span>;
+<span class="hljs-keyword">import</span> Redirect <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Redirect&apos;</span>;
+<span class="hljs-keyword">import</span> Switch <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Switch&apos;</span>;
+<span class="hljs-keyword">export</span> {
+    HashRouter,
+    Route,
+    Link,
+    Redirect,
+    Switch
+}
+</code></pre>
+<h3 id="t328.3 Link.js">8.3 Link.js <a href="#t328.3 Link.js"> # </a></h3>
+<p>src/react-router-dom/Link.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> Context <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./context&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Link</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">static</span> contextType =  Context;  
+  render() {
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span>=&gt;</span>this.context.history.push(this.props.to)}&gt;{this.props.children}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
+    )
+  }
+}
+</code></pre>
+<h3 id="t338.4 Route.js">8.4 Route.js <a href="#t338.4 Route.js"> # </a></h3>
+<p>src/react-router-dom/Route.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> Context <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./context&apos;</span>;
+<span class="hljs-keyword">import</span> pathToRegexp <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;path-to-regexp&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Route</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">static</span> contextType =  Context;  
+  render() {
+    <span class="hljs-keyword">let</span> {path,<span class="hljs-attr">component</span>:Component,exact=<span class="hljs-literal">false</span>} = <span class="hljs-keyword">this</span>.props;
+    <span class="hljs-keyword">let</span> pathname = <span class="hljs-keyword">this</span>.context.location.pathname;
+    <span class="hljs-keyword">let</span> regxp = pathToRegexp(path,[],{<span class="hljs-attr">end</span>:exact});
+    <span class="hljs-keyword">let</span> result = pathname.match(regxp);
+    <span class="hljs-keyword">if</span>(result){
+        <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Component</span> {<span class="hljs-attr">...this.context</span>}/&gt;</span>;
+    }
+    return null;
+  }
+}
+</span></code></pre>
+<h3 id="t348.5 Redirect.js">8.5 Redirect.js <a href="#t348.5 Redirect.js"> # </a></h3>
+<p>src/react-router-dom/Redirect.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> Context <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./context&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Link</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">static</span> contextType = Context;  
+  render() {
+    <span class="hljs-keyword">this</span>.context.history.push(<span class="hljs-keyword">this</span>.props.to);  
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+  }
+}
+</code></pre>
+<h3 id="t358.6 Switch.js">8.6 Switch.js <a href="#t358.6 Switch.js"> # </a></h3>
+<p>src/react-router-dom/Switch.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> Context <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./context&apos;</span>;
+<span class="hljs-keyword">import</span> pathToRegexp <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;path-to-regexp&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Switch</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">static</span> contextType =  Context;  
+  render() {
+    <span class="hljs-keyword">let</span> pathname = <span class="hljs-keyword">this</span>.context.location.pathname;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-keyword">this</span>.props.children.length;i++){
+        <span class="hljs-keyword">let</span> child = <span class="hljs-keyword">this</span>.props.children[i];
+        <span class="hljs-keyword">let</span> {path=<span class="hljs-string">&apos;/&apos;</span>,<span class="hljs-attr">component</span>:Component,exact=<span class="hljs-literal">false</span>} = child.props;
+        <span class="hljs-keyword">let</span> regxp = pathToRegexp(path,[],{<span class="hljs-attr">end</span>:exact});
+        <span class="hljs-keyword">let</span> result = pathname.match(regxp);
+        <span class="hljs-keyword">if</span>(result){
+            <span class="hljs-keyword">return</span> child;
+        }
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+  }
+}
+</code></pre>
+<h2 id="t369. &#x8DEF;&#x5F84;&#x53C2;&#x6570;">9. &#x8DEF;&#x5F84;&#x53C2;&#x6570; <a href="#t369. &#x8DEF;&#x5F84;&#x53C2;&#x6570;"> # </a></h2>
+<h3 id="t379.1 User.js">9.1 User.js <a href="#t379.1 User.js"> # </a></h3>
+<p>src/components/User.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> {Link,Route} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../react-router-dom&apos;</span>;
+<span class="hljs-keyword">import</span> UserAdd <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./UserAdd&apos;</span>;
+<span class="hljs-keyword">import</span> UserDetail <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./UserDetail&apos;</span>;
+<span class="hljs-keyword">import</span> UserList <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./UserList&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
+    render() {
+        <span class="hljs-keyword">return</span> (
+            &lt;div className=&quot;row&quot;&gt;
+               &lt;div className=&quot;col-md-2&quot;&gt;
+                       &lt;ul className=&quot;nav nav-stack&quot;&gt;
+                        &lt;li&gt;&lt;Link to=&quot;/user/list&quot;&gt;&#x7528;&#x6237;&#x5217;&#x8868;&lt;/Link&gt;&lt;/li&gt;    
+                        &lt;li&gt;&lt;Link to=&quot;/user/add&quot;&gt;&#x6DFB;&#x52A0;&#x7528;&#x6237;&lt;/Link&gt;&lt;/li&gt;    
+                    &lt;/ul&gt;
+               &lt;/div&gt;
+               &lt;div className=&quot;col-md-10&quot;&gt;
+                       &lt;Route path=&quot;/user/add&quot; component={UserAdd}/&gt;
+                    &lt;Route path=&quot;/user/list&quot; component={UserList}/&gt;
+                    &lt;Route path=&quot;/user/detail/:id&quot; component={UserDetail}/&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+        )
+    }
+}
+</code></pre>
+<h3 id="t389.2 UserAdd.js">9.2 UserAdd.js <a href="#t389.2 UserAdd.js"> # </a></h3>
+<p>src/components/UserAdd.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserAdd</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">constructor</span>(){
+    <span class="hljs-keyword">super</span>();
+    <span class="hljs-keyword">this</span>.usernameRef = React.createRef();
+  }
+  handleSubmit = <span class="hljs-function">(<span class="hljs-params">event</span>)=&gt;</span>{
+    event.preventDefault();
+    <span class="hljs-keyword">let</span> username = <span class="hljs-keyword">this</span>.usernameRef.current.value;
+    <span class="hljs-keyword">let</span> usersStr = localStorage.getItem(<span class="hljs-string">&apos;users&apos;</span>);
+    <span class="hljs-keyword">let</span> users = usersStr?<span class="hljs-built_in">JSON</span>.parse(usersStr):[];
+    users.push({<span class="hljs-attr">id</span>:<span class="hljs-built_in">Date</span>.now()+<span class="hljs-string">&apos;&apos;</span>,username});
+    localStorage.setItem(<span class="hljs-string">&apos;users&apos;</span>,<span class="hljs-built_in">JSON</span>.stringify(users));
+    <span class="hljs-keyword">this</span>.props.history.push(<span class="hljs-string">&apos;/user/list&apos;</span>);
+  }
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">onSubmit</span>=<span class="hljs-string">{this.handleSubmit}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{this.usernameRef}/</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>&gt;</span>&#x63D0;&#x4EA4;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+    )
+  }
+}
+
+</span></code></pre>
+<h3 id="t399.3 UserList.js">9.3 UserList.js <a href="#t399.3 UserList.js"> # </a></h3>
+<p>src/components/UserList.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> {Link} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../react-router-dom&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserList</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  state = {
+      <span class="hljs-attr">users</span>:[]
+  }  
+  componentDidMount(){
+    <span class="hljs-keyword">let</span> usersStr = localStorage.getItem(<span class="hljs-string">&apos;users&apos;</span>);
+    <span class="hljs-keyword">let</span> users = usersStr?<span class="hljs-built_in">JSON</span>.parse(usersStr):[];
+    <span class="hljs-keyword">this</span>.setState({users});
+  }
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        UserList
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;list-group&quot;</span>&gt;</span>
+        {
+            this.state.users.map((user,index)=&gt;(
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;list-group-item&quot;</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{index}</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">{{pathname:</span>`/<span class="hljs-attr">user</span>/<span class="hljs-attr">detail</span>/${<span class="hljs-attr">user.id</span>}`,<span class="hljs-attr">state</span> <span class="hljs-attr">:user</span>}}&gt;</span>{user.username}<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>    
+            ))
+        }    
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+  }
+}
+</code></pre>
+<h3 id="t409.3 UserDetail.js">9.3 UserDetail.js <a href="#t409.3 UserDetail.js"> # </a></h3>
+<p>src/components/UserDetail.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserDetail</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  state = {
+    <span class="hljs-attr">user</span>:{}
+  }  
+  componentDidMount(){
+    <span class="hljs-keyword">let</span> user = <span class="hljs-keyword">this</span>.props.location.state;
+    <span class="hljs-keyword">if</span>(!user){
+      <span class="hljs-keyword">let</span> usersStr = localStorage.getItem(<span class="hljs-string">&apos;users&apos;</span>);
+      <span class="hljs-keyword">let</span> users = usersStr?<span class="hljs-built_in">JSON</span>.parse(usersStr):[];
+      <span class="hljs-keyword">let</span> id = <span class="hljs-keyword">this</span>.props.match.params.id;
+      user = users.find(<span class="hljs-function"><span class="hljs-params">user</span>=&gt;</span>user.id === id);
+    }
+    <span class="hljs-keyword">if</span>(user) <span class="hljs-keyword">this</span>.setState({user});
+  }
+  render() {
+    <span class="hljs-keyword">let</span> user = <span class="hljs-keyword">this</span>.state.user;
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        {user.id}:{user.username}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+  }
+}
+</code></pre>
+<h3 id="t419.4 HashRouter.js">9.4 HashRouter.js <a href="#t419.4 HashRouter.js"> # </a></h3>
+<p>src/react-router-dom/HashRouter.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> Context <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./context&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HashRouter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  state = {
+      <span class="hljs-attr">location</span>:{<span class="hljs-attr">pathname</span>:<span class="hljs-built_in">window</span>.location.hash.slice(<span class="hljs-number">1</span>) || <span class="hljs-string">&apos;/&apos;</span>}
+  }  
+  locationState=<span class="hljs-literal">undefined</span>
+  componentDidMount(){
+      <span class="hljs-built_in">window</span>.location.hash = <span class="hljs-built_in">window</span>.location.hash || <span class="hljs-string">&apos;/&apos;</span>;
+      <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&apos;hashchange&apos;</span>,()=&gt;{
+          <span class="hljs-keyword">this</span>.setState({
+              <span class="hljs-attr">location</span>:{
+                  ...this.state.location,
+                  <span class="hljs-attr">pathname</span>:<span class="hljs-built_in">window</span>.location.hash.slice(<span class="hljs-number">1</span>) || <span class="hljs-string">&apos;/&apos;</span>,
+                  <span class="hljs-attr">state</span>:<span class="hljs-keyword">this</span>.locationState
+              }
+          });
+      });
+  }
+  render() {
+    <span class="hljs-keyword">let</span> that = <span class="hljs-keyword">this</span>;
+    <span class="hljs-keyword">let</span> value = {
+      <span class="hljs-attr">location</span>:that.state.location,
+      <span class="hljs-attr">history</span>:{
+        push(to){
+          <span class="hljs-keyword">if</span>(<span class="hljs-keyword">typeof</span> to === <span class="hljs-string">&apos;object&apos;</span>){
+            <span class="hljs-keyword">let</span> {pathname,state}= to;
+            that.locationState = state;
+            <span class="hljs-built_in">window</span>.location.hash = pathname; 
+          }<span class="hljs-keyword">else</span>{
+            <span class="hljs-built_in">window</span>.location.hash = to;
+          }  
+      }
+      }
+    }
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Context.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{value}</span>&gt;</span>
+        {this.props.children}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Context.Provider</span>&gt;</span>
+    )
+  }
+}
+
+</span></code></pre>
+<h3 id="t429.5 Route.js">9.5 Route.js <a href="#t429.5 Route.js"> # </a></h3>
+<p>src/react-router-dom/Route.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> Context <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./context&apos;</span>;
+<span class="hljs-keyword">import</span> pathToRegexp <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;path-to-regexp&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Route</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">static</span> contextType = Context;
+  render() {
+    <span class="hljs-keyword">let</span> { path, <span class="hljs-attr">component</span>: Component, exact = <span class="hljs-literal">false</span> } = <span class="hljs-keyword">this</span>.props;
+    <span class="hljs-keyword">let</span> pathname = <span class="hljs-keyword">this</span>.context.location.pathname;
+    <span class="hljs-keyword">let</span> keys = [];
+    <span class="hljs-keyword">let</span> regxp = pathToRegexp(path, keys, { <span class="hljs-attr">end</span>: exact });
+    <span class="hljs-keyword">let</span> result = pathname.match(regxp);
+    <span class="hljs-keyword">if</span> (result) {
+      <span class="hljs-keyword">let</span> [url, ...values] = result;
+      keys = keys.map(<span class="hljs-function"><span class="hljs-params">item</span>=&gt;</span>item.name);
+      <span class="hljs-keyword">let</span> params = values.reduce(<span class="hljs-function">(<span class="hljs-params">memo, val, index</span>) =&gt;</span> {
+        memo[keys[index]] = val;
+        <span class="hljs-keyword">return</span> memo;
+      }, {});
+      <span class="hljs-keyword">let</span> match = {
+        <span class="hljs-attr">url</span>:pathname,
+        <span class="hljs-attr">isExact</span>:pathname===url,
+        path,
+        params
+      }
+      <span class="hljs-keyword">let</span> props = {
+        <span class="hljs-attr">location</span>: <span class="hljs-keyword">this</span>.context.location,
+        <span class="hljs-attr">history</span>: <span class="hljs-keyword">this</span>.context.history,
+        match
+      }
+      <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Component</span> {<span class="hljs-attr">...props</span>} /&gt;</span>;
+    }
+    return null;
+  }
+}
+</span></code></pre>
+<h3 id="t439.6 Switch.js">9.6 Switch.js <a href="#t439.6 Switch.js"> # </a></h3>
+<p>src/react-router-dom/Switch.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> Context <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./context&apos;</span>;
+<span class="hljs-keyword">import</span> pathToRegexp <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;path-to-regexp&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Switch</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">static</span> contextType =  Context;  
+  render() {
+    <span class="hljs-keyword">let</span> pathname = <span class="hljs-keyword">this</span>.context.location.pathname;
+    <span class="hljs-keyword">let</span> children = <span class="hljs-built_in">Array</span>.isArray(<span class="hljs-keyword">this</span>.props.children)?<span class="hljs-keyword">this</span>.props.children:[<span class="hljs-keyword">this</span>.props.children]
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;children.length;i++){
+        <span class="hljs-keyword">let</span> child = children[i];
+        <span class="hljs-keyword">let</span> {path=<span class="hljs-string">&apos;/&apos;</span>,exact=<span class="hljs-literal">false</span>} = child.props;
+        <span class="hljs-keyword">let</span> regxp = pathToRegexp(path,[],{<span class="hljs-attr">end</span>:exact});
+        <span class="hljs-keyword">let</span> result = pathname.match(regxp);
+        <span class="hljs-keyword">if</span>(result){
+            <span class="hljs-keyword">return</span> child;
+        }
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+  }
+}
+</code></pre>
+<h2 id="t4410. &#x53D7;&#x4FDD;&#x62A4;&#x7684;&#x8DEF;&#x7531;">10. &#x53D7;&#x4FDD;&#x62A4;&#x7684;&#x8DEF;&#x7531; <a href="#t4410. &#x53D7;&#x4FDD;&#x62A4;&#x7684;&#x8DEF;&#x7531;"> # </a></h2>
+<h3 id="t4510.1 src/index.js">10.1 src/index.js <a href="#t4510.1 src/index.js"> # </a></h3>
+<p>src/index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> {HashRouter <span class="hljs-keyword">as</span> Router,Route,Link,Redirect,Switch} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react-router-dom&apos;</span>;
+<span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Home&apos;</span>;
+<span class="hljs-keyword">import</span> User <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/User&apos;</span>;
+<span class="hljs-keyword">import</span> Profile <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Profile&apos;</span>;
+<span class="hljs-keyword">import</span> Protected <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Protected&apos;</span>;
+<span class="hljs-keyword">import</span> Login <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Login&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;bootstrap/dist/css/bootstrap.css&apos;</span>;
+ReactDOM.render(
+    &lt;Router&gt;
+        &lt;&gt;
+          &lt;div className=&quot;navbar navbar-inverse&quot;&gt;
+            &lt;div className=&quot;container-fluid&quot;&gt;
+              &lt;div className=&quot;navbar-heading&quot;&gt;
+                  &lt;div className=&quot;navbar-brand&quot;&gt;&#x73E0;&#x5CF0;&#x67B6;&#x6784;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;ul className=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;Link to=&quot;/&quot;&gt;Home&lt;/Link&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;Link to=&quot;/user&quot;&gt;User&lt;/Link&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;Link to=&quot;/profile&quot;&gt;Profile&lt;/Link&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div className=&quot;container&quot;&gt;
+            &lt;div className=&quot;row&quot;&gt;
+              &lt;div className=&quot;col-md-12&quot;&gt;
+                &lt;Switch&gt;
+                  &lt;Route path=&quot;/&quot; exact component={Home} /&gt;
+                  &lt;Route path=&quot;/user&quot; component={User} /&gt;
+                  &lt;Route path=&quot;/login&quot; component={Login} /&gt;
+                  &lt;Protected path=&quot;/profile&quot; component={Profile}/&gt;
+                  &lt;Redirect to=&quot;/&quot; /&gt;
+                &lt;/Switch&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/&gt;
+    &lt;/Router&gt;
+,document.getElementById(&apos;root&apos;));
+</code></pre>
+<h3 id="t4610.2 Route.js">10.2 Route.js <a href="#t4610.2 Route.js"> # </a></h3>
+<p>src/react-router-dom/Route.js</p>
+<pre><code class="lang-js">      <span class="hljs-keyword">let</span> props = {
+        <span class="hljs-attr">location</span>: <span class="hljs-keyword">this</span>.context.location,
+        <span class="hljs-attr">history</span>: <span class="hljs-keyword">this</span>.context.history,
+        match
+      }
+      <span class="hljs-keyword">if</span>(Component){
+        <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Component</span> {<span class="hljs-attr">...props</span>} /&gt;</span>;
+      }else if(render){
+        return render(props);
+      }else{
+        return null;
+      }
+</span></code></pre>
+<h3 id="t4710.3 Protected.js">10.3 Protected.js <a href="#t4710.3 Protected.js"> # </a></h3>
+<p>src/components/Protected.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> {Route,Redirect} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../react-router-dom&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> ({<span class="hljs-attr">component</span>:Component,...rest})=&gt;(
+    &lt;Route {...rest} render={
+        props =&gt; (
+            localStorage.getItem(&apos;logined&apos;)?&lt;Component {...props}/&gt;:&lt;Redirect to={{pathname:&apos;/login&apos;,state:{from:props.location.pathname}}}/&gt;
+        )
+    }/&gt;
+)
+
+</code></pre>
+<h3 id="t4810.4 Login.js">10.4 Login.js <a href="#t4810.4 Login.js"> # </a></h3>
+<p>src/components/Login.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Login</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  handleClick = <span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{
+    localStorage.setItem(<span class="hljs-string">&apos;logined&apos;</span>,<span class="hljs-string">&apos;true&apos;</span>);
+    <span class="hljs-keyword">if</span>(<span class="hljs-keyword">this</span>.props.location.state)
+      <span class="hljs-keyword">this</span>.props.history.push(<span class="hljs-keyword">this</span>.props.location.state.from);
+  }  
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.handleClick}</span>&gt;</span>&#x767B;&#x5F55;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>
+    )
+  }
+}
+
+</code></pre>
+<h2 id="t4911. &#x81EA;&#x5B9A;&#x4E49;&#x5BFC;&#x822A;">11. &#x81EA;&#x5B9A;&#x4E49;&#x5BFC;&#x822A; <a href="#t4911. &#x81EA;&#x5B9A;&#x4E49;&#x5BFC;&#x822A;"> # </a></h2>
+<h3 id="t5011.1 index.js">11.1 index.js <a href="#t5011.1 index.js"> # </a></h3>
+<p> src/index.js</p>
+<pre><code class="lang-diff">&lt;ul className=&quot;nav navbar-nav&quot;&gt;
+<span class="hljs-addition">+    &lt;li&gt;&lt;MenuLink exact to=&quot;/&quot;&gt;Home&lt;/MenuLink&gt;&lt;/li&gt;</span>
+<span class="hljs-addition">+    &lt;li&gt;&lt;MenuLink to=&quot;/user&quot;&gt;User&lt;/MenuLink&gt;&lt;/li&gt;</span>
+<span class="hljs-addition">+    &lt;li&gt;&lt;MenuLink to=&quot;/profile&quot;&gt;Profile&lt;/MenuLink&gt;&lt;/li&gt;</span>
+&lt;/ul&gt;
+</code></pre>
+<h3 id="t5111.2 MenuLink.js">11.2 MenuLink.js <a href="#t5111.2 MenuLink.js"> # </a></h3>
+<p>src/components/MenuLink.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> {Route,Link} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../react-router-dom&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./MenuLink.css&apos;</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> ({to,exact,children}) =&gt; (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Route</span>
+        <span class="hljs-attr">path</span>=<span class="hljs-string">{to}</span>
+        <span class="hljs-attr">exact</span>=<span class="hljs-string">{exact}</span>
+        <span class="hljs-attr">children</span>=<span class="hljs-string">{</span>
+            <span class="hljs-attr">props</span> =&gt;</span> (
+                <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{props.match?</span>&apos;<span class="hljs-attr">active</span>&apos;<span class="hljs-attr">:</span>&apos;&apos;} <span class="hljs-attr">to</span>=<span class="hljs-string">{to}</span>&gt;</span>{children}<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+            )
+        }
+    /&gt;
+)
+</span></code></pre>
+<h3 id="t5211.3 MenuLink.css">11.3 MenuLink.css <a href="#t5211.3 MenuLink.css"> # </a></h3>
+<p>src/components/MenuLink.css</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.navbar-inverse</span> <span class="hljs-selector-class">.navbar-nav</span> &gt; <span class="hljs-selector-tag">li</span> &gt; <span class="hljs-selector-class">.active</span>{
+    <span class="hljs-attribute">background-color</span>: green<span class="hljs-meta">!important</span>;
+    <span class="hljs-attribute">color</span>:red<span class="hljs-meta">!important</span>;
+}
+</code></pre>
+<h3 id="t5311.4 Link.js">11.4 Link.js <a href="#t5311.4 Link.js"> # </a></h3>
+<p>src\react-router-dom\Link.js</p>
+<pre><code class="lang-diff">import React, { Component } from &apos;react&apos;
+import Context from &apos;./context&apos;;
+export default class Link extends Component {
+  static contextType =  Context;  
+  render() {
+    return (
+<span class="hljs-addition">+        &lt;a {...this.props} onClick={()=&gt;this.context.history.push(this.props.to)}&gt;{this.props.children}&lt;/a&gt;</span>
+    )
+  }
+}
+</code></pre>
+<h3 id="t5411.5 Route.js">11.5 Route.js <a href="#t5411.5 Route.js"> # </a></h3>
+<p> src/react-router-dom/Route.js</p>
+<pre><code class="lang-diff">import React, { Component } from &apos;react&apos;
+import Context from &apos;./context&apos;;
+import pathToRegexp from &apos;path-to-regexp&apos;;
+export default class Route extends Component {
+  static contextType = Context;
+  render() {
+    let { path=&apos;/&apos;, component: Component, exact = false,render,children } = this.props;
+    let pathname = this.context.location.pathname;
+    let keys = [];
+    let regxp = pathToRegexp(path, keys, { end: exact });
+    let result = pathname.match(regxp);
+<span class="hljs-addition">+    let props = {</span>
+<span class="hljs-addition">+      location: this.context.location,</span>
+<span class="hljs-addition">+      history: this.context.history</span>
+<span class="hljs-addition">+    }</span>
+    if (result) {
+      let [url, ...values] = result;
+      keys = keys.map(item=&gt;item.name);
+      let params = values.reduce((memo, val, index) =&gt; {
+        memo[keys[index]] = val;
+        return memo;
+      }, {});
+      let match = {
+        url:pathname,
+        isExact:pathname<span class="hljs-comment">===url,</span>
+        path,
+        params
+      }
+<span class="hljs-addition">+      props.match = match;</span>
+      if(Component){
+        return &lt;Component {...props} /&gt;;
+      }else if(render){
+        return render(props);
+<span class="hljs-addition">+      }else if(children){</span>
+<span class="hljs-addition">+        return children(props);</span>
+<span class="hljs-addition">+      }else{</span>
+<span class="hljs-addition">+        return null;</span>
+<span class="hljs-addition">+      }</span>
+<span class="hljs-addition">+    }else if(children){</span>
+<span class="hljs-addition">+      return children(props);</span>
+<span class="hljs-addition">+    }else{</span>
+<span class="hljs-addition">+      return null;</span>
+<span class="hljs-addition">+    }</span>
+  }
+}
+</code></pre>
+<h2 id="t5512. withRouter">12. withRouter <a href="#t5512. withRouter"> # </a></h2>
+<h3 id="t5612.1 src/index.js">12.1 src/index.js <a href="#t5612.1 src/index.js"> # </a></h3>
+<pre><code class="lang-diff"><span class="hljs-addition">+import NavHeader from &apos;./components/NavHeader&apos;;</span>
+&lt;div className=&quot;navbar navbar-inverse&quot;&gt;
+            &lt;div className=&quot;container-fluid&quot;&gt;
+<span class="hljs-addition">+              &lt;NavHeader/&gt;</span>
+              &lt;ul className=&quot;nav navbar-nav&quot;&gt;
+                  &lt;MenuLink exact to=&quot;/&quot;&gt;Home&lt;/MenuLink&gt;
+                  &lt;MenuLink to=&quot;/user&quot;&gt;User&lt;/MenuLink&gt;
+                  &lt;MenuLink to=&quot;/profile&quot;&gt;Profile&lt;/MenuLink&gt;
+              &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="t5712.2 NavHeader.js">12.2 NavHeader.js <a href="#t5712.2 NavHeader.js"> # </a></h3>
+<p>src/components/NavHeader.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> {withRouter} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../react-router-dom&apos;</span>;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NavHeader</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;navbar-heading&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;navbar-brand&quot;</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span>=&gt;</span>this.props.history.push(&apos;/&apos;)}&gt;&#x73E0;&#x5CF0;&#x67B6;&#x6784;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+  }
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> withRouter(NavHeader)
+</code></pre>
+<h3 id="t5812.3 withRouter.js">12.3 withRouter.js <a href="#t5812.3 withRouter.js"> # </a></h3>
+<p>src/react-router-dom/withRouter.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> {Route} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../react-router-dom&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">Component</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">props</span>=&gt;</span>(
+        &lt;Route render={routeProps=&gt;&lt;Component {...routeProps}&gt;}/&gt;
+    )
+}
+</code></pre>
+<h3 id="t5912.4 index.js">12.4 index.js <a href="#t5912.4 index.js"> # </a></h3>
+<p>src/react-router-dom/index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> withRouter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./withRouter&apos;</span>;
+<span class="hljs-keyword">export</span> {
+    HashRouter,
+    Route,
+    Link,
+    Redirect,
+    Switch,
+    withRouter
+}
+</code></pre>
+<h2 id="t6013. &#x963B;&#x6B62;&#x8DF3;&#x8F6C;">13. &#x963B;&#x6B62;&#x8DF3;&#x8F6C; <a href="#t6013. &#x963B;&#x6B62;&#x8DF3;&#x8F6C;"> # </a></h2>
+<h3 id="t6113.1 UserAdd.js">13.1 UserAdd.js <a href="#t6113.1 UserAdd.js"> # </a></h3>
+<p>src/components/UserAdd.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> {Prompt} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../react-router-dom&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserAdd</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">constructor</span>(){
+    <span class="hljs-keyword">super</span>();
+    <span class="hljs-keyword">this</span>.usernameRef = React.createRef();
+  }
+  state = {
+    <span class="hljs-attr">isBlocking</span>:<span class="hljs-literal">false</span>
+  }
+  handleSubmit = <span class="hljs-function">(<span class="hljs-params">event</span>)=&gt;</span>{
+    event.preventDefault();
+    <span class="hljs-keyword">this</span>.setState({
+      <span class="hljs-attr">isBlocking</span>:<span class="hljs-literal">false</span>
+    },()=&gt;{
+      <span class="hljs-keyword">let</span> username = <span class="hljs-keyword">this</span>.usernameRef.current.value;
+      <span class="hljs-keyword">let</span> usersStr = localStorage.getItem(<span class="hljs-string">&apos;users&apos;</span>);
+      <span class="hljs-keyword">let</span> users = usersStr?<span class="hljs-built_in">JSON</span>.parse(usersStr):[];
+      users.push({<span class="hljs-attr">id</span>:<span class="hljs-built_in">Date</span>.now()+<span class="hljs-string">&apos;&apos;</span>,username});
+      localStorage.setItem(<span class="hljs-string">&apos;users&apos;</span>,<span class="hljs-built_in">JSON</span>.stringify(users));
+      <span class="hljs-keyword">this</span>.props.history.push(<span class="hljs-string">&apos;/user/list&apos;</span>);
+    })
+
+  }
+  render() {
+    <span class="hljs-keyword">let</span> {isBlocking}=<span class="hljs-keyword">this</span>.state;
+    <span class="hljs-keyword">return</span> (
+      &lt;form onSubmit={this.handleSubmit}&gt;
+       &lt;Prompt
+              when={isBlocking}
+              message={location=&gt;`&#x4F60;&#x786E;&#x5B9A;&#x8981;&#x8DF3;&#x8F6C;&#x5230;${location.pathname}&#x5417;&#xFF1F;`}
+        /&gt;
+        &lt;input className=&quot;form-control&quot; type=&quot;text&quot; 
+           onChange={event =&gt; {
+            this.setState({isBlocking:event.target.value.length&gt;0});
+           }}
+           ref={this.usernameRef}/&gt;
+        &lt;button type=&quot;submit&quot; className=&quot;btn btn-primary&quot;&gt;&#x63D0;&#x4EA4;&lt;/button&gt;
+      &lt;/form&gt;
+    )
+  }
+}
+
+</code></pre>
+<h3 id="t6213.2 HashRouter.js">13.2 HashRouter.js <a href="#t6213.2 HashRouter.js"> # </a></h3>
+<p>src/react-router-dom/HashRouter.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> Context <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./context&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HashRouter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  state = {
+    <span class="hljs-attr">location</span>: { <span class="hljs-attr">pathname</span>: <span class="hljs-built_in">window</span>.location.hash.slice(<span class="hljs-number">1</span>) || <span class="hljs-string">&apos;/&apos;</span> }
+  }
+  locationState = <span class="hljs-literal">undefined</span>
+  getMessage=<span class="hljs-literal">null</span>
+  componentDidMount() {
+    <span class="hljs-built_in">window</span>.location.hash = <span class="hljs-built_in">window</span>.location.hash || <span class="hljs-string">&apos;/&apos;</span>;
+    <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&apos;hashchange&apos;</span>, () =&gt; {
+      <span class="hljs-keyword">this</span>.setState({
+        <span class="hljs-attr">location</span>: {
+          ...this.state.location,
+          <span class="hljs-attr">pathname</span>: <span class="hljs-built_in">window</span>.location.hash.slice(<span class="hljs-number">1</span>) || <span class="hljs-string">&apos;/&apos;</span>,
+          <span class="hljs-attr">state</span>: <span class="hljs-keyword">this</span>.locationState
+        }
+      });
+    });
+  }
+  render() {
+    <span class="hljs-keyword">let</span> that = <span class="hljs-keyword">this</span>;
+    <span class="hljs-keyword">let</span> value = {
+      <span class="hljs-attr">location</span>: that.state.location,
+      <span class="hljs-attr">history</span>: {
+        push(to) {
+          <span class="hljs-keyword">if</span> (that.getMessage) {
+              <span class="hljs-keyword">let</span> allow=<span class="hljs-built_in">window</span>.confirm(that.getMessage(that.state.location)+<span class="hljs-string">`&#xFF0C;&#x5E76;&#x4E14;&#x8DF3;&#x8F6C;&#x5230;<span class="hljs-subst">${<span class="hljs-keyword">typeof</span> to === <span class="hljs-string">&apos;object&apos;</span>?to.pathname:to}</span>&#x5417;?`</span>);
+              <span class="hljs-keyword">if</span> (!allow) <span class="hljs-keyword">return</span>;
+          }
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> to === <span class="hljs-string">&apos;object&apos;</span>) {
+            <span class="hljs-keyword">let</span> { pathname, state } = to;
+            that.locationState = state;
+            <span class="hljs-built_in">window</span>.location.hash = pathname;
+          } <span class="hljs-keyword">else</span> {
+            <span class="hljs-built_in">window</span>.location.hash = to;
+          }
+        },
+        block(message) {
+          that.getMessage=message;
+        },
+        unblock() {
+          that.getMessage=<span class="hljs-literal">null</span>;
+        }
+      }
+    }
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Context.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{value}</span>&gt;</span>
+        {this.props.children}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Context.Provider</span>&gt;</span>
+    )
+  }
+}
+
+</span></code></pre>
+<h3 id="t6313.3 index.js">13.3 index.js <a href="#t6313.3 index.js"> # </a></h3>
+<p>src/react-router-dom/index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> HashRouter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./HashRouter&apos;</span>;
+<span class="hljs-keyword">import</span> Route <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Route&apos;</span>;
+<span class="hljs-keyword">import</span> Link <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Link&apos;</span>;
+<span class="hljs-keyword">import</span> Redirect <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Redirect&apos;</span>;
+<span class="hljs-keyword">import</span> Switch <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Switch&apos;</span>;
+<span class="hljs-keyword">import</span> withRouter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./withRouter&apos;</span>;
+<span class="hljs-keyword">import</span> Prompt <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Prompt&apos;</span>;
+<span class="hljs-keyword">export</span> {
+    HashRouter,
+    Route,
+    Link,
+    Redirect,
+    Switch,
+    withRouter,
+    Prompt
+}
+</code></pre>
+<h3 id="t6413.4 Prompt.js">13.4 Prompt.js <a href="#t6413.4 Prompt.js"> # </a></h3>
+<p>src/react-router-dom/Prompt.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> Context <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./context&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Prompt</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span></span>{
+    <span class="hljs-keyword">static</span> contextType = Context;
+    componentWillUnmount() {
+        <span class="hljs-keyword">this</span>.history.unblock();
+    }
+    render() {
+        <span class="hljs-keyword">this</span>.history=<span class="hljs-keyword">this</span>.context.history;
+        <span class="hljs-keyword">const</span> {when,message}=<span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">if</span> (when) {
+            <span class="hljs-keyword">this</span>.history.block(message);
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">this</span>.history.block(<span class="hljs-literal">null</span>);
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    }
+}
+</code></pre>
+<h2 id="t6514. BrowserRouter">14. BrowserRouter <a href="#t6514. BrowserRouter"> # </a></h2>
+<h3 id="t6614.1 index.js">14.1 index.js <a href="#t6614.1 index.js"> # </a></h3>
+<p>src/index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {BrowserRouter <span class="hljs-keyword">as</span> Router,Route,Redirect,Switch} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react-router-dom&apos;</span>;
+</code></pre>
+<h3 id="t6714.2 BrowserRouter.js">14.2 BrowserRouter.js <a href="#t6714.2 BrowserRouter.js"> # </a></h3>
+<p>src/react-router-dom/BrowserRouter.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+<span class="hljs-keyword">import</span> Context <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./context&apos;</span>;
+(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">history</span>) </span>{
+    <span class="hljs-keyword">var</span> pushState = history.pushState;
+    history.pushState = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state,title,pathname</span>) </span>{
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> <span class="hljs-built_in">window</span>.onpushstate == <span class="hljs-string">&quot;function&quot;</span>) {
+            <span class="hljs-built_in">window</span>.onpushstate(state,pathname);
+        }
+        <span class="hljs-keyword">return</span> pushState.apply(history, <span class="hljs-built_in">arguments</span>);
+    };
+})(<span class="hljs-built_in">window</span>.history);
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BrowserRouter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    state = {
+        <span class="hljs-attr">location</span>: { <span class="hljs-attr">pathname</span>: <span class="hljs-string">&apos;/&apos;</span> }
+    }
+    getMessage = <span class="hljs-literal">null</span>
+    componentDidMount() {
+        <span class="hljs-built_in">window</span>.onpopstate = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+            <span class="hljs-keyword">this</span>.setState({
+                <span class="hljs-attr">location</span>: {
+                    ...this.state.location,
+                    <span class="hljs-attr">pathname</span>:<span class="hljs-built_in">document</span>.location.pathname,
+                    <span class="hljs-attr">state</span>:event.state
+                }
+            });
+        };
+        <span class="hljs-built_in">window</span>.onpushstate = <span class="hljs-function">(<span class="hljs-params">state,pathname</span>) =&gt;</span> {
+            <span class="hljs-keyword">this</span>.setState({
+                <span class="hljs-attr">location</span>: {
+                    ...this.state.location,
+                    pathname,
+                    state
+                }
+            });
+        };
+    }
+    render() {
+        <span class="hljs-keyword">let</span> that = <span class="hljs-keyword">this</span>;
+        <span class="hljs-keyword">let</span> value = {
+            <span class="hljs-attr">location</span>: that.state.location,
+            <span class="hljs-attr">history</span>: {
+                push(to) {
+                    <span class="hljs-keyword">if</span> (that.block) {
+                        <span class="hljs-keyword">let</span> allow = <span class="hljs-built_in">window</span>.confirm(that.getMessage(that.state.location));
+                        <span class="hljs-keyword">if</span> (!allow) <span class="hljs-keyword">return</span>;
+                    }
+                    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> to === <span class="hljs-string">&apos;object&apos;</span>) {
+                        <span class="hljs-keyword">let</span> { pathname, state } = to;
+                        <span class="hljs-built_in">window</span>.history.pushState(state, <span class="hljs-string">&apos;&apos;</span>, pathname);
+                    } <span class="hljs-keyword">else</span> {
+                        <span class="hljs-built_in">window</span>.history.pushState(<span class="hljs-string">&apos;&apos;</span>, <span class="hljs-string">&apos;&apos;</span>, to);
+                    }
+                },
+                block(getMessage) {
+                    that.block = getMessage;
+                },
+                unblock() {
+                    that.block = <span class="hljs-literal">null</span>;
+                }
+            }
+        }
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Context.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{value}</span>&gt;</span>
+                {this.props.children}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Context.Provider</span>&gt;</span>
+        )
+    }
+}
+
+</span></code></pre>
+<h3 id="t6814.3 index.js">14.3 index.js <a href="#t6814.3 index.js"> # </a></h3>
+<p>src/react-router-dom/index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> HashRouter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./HashRouter&apos;</span>;
+<span class="hljs-keyword">import</span> Route <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Route&apos;</span>;
+<span class="hljs-keyword">import</span> Link <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Link&apos;</span>;
+<span class="hljs-keyword">import</span> Redirect <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Redirect&apos;</span>;
+<span class="hljs-keyword">import</span> Switch <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Switch&apos;</span>;
+<span class="hljs-keyword">import</span> withRouter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./withRouter&apos;</span>;
+<span class="hljs-keyword">import</span> Prompt <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Prompt&apos;</span>;
+<span class="hljs-keyword">import</span> BrowserRouter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./BrowserRouter&apos;</span>;
+
+<span class="hljs-keyword">export</span> {
+    HashRouter,
+    Route,
+    Link,
+    Redirect,
+    Switch,
+    withRouter,
+    Prompt,
+    BrowserRouter
+}
+</code></pre>
+
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org/">Node.js</a> run.</div>
+    </div>
+    
+</div>
+
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../../cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+<script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+// if (!$('.understand-me').length) {
+  //   var bar = $(window).height() - $('.navbar ').height() - $('.page-toc').position().top;
+  //   var count = bar / 26 / 2;
+  //   var barHeight = $('.page-toc').outerHeight();
+  //   $('.page-toc li').eq(0).children('a').addClass('red');
+  //   var arr = [];
+  //   $("h1,h2,h3,h4,h5,h6").each(function () {
+  //     arr.push($(this).position().top);
+  //   });
+  //   var timer
+  //   function dark() {
+  //     clearTimeout(timer)
+  //      timer = setTimeout(function () {
+  //      var top = Math.abs($('.page-toc > ul').position().top);
+  //      var cur = $('.content').scrollTop();
+  //      for (var i = arr.length; i >= 0; i--) {
+  //        if (arr[i] <= cur) {
+  //          break;
+  //        }
+  //      }
+  //      if (i === -1) {
+  //        i = 0;
+  //      }
+  //      $('.page-toc li a').removeClass('red');
+  //      $('.page-toc li').eq(i).children('a').addClass('red');
+  //      let height = $('.page-toc li').eq(i).position().top-$('.page-toc').height(); // 如果当前的offset出去了 回到中间可好？
+  //      $('.page-toc').scrollTop(height+$('.page-toc').height()/2);
+  //    },200)
+  //   }
+
+  //   $('.content').on('scroll', dark);
+  // }
+</script>
+<style>
+
+    /* ::-webkit-scrollbar{width:14px;}
+    ::-webkit-scrollbar-track{background-color:transparent;}
+    ::-webkit-scrollbar-thumb{background-color:transparent;}
+    ::-webkit-scrollbar-thumb:hover {background-color:transparent}
+    ::-webkit-scrollbar-thumb:active {background-color:transparent} */
+
+    .page-toc > ul .red {
+        background: #f3f3f3;
+        z-index: 1;
+        border-left: 3px solid #009a61;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        color: #000
+    }
+
+
+
+
+
+</style>
+</body>
+</html>

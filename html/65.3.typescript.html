@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+</head>
+<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  12/02/19 14:55:01.<br>
+<b>Address:</b> <a class="info" href="http://www.zhufengpeixun.cn/ahead/html/65.3.typescript.html">http://www.zhufengpeixun.cn/ahead/html/65.3.typescript.html</a><br>
+<b>Title:</b> 珠峰架构师成长计划 &nbsp;&bull;&nbsp; <b>Size:</b> 78322 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Sun, 01 Dec 2019 11:37:09 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<div class="nav">
+    <div class="logo">
+        
+            珠峰架构师成长计划
+        
+    </div>
+<ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3.tapable.html">26.webpack-3.tapable</a></li><li><a href="../html/26.webpack-4-AST.html">26.webpack-4-AST</a></li><li><a href="../html/26.webpack-5-sources.html">26.webpack-5-sources</a></li><li><a href="../html/26.webpack-6-loader.html">26.webpack-6-loader</a></li><li><a href="../html/26.webpack-7-plugin.html">26.webpack-7-plugin</a></li><li><a href="../html/26.webpack-8-hand.html">26.webpack-8-hand</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/51.typescript.html">51.typescript</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li class="active"><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.源码准备.html">75.webpack-5.源码准备</a></li><li><a href="../html/75.webpack-6.实现.html">75.webpack-6.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/82.2.react.html">82.2.react</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.5.connected.html">82.5.connected</a></li><li><a href="../html/82.6.saga.html">82.6.saga</a></li><li><a href="../html/82.7.dva.html">82.7.dva</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/82.8.roadhog.html">82.8.roadhog</a></li><li><a href="../html/82.9.umi.html">82.9.umi</a></li><li><a href="../html/82.10.antdesign.html">82.10.antdesign</a></li></ul></div>
+
+
+<div class="warpper">
+
+    <div class="page-toc">
+        <ul><li><a href="#t01. 初始化项目">1. 初始化项目</a></li><li><a href="#t12.安装依赖">2.安装依赖</a></li><li><a href="#t23.支持typescript">3.支持typescript</a></li><li><a href="#t34.编写webpack配置文件">4.编写webpack配置文件</a></li><li><a href="#t45.计数器组件">5.计数器组件</a><ul><li><a href="#t55.1 src/index.tsx">5.1 src/index.tsx</a></li><li><a href="#t65.2 components/Counter.tsx">5.2 components/Counter.tsx</a></li><li><a href="#t75.3 TodoInput">5.3 TodoInput</a></li><li><a href="#t85.4 函数式组件">5.4 函数式组件</a></li></ul></li><li><a href="#t96. 使用redux">6. 使用redux</a><ul><li><a href="#t106.1 src/index.tsx">6.1 src/index.tsx</a></li><li><a href="#t116.2 components/Counter.tsx">6.2 components/Counter.tsx</a></li><li><a href="#t126.3 src/store/index.tsx">6.3 src/store/index.tsx</a></li><li><a href="#t136.4 store/action-types.tsx">6.4 store/action-types.tsx</a></li><li><a href="#t146.5 reducers/index.tsx">6.5 reducers/index.tsx</a></li><li><a href="#t156.6 actions/index.tsx">6.6 actions/index.tsx</a></li><li><a href="#t166.7 types/index.tsx">6.7 types/index.tsx</a></li></ul></li><li><a href="#t177. 合并reducers">7. 合并reducers</a><ul><li><a href="#t187.1 src/index.tsx">7.1 src/index.tsx</a></li><li><a href="#t197.2 /action-types.tsx">7.2 /action-types.tsx</a></li><li><a href="#t207.3 reducers/index.tsx">7.3 reducers/index.tsx</a></li><li><a href="#t217.4 types/index.tsx">7.4 types/index.tsx</a></li><li><a href="#t227.5 components/Counter1.tsx">7.5 components/Counter1.tsx</a></li><li><a href="#t237.6 src/components/Counter2.tsx">7.6 src/components/Counter2.tsx</a></li><li><a href="#t247.7 actions/counter1.tsx">7.7 actions/counter1.tsx</a></li><li><a href="#t257.8 actions/counter2.tsx">7.8 actions/counter2.tsx</a></li><li><a href="#t267.9 reducers/counter1.tsx">7.9 reducers/counter1.tsx</a></li><li><a href="#t277.10 reducers/counter2.tsx">7.10 reducers/counter2.tsx</a></li></ul></li><li><a href="#t288.配置路由">8.配置路由</a><ul><li><a href="#t298.1  src/index.tsx">8.1  src/index.tsx</a></li></ul></li><li><a href="#t309. connected-react-router">9. connected-react-router</a><ul><li><a href="#t319.1 components/Counter1.tsx">9.1 components/Counter1.tsx</a></li><li><a href="#t329.2 src/index.tsx">9.2 src/index.tsx</a></li><li><a href="#t339.3 actions/counter1.tsx">9.3 actions/counter1.tsx</a></li><li><a href="#t349.4 src/store/index.tsx">9.4 src/store/index.tsx</a></li><li><a href="#t359.5 reducers/index.tsx">9.5 reducers/index.tsx</a></li><li><a href="#t369.6 store/history.tsx">9.6 store/history.tsx</a></li></ul></li><li><a href="#t3710. 编写单元测试">10. 编写单元测试</a><ul><li><a href="#t3810.1 安装单元测试模块">10.1 安装单元测试模块</a></li><li><a href="#t3910.2 配置package.json">10.2 配置package.json</a></li><li><a href="#t4010.3 index.test.tsx">10.3 index.test.tsx</a></li><li><a href="#t4110.4 counter.spec.tsx">10.4 counter.spec.tsx</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h2 id="t01. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;">1. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE; <a href="#t01. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;"> # </a></h2>
+<pre><code class="lang-js">mkdir react-typesript
+cd react-typesript
+cnpm init -y
+touch .gitignore  <span class="hljs-comment">//mac&#x6216;linux</span>
+type nul &gt; .gitignore  <span class="hljs-comment">//window</span>
+</code></pre>
+<h2 id="t12.&#x5B89;&#x88C5;&#x4F9D;&#x8D56;">2.&#x5B89;&#x88C5;&#x4F9D;&#x8D56; <a href="#t12.&#x5B89;&#x88C5;&#x4F9D;&#x8D56;"> # </a></h2>
+<ul>
+<li>@types&#x5F00;&#x5934;&#x7684;&#x5305;&#x90FD;&#x662F;typeScript&#x7684;&#x58F0;&#x660E;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x8FDB;&#x5165;node_modules/@types/XX/index.d.ts&#x8FDB;&#x884C;&#x67E5;&#x770B;</li>
+<li><a href="https://github.com/DefinitelyTyped/DefinitelyTyped">&#x58F0;&#x660E;&#x6587;&#x4EF6;</a></li>
+</ul>
+<pre><code class="lang-js">cnpm i react react-dom @types/react @types/react-dom react-router-dom @types/react-router-dom react-transition-group @types/react-transition-group react-swipe @types/react-swipe  -S
+cnpm i webpack webpack-cli webpack-dev-server html-webpack-plugin -D
+cnpm i typescript ts-loader source-map-loader -D
+cnpm i redux react-redux @types/react-redux redux-thunk  redux-logger @types/redux-logger -S
+cnpm i connected-react-router -S
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5305;&#x540D;</th>
+<th style="text-align:left">&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">react @types/react</td>
+<td style="text-align:left">react&#x6838;&#x5FC3;&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">react-dom @types/react-dom</td>
+<td style="text-align:left">react&#x64CD;&#x4F5C;DOM&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">react-router-dom @types/react-router-dom</td>
+<td style="text-align:left">react&#x8DEF;&#x7531;&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">react-transition-group @types/react-transition-group</td>
+<td style="text-align:left">react&#x52A8;&#x753B;&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">react-swipe @types/react-swipe</td>
+<td style="text-align:left">react&#x8F6E;&#x64AD;&#x56FE;&#x7EC4;&#x4EF6;&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">webpack</td>
+<td style="text-align:left">webpack&#x6838;&#x5FC3;&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">webpack-cli</td>
+<td style="text-align:left">webpack&#x547D;&#x4EE4;&#x884C;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td style="text-align:left">webpack-dev-server</td>
+<td style="text-align:left">webpack&#x5F00;&#x53D1;&#x670D;&#x52A1;&#x5668;</td>
+</tr>
+<tr>
+<td style="text-align:left">html-webpack-plugin</td>
+<td style="text-align:left">webpack&#x7528;&#x4E8E;&#x751F;&#x6210;html&#x7684;&#x63D2;&#x4EF6;</td>
+</tr>
+<tr>
+<td style="text-align:left">redux</td>
+<td style="text-align:left">&#x5168;&#x5C40;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">react-redux @types/react-redux</td>
+<td style="text-align:left">&#x8FDE;&#x63A5;react&#x548C;redux&#x7684;&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">redux-thunk</td>
+<td style="text-align:left">&#x53EF;&#x4EE5;&#x8BA9;store&#x6D3E;&#x53D1;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;</td>
+</tr>
+<tr>
+<td style="text-align:left">redux-logger @types/redux-logger</td>
+<td style="text-align:left">&#x53EF;&#x4EE5;&#x5728;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x524D;&#x540E;&#x6253;&#x5370;&#x72B6;&#x6001;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;</td>
+</tr>
+<tr>
+<td style="text-align:left">typescript</td>
+<td style="text-align:left">JavaScript&#x8BED;&#x8A00;&#x6269;&#x5C55;</td>
+</tr>
+<tr>
+<td style="text-align:left">ts-loader</td>
+<td style="text-align:left">&#x53EF;&#x4EE5;&#x8BA9;Webpack&#x4F7F;&#x7528;TypeScript&#x7684;&#x6807;&#x51C6;&#x914D;&#x7F6E;&#x6587;&#x4EF6;<code>tsconfig.json</code>&#x7F16;&#x8BD1;TypeScript&#x4EE3;&#x7801;</td>
+</tr>
+<tr>
+<td style="text-align:left">source-map-loader</td>
+<td style="text-align:left">&#x4F7F;&#x7528;&#x4EFB;&#x610F;&#x6765;&#x81EA;Typescript&#x7684;sourcemap&#x8F93;&#x51FA;&#xFF0C;&#x4EE5;&#x6B64;&#x901A;&#x77E5;webpack&#x4F55;&#x65F6;&#x751F;&#x6210;&#x81EA;&#x5DF1;&#x7684;sourcemaps,&#x8FD9;&#x8BA9;&#x4F60;&#x5728;&#x8C03;&#x8BD5;&#x6700;&#x7EC8;&#x751F;&#x6210;&#x7684;&#x6587;&#x4EF6;&#x65F6;&#x5C31;&#x597D;&#x50CF;&#x5728;&#x8C03;&#x8BD5;TypeScript&#x6E90;&#x7801;&#x4E00;&#x6837;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>ts-loader&#x53EF;&#x4EE5;&#x8BA9;Webpack&#x4F7F;&#x7528;TypeScript&#x7684;&#x6807;&#x51C6;&#x914D;&#x7F6E;&#x6587;&#x4EF6;tsconfig.json&#x7F16;&#x8BD1;TypeScript&#x4EE3;&#x7801;&#x3002;</li>
+<li>source-map-loader&#x4F7F;&#x7528;&#x4EFB;&#x610F;&#x6765;&#x81EA;Typescript&#x7684;sourcemap&#x8F93;&#x51FA;&#xFF0C;&#x4EE5;&#x6B64;&#x901A;&#x77E5;webpack&#x4F55;&#x65F6;&#x751F;&#x6210;&#x81EA;&#x5DF1;&#x7684;sourcemaps,&#x8FD9;&#x8BA9;&#x4F60;&#x5728;&#x8C03;&#x8BD5;&#x6700;&#x7EC8;&#x751F;&#x6210;&#x7684;&#x6587;&#x4EF6;&#x65F6;&#x5C31;&#x597D;&#x50CF;&#x5728;&#x8C03;&#x8BD5;TypeScript&#x6E90;&#x7801;&#x4E00;&#x6837;&#x3002;</li>
+</ul>
+<h2 id="t23.&#x652F;&#x6301;typescript">3.&#x652F;&#x6301;typescript <a href="#t23.&#x652F;&#x6301;typescript"> # </a></h2>
+<p>&#x9700;&#x8981;&#x751F;&#x6210;&#x4E00;&#x4E2A;tsconfig.json&#x6587;&#x4EF6;&#x6765;&#x544A;&#x8BC9;ts-loader&#x5982;&#x4F55;&#x7F16;&#x8BD1;&#x4EE3;&#x7801;TypeScript&#x4EE3;&#x7801;</p>
+<pre><code class="lang-js">tsc --init
+</code></pre>
+<pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;compilerOptions&quot;</span>: {
+    <span class="hljs-attr">&quot;outDir&quot;</span>: <span class="hljs-string">&quot;./dist&quot;</span>,
+    <span class="hljs-attr">&quot;sourceMap&quot;</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">&quot;noImplicitAny&quot;</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">&quot;module&quot;</span>: <span class="hljs-string">&quot;commonjs&quot;</span>,
+    <span class="hljs-attr">&quot;target&quot;</span>: <span class="hljs-string">&quot;es5&quot;</span>,
+    <span class="hljs-attr">&quot;jsx&quot;</span>: <span class="hljs-string">&quot;react&quot;</span>
+  },
+  <span class="hljs-attr">&quot;include&quot;</span>: [
+    <span class="hljs-string">&quot;./src/**/*&quot;</span>
+  ]
+}
+</code></pre>
+<ul>
+<li>outDir &#x6307;&#x5B9A;&#x8F93;&#x51FA;&#x76EE;&#x5F55;</li>
+<li>sourceMap&#xFF1A;&#x628A; ts &#x6587;&#x4EF6;&#x7F16;&#x8BD1;&#x6210; js &#x6587;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x540C;&#x65F6;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x7684;sourceMap&#x6587;&#x4EF6;</li>
+<li>noImplicitAny&#xFF1A;&#x5982;&#x679C;&#x4E3A;true&#x7684;&#x8BDD;&#xFF0C;TypeScript &#x7F16;&#x8BD1;&#x5668;&#x65E0;&#x6CD5;&#x63A8;&#x65AD;&#x51FA;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x5B83;&#x4ECD;&#x7136;&#x4F1A;&#x751F;&#x6210; JavaScript &#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x4E5F;&#x4F1A;&#x62A5;&#x544A;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;</li>
+<li>module&#xFF1A;&#x4EE3;&#x7801;&#x89C4;&#x8303;</li>
+<li>target&#xFF1A;&#x8F6C;&#x6362;&#x6210;es5</li>
+<li>jsx&#xFF1A;react&#x6A21;&#x5F0F;&#x4F1A;&#x751F;&#x6210;React.createElement&#xFF0C;&#x5728;&#x4F7F;&#x7528;&#x524D;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x8FDB;&#x884C;&#x8F6C;&#x6362;&#x64CD;&#x4F5C;&#x4E86;&#xFF0C;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x7684;&#x6269;&#x5C55;&#x540D;&#x4E3A;.js</li>
+<li>include&#xFF1A;&#x9700;&#x8981;&#x7F16;&#x8BD1;&#x7684;&#x76EE;&#x5F55;&#x3002;</li>
+</ul>
+<h2 id="t34.&#x7F16;&#x5199;webpack&#x914D;&#x7F6E;&#x6587;&#x4EF6;">4.&#x7F16;&#x5199;webpack&#x914D;&#x7F6E;&#x6587;&#x4EF6; <a href="#t34.&#x7F16;&#x5199;webpack&#x914D;&#x7F6E;&#x6587;&#x4EF6;"> # </a></h2>
+<p>webpack.config.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> webpack=<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;webpack&apos;</span>);
+<span class="hljs-keyword">const</span> HtmlWebpackPlugin=<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;html-webpack-plugin&apos;</span>);
+<span class="hljs-keyword">const</span> path=<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
+<span class="hljs-built_in">module</span>.exports={
+    <span class="hljs-attr">mode</span>: <span class="hljs-string">&apos;development&apos;</span>,
+    <span class="hljs-attr">entry</span>: <span class="hljs-string">&quot;./src/index.tsx&quot;</span>,
+    <span class="hljs-attr">output</span>: {
+        <span class="hljs-attr">filename</span>: <span class="hljs-string">&quot;bundle.js&quot;</span>,
+        <span class="hljs-attr">path</span>: path.join(__dirname,<span class="hljs-string">&apos;dist&apos;</span>)
+    },
+    <span class="hljs-attr">devtool</span>: <span class="hljs-string">&quot;source-map&quot;</span>,
+    <span class="hljs-attr">devServer</span>: {
+        <span class="hljs-attr">hot</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">contentBase</span>: path.join(__dirname,<span class="hljs-string">&apos;dist&apos;</span>),
+        <span class="hljs-attr">historyApiFallback</span>: {
+            <span class="hljs-attr">index</span>:<span class="hljs-string">&apos;./index.html&apos;</span>
+        }
+    },
+    <span class="hljs-attr">resolve</span>: {
+        <span class="hljs-attr">extensions</span>: [<span class="hljs-string">&quot;.ts&quot;</span>, <span class="hljs-string">&quot;.tsx&quot;</span>, <span class="hljs-string">&quot;.js&quot;</span>, <span class="hljs-string">&quot;.json&quot;</span>]
+    },
+
+    <span class="hljs-attr">module</span>: {
+        <span class="hljs-attr">rules</span>: [{
+                <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.tsx?$/</span>,
+                <span class="hljs-attr">loader</span>: <span class="hljs-string">&quot;ts-loader&quot;</span>
+            },
+            {
+                <span class="hljs-attr">enforce</span>: <span class="hljs-string">&quot;pre&quot;</span>,
+                <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.tsx$/</span>,
+                <span class="hljs-attr">loader</span>: <span class="hljs-string">&quot;source-map-loader&quot;</span>
+            }
+        ]
+    },
+
+    <span class="hljs-attr">plugins</span>: [
+        <span class="hljs-keyword">new</span> HtmlWebpackPlugin({
+            <span class="hljs-attr">template</span>:<span class="hljs-string">&apos;./src/index.html&apos;</span>
+        }),
+        <span class="hljs-keyword">new</span> webpack.HotModuleReplacementPlugin()
+    ],
+};
+</code></pre>
+<h2 id="t45.&#x8BA1;&#x6570;&#x5668;&#x7EC4;&#x4EF6;">5.&#x8BA1;&#x6570;&#x5668;&#x7EC4;&#x4EF6; <a href="#t45.&#x8BA1;&#x6570;&#x5668;&#x7EC4;&#x4EF6;"> # </a></h2>
+<h3 id="t55.1 src/index.tsx">5.1 src/index.tsx <a href="#t55.1 src/index.tsx"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> Counter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Counter&apos;</span>;
+ReactDOM.render((
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Counter</span> <span class="hljs-attr">number</span>=<span class="hljs-string">{100}/</span>&gt;</span>
+),document.getElementById(&apos;root&apos;));
+</span></code></pre>
+<h3 id="t65.2 components/Counter.tsx">5.2 components/Counter.tsx <a href="#t65.2 components/Counter.tsx"> # </a></h3>
+<p>src/components/Counter.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">export</span> interface Props{
+    <span class="hljs-attr">number</span>: number
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span>&lt;<span class="hljs-title">Props</span>&gt;</span>{
+    render() {
+        <span class="hljs-keyword">const</span> {number}=<span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{number}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+        )
+    }
+}
+</code></pre>
+<h3 id="t75.3 TodoInput">5.3 TodoInput <a href="#t75.3 TodoInput"> # </a></h3>
+<p>src\components\TodoInput.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">export</span> interface Props{
+    number?: number
+}
+interface State {
+    <span class="hljs-attr">value</span>:string
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TodoInput</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span>&lt;<span class="hljs-title">Props</span>,<span class="hljs-title">State</span>&gt;</span>{
+    public <span class="hljs-keyword">static</span> defaultProps:Props = {
+        <span class="hljs-attr">number</span>:<span class="hljs-number">0</span>
+    }
+    public state = {<span class="hljs-attr">value</span>:<span class="hljs-string">&apos;&apos;</span>}
+    private handleChange = <span class="hljs-function">(<span class="hljs-params">event:React.ChangeEvent&lt;HTMLInputElement&gt;</span>)=&gt;</span>{
+        <span class="hljs-keyword">this</span>.setState({<span class="hljs-attr">value</span>:event.target.value});
+    }
+    public render() {
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{this.state.value}</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(event)</span>=&gt;</span>this.handleChange(event)}/&gt;
+        )
+    }
+}
+</span></code></pre>
+<h3 id="t85.4 &#x51FD;&#x6570;&#x5F0F;&#x7EC4;&#x4EF6;">5.4 &#x51FD;&#x6570;&#x5F0F;&#x7EC4;&#x4EF6; <a href="#t85.4 &#x51FD;&#x6570;&#x5F0F;&#x7EC4;&#x4EF6;"> # </a></h3>
+<p>src\components\TodoItem.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">const</span> todoItemStyle:React.CSSProperties = {
+    <span class="hljs-attr">color</span>:<span class="hljs-string">&apos;red&apos;</span>,
+    <span class="hljs-attr">backgroundColor</span>:<span class="hljs-string">&apos;green&apos;</span>
+}
+interface Props {
+    <span class="hljs-attr">content</span>:string;
+}
+<span class="hljs-keyword">const</span> TodoItem:React.SFC&lt;Props&gt; = <span class="hljs-function">(<span class="hljs-params">props:Props</span>)=&gt;</span>(
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{todoItemStyle}</span>&gt;</span>{props.content}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+)
+TodoItem.defaultProps;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> TodoItem;
+</code></pre>
+<h2 id="t96. &#x4F7F;&#x7528;redux">6. &#x4F7F;&#x7528;redux <a href="#t96. &#x4F7F;&#x7528;redux"> # </a></h2>
+<h3 id="t106.1 src/index.tsx">6.1 src/index.tsx <a href="#t106.1 src/index.tsx"> # </a></h3>
+<p>src/index.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> Counter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Counter&apos;</span>;
+<span class="hljs-keyword">import</span> { Provider } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+<span class="hljs-keyword">import</span> store <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./store&apos;</span>;
+ReactDOM.render((
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Provider</span> <span class="hljs-attr">store</span>=<span class="hljs-string">{store}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Counter</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span></span>
+),<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>));
+</code></pre>
+<h3 id="t116.2 components/Counter.tsx">6.2 components/Counter.tsx <a href="#t116.2 components/Counter.tsx"> # </a></h3>
+<p>src/components/Counter.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { connect } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+<span class="hljs-keyword">import</span> { Store } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../store/types&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> actions <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../store/actions&apos;</span>;
+<span class="hljs-keyword">export</span> interface Props{
+    <span class="hljs-attr">number</span>: number,
+    <span class="hljs-attr">increment</span>: any,
+    <span class="hljs-attr">decrement</span>: any
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span>&lt;<span class="hljs-title">Props</span>&gt;</span>{
+    render() {
+        <span class="hljs-keyword">const</span> {number,increment,decrement}=<span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{number}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{increment}</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{decrement}</span>&gt;</span>-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+        )
+    }
+}
+
+<span class="hljs-keyword">let</span> mapStateToProps=<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state:Store</span>):<span class="hljs-title">Store</span> </span>{
+    <span class="hljs-keyword">return</span> state;
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connect(mapStateToProps,actions)(Counter);
+</code></pre>
+<h3 id="t126.3 src/store/index.tsx">6.3 src/store/index.tsx <a href="#t126.3 src/store/index.tsx"> # </a></h3>
+<p>src/store/index.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {createStore } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>
+<span class="hljs-keyword">import</span> reducers <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./reducers&apos;</span>;
+<span class="hljs-keyword">let</span> store=createStore(reducers);
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> store;
+</code></pre>
+<h3 id="t136.4 store/action-types.tsx">6.4 store/action-types.tsx <a href="#t136.4 store/action-types.tsx"> # </a></h3>
+<p>src/store/action-types.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> INCREMENT=<span class="hljs-string">&apos;INCREMENT&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> DECREMENT=<span class="hljs-string">&apos;DECREMENT&apos;</span>;
+</code></pre>
+<h3 id="t146.5 reducers/index.tsx">6.5 reducers/index.tsx <a href="#t146.5 reducers/index.tsx"> # </a></h3>
+<p>src/store/reducers/index.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../action-types&apos;</span>;
+<span class="hljs-keyword">import</span> { Store } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../types&apos;</span>;
+<span class="hljs-keyword">import</span> {Action} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../actions&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state: Store={ number: <span class="hljs-number">0</span> },action: Action</span>): <span class="hljs-title">Store</span> </span>{
+    <span class="hljs-keyword">switch</span> (action.type) {
+        <span class="hljs-keyword">case</span> types.INCREMENT:
+            <span class="hljs-keyword">return</span> {...state,<span class="hljs-attr">number</span>:state.number+<span class="hljs-number">1</span>};
+        <span class="hljs-keyword">case</span> types.DECREMENT:
+            <span class="hljs-keyword">return</span> {...state,<span class="hljs-attr">number</span>:state.number<span class="hljs-number">-1</span>};
+        <span class="hljs-keyword">default</span>:
+            <span class="hljs-keyword">return</span> state;
+    }
+}
+</code></pre>
+<h3 id="t156.6 actions/index.tsx">6.6 actions/index.tsx <a href="#t156.6 actions/index.tsx"> # </a></h3>
+<p>src/store/actions/index.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {INCREMENT,DECREMENT} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../action-types&apos;</span>;
+<span class="hljs-keyword">export</span> interface Increment{
+    <span class="hljs-attr">type</span>:<span class="hljs-keyword">typeof</span> INCREMENT
+}
+<span class="hljs-keyword">export</span> interface Decrement{
+    <span class="hljs-attr">type</span>:<span class="hljs-keyword">typeof</span> DECREMENT
+}
+<span class="hljs-keyword">export</span> type Action=Increment|Decrement;
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">increment</span>(<span class="hljs-params"></span>): <span class="hljs-title">Increment</span> </span>{
+    <span class="hljs-keyword">return</span> { <span class="hljs-attr">type</span>: INCREMENT };
+}
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">decrement</span>(<span class="hljs-params"></span>):<span class="hljs-title">Decrement</span> </span>{
+    <span class="hljs-keyword">return</span> { <span class="hljs-attr">type</span>: DECREMENT };
+}
+</code></pre>
+<h3 id="t166.7 types/index.tsx">6.7 types/index.tsx <a href="#t166.7 types/index.tsx"> # </a></h3>
+<p>src/store/types/index.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> interface Store{
+    <span class="hljs-attr">number</span>: number
+}
+</code></pre>
+<h2 id="t177. &#x5408;&#x5E76;reducers">7. &#x5408;&#x5E76;reducers <a href="#t177. &#x5408;&#x5E76;reducers"> # </a></h2>
+<h3 id="t187.1 src/index.tsx">7.1 src/index.tsx <a href="#t187.1 src/index.tsx"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> Counter1 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Counter1&apos;</span>;
+<span class="hljs-keyword">import</span> Counter2 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Counter2&apos;</span>;
+<span class="hljs-keyword">import</span> { Provider } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+<span class="hljs-keyword">import</span> store <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./store&apos;</span>;
+ReactDOM.render((
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Provider</span> <span class="hljs-attr">store</span>=<span class="hljs-string">{store}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">React.Fragment</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Counter1</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Counter2</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">React.Fragment</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span>
+),document.getElementById(&apos;root&apos;));
+</span></code></pre>
+<h3 id="t197.2 /action-types.tsx">7.2 /action-types.tsx <a href="#t197.2 /action-types.tsx"> # </a></h3>
+<p>src/store/action-types.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> INCREMENT=<span class="hljs-string">&apos;INCREMENT&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> DECREMENT=<span class="hljs-string">&apos;DECREMENT&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> INCREMENT1=<span class="hljs-string">&apos;INCREMENT1&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> DECREMENT1=<span class="hljs-string">&apos;DECREMENT1&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> INCREMENT2=<span class="hljs-string">&apos;INCREMENT2&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> DECREMENT2=<span class="hljs-string">&apos;DECREMENT2&apos;</span>;
+</code></pre>
+<h3 id="t207.3 reducers/index.tsx">7.3 reducers/index.tsx <a href="#t207.3 reducers/index.tsx"> # </a></h3>
+<p>src/store/reducers/index.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> counter1 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./counter1&apos;</span>;
+<span class="hljs-keyword">import</span> counter2 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./counter2&apos;</span>;
+<span class="hljs-keyword">import</span> { combineReducers } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-keyword">let</span> reducers = {
+    counter1,
+    counter2
+};
+type ReducersType = <span class="hljs-keyword">typeof</span> reducers;
+type RootState = {
+    [key <span class="hljs-keyword">in</span> keyof <span class="hljs-keyword">typeof</span> reducers]:ReturnType&lt;<span class="hljs-keyword">typeof</span> reducers[key]&gt;
+}
+<span class="hljs-keyword">export</span> {RootState}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> combineReducers(reducers);
+</code></pre>
+<h3 id="t217.4 types/index.tsx">7.4 types/index.tsx <a href="#t217.4 types/index.tsx"> # </a></h3>
+<p>src/store/types/index.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> interface Store{
+    <span class="hljs-attr">counter1</span>: Counter1,
+    <span class="hljs-attr">counter2</span>: Counter2
+}
+<span class="hljs-keyword">export</span> interface Counter1{
+    <span class="hljs-attr">number</span>: number
+}
+<span class="hljs-keyword">export</span> interface Counter2{
+    <span class="hljs-attr">number</span>: number
+}
+</code></pre>
+<h3 id="t227.5 components/Counter1.tsx">7.5 components/Counter1.tsx <a href="#t227.5 components/Counter1.tsx"> # </a></h3>
+<p>src/components/Counter1.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { connect } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+<span class="hljs-keyword">import</span> {RootState} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../store/reducers/index&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../store/types&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> actions <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../store/actions/counter1&apos;</span>;
+type StateProps = ReturnType&lt;<span class="hljs-keyword">typeof</span> mapStateToProps&gt;;
+type DispatchProps =<span class="hljs-keyword">typeof</span> actions;
+type Props = StateProps &amp; DispatchProps;
+
+<span class="hljs-comment">/* export interface Props{
+    number: number,
+    increment1: any,
+    decrement1: any
+} */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter1</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span>&lt;<span class="hljs-title">Props</span>&gt;</span>{
+    render() {
+        <span class="hljs-keyword">const</span> {number,increment1,decrement1}=<span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{number}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{increment1}</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span>=&gt;</span>incrementAmount(5)}&gt;+5<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{decrement1}</span>&gt;</span>-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+        )
+    }
+}
+
+<span class="hljs-keyword">let</span> mapStateToProps=<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state:RootState</span>):<span class="hljs-title">types</span>.<span class="hljs-title">Counter1</span> </span>{
+    <span class="hljs-keyword">return</span> state.counter1;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connect(mapStateToProps,actions)(Counter1);
+</code></pre>
+<h3 id="t237.6 src/components/Counter2.tsx">7.6 src/components/Counter2.tsx <a href="#t237.6 src/components/Counter2.tsx"> # </a></h3>
+<p> src/components/Counter2.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { connect } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../store/types&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> actions <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../store/actions/counter2&apos;</span>;
+<span class="hljs-keyword">export</span> interface Props{
+    <span class="hljs-attr">number</span>: number,
+    <span class="hljs-attr">increment2</span>: any,
+    <span class="hljs-attr">decrement2</span>: any
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter2</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span>&lt;<span class="hljs-title">Props</span>&gt;</span>{
+    render() {
+        <span class="hljs-keyword">const</span> {number,increment2,decrement2}=<span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{number}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{increment2}</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{decrement2}</span>&gt;</span>-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+        )
+    }
+}
+
+<span class="hljs-keyword">let</span> mapStateToProps=<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state:types.Store</span>):<span class="hljs-title">types</span>.<span class="hljs-title">Counter2</span> </span>{
+    <span class="hljs-keyword">return</span> state.counter2;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connect(mapStateToProps,actions)(Counter2);
+</code></pre>
+<h3 id="t247.7 actions/counter1.tsx">7.7 actions/counter1.tsx <a href="#t247.7 actions/counter1.tsx"> # </a></h3>
+<p>src/store/actions/counter1.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {INCREMENT1,DECREMENT1} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../action-types&apos;</span>;
+<span class="hljs-keyword">export</span> interface Increment1{
+    <span class="hljs-attr">type</span>:<span class="hljs-keyword">typeof</span> INCREMENT1
+}
+<span class="hljs-keyword">export</span> interface IncrementAmount{
+    <span class="hljs-attr">type</span>:<span class="hljs-keyword">typeof</span> INCREMENT_AMOUNT,
+    <span class="hljs-attr">payload</span>:number
+}
+<span class="hljs-keyword">export</span> interface Decrement1{
+    <span class="hljs-attr">type</span>:<span class="hljs-keyword">typeof</span> DECREMENT1
+}
+<span class="hljs-keyword">export</span> type Action=Increment1|Decrement1;
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">increment1</span>(<span class="hljs-params"></span>): <span class="hljs-title">Increment1</span> </span>{
+    <span class="hljs-keyword">return</span> { <span class="hljs-attr">type</span>: INCREMENT1 };
+}
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">incrementAmount</span>(<span class="hljs-params">amount:number</span>):<span class="hljs-title">IncrementAmount</span> </span>{
+    <span class="hljs-keyword">return</span> { <span class="hljs-attr">type</span>: INCREMENT_AMOUNT,<span class="hljs-attr">payload</span>:amount };
+}
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">decrement1</span>(<span class="hljs-params"></span>):<span class="hljs-title">Decrement1</span> </span>{
+    <span class="hljs-keyword">return</span> { <span class="hljs-attr">type</span>: DECREMENT1 };
+}
+</code></pre>
+<h3 id="t257.8 actions/counter2.tsx">7.8 actions/counter2.tsx <a href="#t257.8 actions/counter2.tsx"> # </a></h3>
+<p>src/store/actions/counter2.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {INCREMENT2,DECREMENT2} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../action-types&apos;</span>;
+<span class="hljs-keyword">export</span> interface Increment2{
+    <span class="hljs-attr">type</span>:<span class="hljs-keyword">typeof</span> INCREMENT2
+}
+<span class="hljs-keyword">export</span> interface Decrement2{
+    <span class="hljs-attr">type</span>:<span class="hljs-keyword">typeof</span> DECREMENT2
+}
+<span class="hljs-keyword">export</span> type Action=Increment2|Decrement2;
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">increment2</span>(<span class="hljs-params"></span>): <span class="hljs-title">Increment2</span> </span>{
+    <span class="hljs-keyword">return</span> { <span class="hljs-attr">type</span>: INCREMENT2 };
+}
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">decrement2</span>(<span class="hljs-params"></span>):<span class="hljs-title">Decrement2</span> </span>{
+    <span class="hljs-keyword">return</span> { <span class="hljs-attr">type</span>: DECREMENT2 };
+}
+</code></pre>
+<h3 id="t267.9 reducers/counter1.tsx">7.9 reducers/counter1.tsx <a href="#t267.9 reducers/counter1.tsx"> # </a></h3>
+<p>src/store/reducers/counter1.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../action-types&apos;</span>;
+<span class="hljs-keyword">import</span> { Counter1 } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../types&apos;</span>;
+<span class="hljs-keyword">import</span> {Action} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../actions/counter1&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state: Counter1={ number: <span class="hljs-number">0</span> },action: Action</span>): <span class="hljs-title">Counter1</span> </span>{
+    <span class="hljs-keyword">switch</span> (action.type) {
+        <span class="hljs-keyword">case</span> types.INCREMENT1:
+            <span class="hljs-keyword">return</span> {...state,<span class="hljs-attr">number</span>:state.number+<span class="hljs-number">1</span>};
+        <span class="hljs-keyword">case</span> types.DECREMENT1:
+            <span class="hljs-keyword">return</span> {...state,<span class="hljs-attr">number</span>:state.number<span class="hljs-number">-1</span>};
+        <span class="hljs-keyword">default</span>:
+            <span class="hljs-keyword">return</span> state;
+    }
+}
+</code></pre>
+<h3 id="t277.10 reducers/counter2.tsx">7.10 reducers/counter2.tsx <a href="#t277.10 reducers/counter2.tsx"> # </a></h3>
+<p>src/store/reducers/counter2.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../action-types&apos;</span>;
+<span class="hljs-keyword">import</span> { Counter2 } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../types&apos;</span>;
+<span class="hljs-keyword">import</span> {Action} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../actions/counter2&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state: Counter2={ number: <span class="hljs-number">0</span> },action: Action</span>): <span class="hljs-title">Counter2</span> </span>{
+    <span class="hljs-keyword">switch</span> (action.type) {
+        <span class="hljs-keyword">case</span> types.INCREMENT2:
+            <span class="hljs-keyword">return</span> {...state,<span class="hljs-attr">number</span>:state.number+<span class="hljs-number">1</span>};
+        <span class="hljs-keyword">case</span> types.DECREMENT2:
+            <span class="hljs-keyword">return</span> {...state,<span class="hljs-attr">number</span>:state.number<span class="hljs-number">-1</span>};
+        <span class="hljs-keyword">default</span>:
+            <span class="hljs-keyword">return</span> state;
+    }
+}
+</code></pre>
+<h2 id="t288.&#x914D;&#x7F6E;&#x8DEF;&#x7531;">8.&#x914D;&#x7F6E;&#x8DEF;&#x7531; <a href="#t288.&#x914D;&#x7F6E;&#x8DEF;&#x7531;"> # </a></h2>
+<h3 id="t298.1  src/index.tsx">8.1  src/index.tsx <a href="#t298.1  src/index.tsx"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> Counter1 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Counter1&apos;</span>;
+<span class="hljs-keyword">import</span> Counter2 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Counter2&apos;</span>;
+<span class="hljs-keyword">import</span> { Provider } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+<span class="hljs-keyword">import</span> store <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./store&apos;</span>;
+<span class="hljs-keyword">import</span> {BrowserRouter <span class="hljs-keyword">as</span> Router, Route,Link } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-router-dom&apos;</span>;
+ReactDOM.render((
+    &lt;Provider store={store}&gt;
+        &lt;Router &gt;
+            &lt;React.Fragment&gt;
+                &lt;Link to=&quot;/counter1&quot;&gt;counter1&lt;/Link&gt;
+                &lt;Link to=&quot;/counter2&quot;&gt;counter2&lt;/Link&gt;
+                &lt;Route path=&quot;/counter1&quot; component={Counter1} /&gt;
+                  &lt;Route path=&quot;/counter2&quot; component={Counter2}/&gt;
+         &lt;/React.Fragment&gt;
+        &lt;/Router&gt;
+
+    &lt;/Provider&gt;
+),document.getElementById(&apos;root&apos;));
+</code></pre>
+<h2 id="t309. connected-react-router">9. connected-react-router <a href="#t309. connected-react-router"> # </a></h2>
+<ul>
+<li><a href="https://github.com/supasate/connected-react-router">connected-react-router</a></li>
+</ul>
+<h3 id="t319.1 components/Counter1.tsx">9.1 components/Counter1.tsx <a href="#t319.1 components/Counter1.tsx"> # </a></h3>
+<p>src/components/Counter1.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { connect } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../store/types&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> actions <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../store/actions/counter1&apos;</span>;
+<span class="hljs-keyword">export</span> interface Props{
+    <span class="hljs-attr">number</span>: number,
+    <span class="hljs-attr">increment1</span>: any,
+    <span class="hljs-attr">decrement1</span>: any,
+    <span class="hljs-attr">goCounter2</span>: any
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter1</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span>&lt;<span class="hljs-title">Props</span>&gt;</span>{
+    render() {
+        <span class="hljs-keyword">const</span> {number,increment1,decrement1,goCounter2}=<span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{number}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{increment1}</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{decrement1}</span>&gt;</span>-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{goCounter2}</span>&gt;</span>goCounter2<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+        )
+    }
+}
+
+<span class="hljs-keyword">let</span> mapStateToProps=<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state:types.Store</span>):<span class="hljs-title">types</span>.<span class="hljs-title">Counter1</span> </span>{
+    <span class="hljs-keyword">return</span> state.counter1;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connect(mapStateToProps,actions)(Counter1);
+</code></pre>
+<h3 id="t329.2 src/index.tsx">9.2 src/index.tsx <a href="#t329.2 src/index.tsx"> # </a></h3>
+<p>src/index.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> Counter1 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Counter1&apos;</span>;
+<span class="hljs-keyword">import</span> Counter2 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Counter2&apos;</span>;
+<span class="hljs-keyword">import</span> { Provider } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+<span class="hljs-keyword">import</span> store <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./store&apos;</span>;
+<span class="hljs-keyword">import</span> {Route,Link } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-router-dom&apos;</span>;
+<span class="hljs-keyword">import</span> { ConnectedRouter } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;connected-react-router&apos;</span>
+<span class="hljs-keyword">import</span> history <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./store/history&apos;</span>;
+ReactDOM.render((
+    &lt;Provider store={store}&gt;
+        &lt;ConnectedRouter history={history}&gt;
+            &lt;React.Fragment&gt;
+                &lt;Link to=&quot;/counter1&quot;&gt;counter1&lt;/Link&gt;
+                &lt;Link to=&quot;/counter2&quot;&gt;counter2&lt;/Link&gt;
+            &lt;Route path=&quot;/counter1&quot; component={Counter1} /&gt;
+              &lt;Route path=&quot;/counter2&quot; component={Counter2}/&gt;
+         &lt;/React.Fragment&gt;
+        &lt;/ConnectedRouter&gt;
+    &lt;/Provider&gt;
+),document.getElementById(&apos;root&apos;));
+</code></pre>
+<h3 id="t339.3 actions/counter1.tsx">9.3 actions/counter1.tsx <a href="#t339.3 actions/counter1.tsx"> # </a></h3>
+<p> src/store/actions/counter1.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {INCREMENT1,DECREMENT1} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../action-types&apos;</span>;
+<span class="hljs-keyword">import</span> { push } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;connected-react-router&apos;</span>;
+
+<span class="hljs-keyword">export</span> interface Increment1{
+    <span class="hljs-attr">type</span>:<span class="hljs-keyword">typeof</span> INCREMENT1
+}
+<span class="hljs-keyword">export</span> interface Decrement1{
+    <span class="hljs-attr">type</span>:<span class="hljs-keyword">typeof</span> DECREMENT1
+}
+<span class="hljs-keyword">export</span> type Action=Increment1|Decrement1;
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">increment1</span>(<span class="hljs-params"></span>): <span class="hljs-title">any</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">dispatch:any,getState:any</span>) </span>{
+        setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            dispatch({
+                <span class="hljs-attr">type</span>:INCREMENT1
+            })
+        },<span class="hljs-number">1000</span>);
+    }
+}
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">decrement1</span>(<span class="hljs-params"></span>):<span class="hljs-title">Decrement1</span> </span>{
+    <span class="hljs-keyword">return</span> { <span class="hljs-attr">type</span>: DECREMENT1 };
+}
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">goCounter2</span>(<span class="hljs-params"></span>):<span class="hljs-title">any</span> </span>{
+    <span class="hljs-keyword">return</span> push(<span class="hljs-string">&apos;/counter2&apos;</span>);
+}
+</code></pre>
+<h3 id="t349.4 src/store/index.tsx">9.4 src/store/index.tsx <a href="#t349.4 src/store/index.tsx"> # </a></h3>
+<p>src/store/index.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {createStore,applyMiddleware} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>
+<span class="hljs-keyword">import</span> reducers <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./reducers&apos;</span>;
+<span class="hljs-keyword">import</span> { routerMiddleware } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;connected-react-router&apos;</span>
+<span class="hljs-keyword">import</span> history <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./history&apos;</span>;
+<span class="hljs-keyword">import</span> thunk <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-thunk&apos;</span>;
+<span class="hljs-keyword">import</span> logger <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-logger&apos;</span>;
+<span class="hljs-keyword">let</span> router = routerMiddleware(history);
+<span class="hljs-keyword">let</span> store=createStore(reducers,applyMiddleware(router,thunk,logger));
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> store;
+</code></pre>
+<h3 id="t359.5 reducers/index.tsx">9.5 reducers/index.tsx <a href="#t359.5 reducers/index.tsx"> # </a></h3>
+<p>src/store/reducers/index.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> counter1 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./counter1&apos;</span>;
+<span class="hljs-keyword">import</span> counter2 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./counter2&apos;</span>;
+<span class="hljs-keyword">import</span> { combineReducers } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-keyword">import</span> history <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../history&apos;</span>;
+<span class="hljs-keyword">import</span> { connectRouter } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;connected-react-router&apos;</span>
+<span class="hljs-keyword">let</span> reducers=combineReducers({
+    counter1,
+    counter2,
+    <span class="hljs-attr">router</span>: connectRouter(history)
+});
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> reducers;
+</code></pre>
+<h3 id="t369.6 store/history.tsx">9.6 store/history.tsx <a href="#t369.6 store/history.tsx"> # </a></h3>
+<p>src/store/history.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {createBrowserHistory} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;history&apos;</span>
+<span class="hljs-keyword">const</span> history=createBrowserHistory()
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> history;
+</code></pre>
+<h2 id="t3710. &#x7F16;&#x5199;&#x5355;&#x5143;&#x6D4B;&#x8BD5;">10. &#x7F16;&#x5199;&#x5355;&#x5143;&#x6D4B;&#x8BD5; <a href="#t3710. &#x7F16;&#x5199;&#x5355;&#x5143;&#x6D4B;&#x8BD5;"> # </a></h2>
+<ul>
+<li>&#x76EE;&#x524D;&#x6BD4;&#x8F83;&#x6D41;&#x884C;&#x7684;React&#x5355;&#x6D4B;&#x7EC4;&#x5408;&#x662F;Jest+Enzyme</li>
+<li><a href="https://jestjs.io/">Jest</a>&#x662F;Facebook&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x6846;&#x67B6;&#xFF0C;&#x5B83;&#x96C6;&#x6210;&#x4E86;&#x6D4B;&#x8BD5;&#x6267;&#x884C;&#x5668;&#x3001;&#x65AD;&#x8A00;&#x5E93;&#x3001;spy&#x3001;mock&#x3001;snapshot&#x548C;&#x6D4B;&#x8BD5;&#x8986;&#x76D6;&#x7387;&#x62A5;&#x544A;&#x7B49;&#x529F;&#x80FD;&#x3002;React&#x9879;&#x76EE;&#x672C;&#x8EAB;&#x4E5F;&#x662F;&#x4F7F;&#x7528;Jest&#x8FDB;&#x884C;&#x5355;&#x6D4B;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x4EEC;&#x4FE9;&#x7684;&#x5951;&#x5408;&#x5EA6;&#x76F8;&#x5F53;&#x9AD8;&#x3002;</li>
+<li><a href="https://airbnb.io/enzyme/">enzyme</a>&#x662F;&#x7531;airbnb&#x5F00;&#x53D1;&#x7684;React&#x5355;&#x6D4B;&#x5DE5;&#x5177;&#x3002;&#x5B83;&#x6269;&#x5C55;&#x4E86;React&#x7684;TestUtils&#x5E76;&#x901A;&#x8FC7;&#x652F;&#x6301;&#x7C7B;&#x4F3C;jQuery&#x7684;find&#x8BED;&#x6CD5;&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x7684;&#x5BF9;render&#x51FA;&#x6765;&#x7684;&#x7ED3;&#x679C;&#x505A;&#x5404;&#x79CD;&#x65AD;&#x8A00;</li>
+</ul>
+<h3 id="t3810.1 &#x5B89;&#x88C5;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x6A21;&#x5757;">10.1 &#x5B89;&#x88C5;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x6A21;&#x5757; <a href="#t3810.1 &#x5B89;&#x88C5;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x6A21;&#x5757;"> # </a></h3>
+<pre><code class="lang-js">cnpm i jest @types/jest ts-jest enzyme @types/enzyme enzyme-adapter-react<span class="hljs-number">-16</span> @types/enzyme-adapter-react<span class="hljs-number">-16</span> -D
+</code></pre>
+<h3 id="t3910.2 &#x914D;&#x7F6E;package.json">10.2 &#x914D;&#x7F6E;package.json <a href="#t3910.2 &#x914D;&#x7F6E;package.json"> # </a></h3>
+<pre><code class="lang-json">&quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;webpack-dev-server&quot;,
+    &quot;test&quot;: &quot;jest&quot;
+  },
+  &quot;jest&quot;: {
+    &quot;moduleFileExtensions&quot;: [
+      &quot;js&quot;,
+      &quot;ts&quot;,
+      &quot;tsx&quot;
+    ],
+    &quot;transform&quot;: {
+      &quot;^.+\\.tsx?$&quot;: &quot;ts-jest&quot;
+    },
+    &quot;testMatch&quot;: [
+      &quot;&lt;rootDir&gt;/test/**/*.(spec|test).tsx&quot;
+    ]
+  }
+</code></pre>
+<h3 id="t4010.3 index.test.tsx">10.3 index.test.tsx <a href="#t4010.3 index.test.tsx"> # </a></h3>
+<p>test\index.test.tsx</p>
+<pre><code class="lang-js">test(<span class="hljs-string">&apos;&#x6D4B;&#x8BD5;&#x8FD0;&#x884C;&apos;</span>, () =&gt; {
+   expect(<span class="hljs-number">1</span>+<span class="hljs-number">1</span>).toBe(<span class="hljs-number">2</span>);
+})
+</code></pre>
+<h3 id="t4110.4 counter.spec.tsx">10.4 counter.spec.tsx <a href="#t4110.4 counter.spec.tsx"> # </a></h3>
+<p>test\counter.spec.tsx</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { shallow, configure } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;enzyme&apos;</span>
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span>  Adapter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;enzyme-adapter-react-16&apos;</span>
+<span class="hljs-keyword">import</span> Counter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../src/components/Counter&apos;</span>;
+configure({ <span class="hljs-attr">adapter</span>: <span class="hljs-keyword">new</span> Adapter() })
+test(<span class="hljs-string">&apos;Jest-React-TypeScript&#x8FD0;&#x884C;&apos;</span>, () =&gt; {
+    <span class="hljs-keyword">const</span> renderer = shallow(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Counter</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;&#x8BA1;&#x6570;&#x5668;&quot;</span>/&gt;</span>);
+&#x3000;&#x3000;expect(renderer.text()).toContain(&apos;&#x8BA1;&#x6570;&#x5668;&apos;);
+})
+</span></code></pre>
+
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org/">Node.js</a> run.</div>
+    </div>
+    
+</div>
+
+<script src="../../../cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+<script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+// if (!$('.understand-me').length) {
+  //   var bar = $(window).height() - $('.navbar ').height() - $('.page-toc').position().top;
+  //   var count = bar / 26 / 2;
+  //   var barHeight = $('.page-toc').outerHeight();
+  //   $('.page-toc li').eq(0).children('a').addClass('red');
+  //   var arr = [];
+  //   $("h1,h2,h3,h4,h5,h6").each(function () {
+  //     arr.push($(this).position().top);
+  //   });
+  //   var timer
+  //   function dark() {
+  //     clearTimeout(timer)
+  //      timer = setTimeout(function () {
+  //      var top = Math.abs($('.page-toc > ul').position().top);
+  //      var cur = $('.content').scrollTop();
+  //      for (var i = arr.length; i >= 0; i--) {
+  //        if (arr[i] <= cur) {
+  //          break;
+  //        }
+  //      }
+  //      if (i === -1) {
+  //        i = 0;
+  //      }
+  //      $('.page-toc li a').removeClass('red');
+  //      $('.page-toc li').eq(i).children('a').addClass('red');
+  //      let height = $('.page-toc li').eq(i).position().top-$('.page-toc').height(); // 如果当前的offset出去了 回到中间可好？
+  //      $('.page-toc').scrollTop(height+$('.page-toc').height()/2);
+  //    },200)
+  //   }
+
+  //   $('.content').on('scroll', dark);
+  // }
+</script>
+<style>
+
+    /* ::-webkit-scrollbar{width:14px;}
+    ::-webkit-scrollbar-track{background-color:transparent;}
+    ::-webkit-scrollbar-thumb{background-color:transparent;}
+    ::-webkit-scrollbar-thumb:hover {background-color:transparent}
+    ::-webkit-scrollbar-thumb:active {background-color:transparent} */
+
+    .page-toc > ul .red {
+        background: #f3f3f3;
+        z-index: 1;
+        border-left: 3px solid #009a61;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        color: #000
+    }
+
+
+
+
+
+</style>
+</body>
+</html>
