@@ -1,47 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>前端架构师成长计划</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/main.css">
 </head>
+
 <body>
 
 
-<!-- Copyright � 2005. Spidersoft Ltd -->
-<style>
-A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
-A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
-A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
-A.info:hover    {color:green;background:transparent;text-decoration:underline}
-</style>
-<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
-This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  12/02/19 14:55:01.<br>
-<b>Address:</b> <a class="info" href="http://www.zhufengpeixun.cn/ahead/html/75.webpack-6.实现.html">http://www.zhufengpeixun.cn/ahead/html/75.webpack-6.实现.html</a><br>
-<b>Title:</b> 珠峰架构师成长计划 &nbsp;&bull;&nbsp; <b>Size:</b> 77324 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Sun, 01 Dec 2019 11:37:12 GMT<br></div>
-<!-- /Copyright � 2005. Spidersoft Ltd -->
+  <!-- Copyright � 2005. Spidersoft Ltd -->
+  <style>
+    A.applink:hover {
+      border: 2px dotted #DCE6F4;
+      padding: 2px;
+      background-color: #ffff00;
+      color: green;
+      text-decoration: none
+    }
+
+    A.applink {
+      border: 2px dotted #DCE6F4;
+      padding: 2px;
+      color: #2F5BFF;
+      background: transparent;
+      text-decoration: none
+    }
+
+    A.info {
+      color: #2F5BFF;
+      background: transparent;
+      text-decoration: none
+    }
+
+    A.info:hover {
+      color: green;
+      background: transparent;
+      text-decoration: underline
+    }
+  </style>
+  <div
+    style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+    This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a
+      class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a> on 12/02/19 14:55:01.<br>
+    <b>Address:</b> <a class="info"
+      href="http://www.zhufengpeixun.cn/ahead/html/75.webpack-6.实现.html">http://www.zhufengpeixun.cn/ahead/html/75.webpack-6.实现.html</a><br>
+    <b>Title:</b> 前端架构师成长计划 &nbsp;&bull;&nbsp; <b>Size:</b> 77324 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Sun, 01 Dec
+    2019 11:37:12 GMT<br></div>
+  <!-- /Copyright � 2005. Spidersoft Ltd -->
 
 
-<div class="nav">
+  <div class="nav">
     <div class="logo">
-        
-            珠峰架构师成长计划
-        
+
+      前端架构师成长计划
+
     </div>
-<ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3.tapable.html">26.webpack-3.tapable</a></li><li><a href="../html/26.webpack-4-AST.html">26.webpack-4-AST</a></li><li><a href="../html/26.webpack-5-sources.html">26.webpack-5-sources</a></li><li><a href="../html/26.webpack-6-loader.html">26.webpack-6-loader</a></li><li><a href="../html/26.webpack-7-plugin.html">26.webpack-7-plugin</a></li><li><a href="../html/26.webpack-8-hand.html">26.webpack-8-hand</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/51.typescript.html">51.typescript</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.源码准备.html">75.webpack-5.源码准备</a></li><li class="active"><a href="../html/75.webpack-6.实现.html">75.webpack-6.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/82.2.react.html">82.2.react</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.5.connected.html">82.5.connected</a></li><li><a href="../html/82.6.saga.html">82.6.saga</a></li><li><a href="../html/82.7.dva.html">82.7.dva</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/82.8.roadhog.html">82.8.roadhog</a></li><li><a href="../html/82.9.umi.html">82.9.umi</a></li><li><a href="../html/82.10.antdesign.html">82.10.antdesign</a></li></ul></div>
+    <ul>
+      <li><a href="../index.html">0.Async</a></li>
+      <li><a href="../html/0.editor.html">0.editor</a></li>
+      <li><a href="../html/0.module.html">0.module</a></li>
+      <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+      <li><a href="../html/2.Promise.html">2.Promise</a></li>
+      <li><a href="../html/3.Node.html">3.Node</a></li>
+      <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+      <li><a href="../html/5.REPL.html">5.REPL</a></li>
+      <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+      <li><a href="../html/7.module&NPM.html">7.module&NPM</a></li>
+      <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+      <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+      <li><a href="../html/10.fs.html">10.fs</a></li>
+      <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+      <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+      <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+      <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+      <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+      <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+      <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+      <li><a href="../html/13.tcp.html">13.tcp</a></li>
+      <li><a href="../html/14.http-1.html">14.http-1</a></li>
+      <li><a href="../html/14.http-2.html">14.http-2</a></li>
+      <li><a href="../html/15.compress.html">15.compress</a></li>
+      <li><a href="../html/16.crypto.html">16.crypto</a></li>
+      <li><a href="../html/17.process.html">17.process</a></li>
+      <li><a href="../html/18.yargs.html">18.yargs</a></li>
+      <li><a href="../html/19.cache.html">19.cache</a></li>
+      <li><a href="../html/20.action.html">20.action</a></li>
+      <li><a href="../html/21.https.html">21.https</a></li>
+      <li><a href="../html/22.cookie.html">22.cookie</a></li>
+      <li><a href="../html/23.session.html">23.session</a></li>
+      <li><a href="../html/24.express-1.html">24.express-1</a></li>
+      <li><a href="../html/24.express-2.html">24.express-2</a></li>
+      <li><a href="../html/24.express-3.html">24.express-3</a></li>
+      <li><a href="../html/24.express-4.html">24.express-4</a></li>
+      <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+      <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+      <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+      <li><a href="../html/26.webpack-3.tapable.html">26.webpack-3.tapable</a></li>
+      <li><a href="../html/26.webpack-4-AST.html">26.webpack-4-AST</a></li>
+      <li><a href="../html/26.webpack-5-sources.html">26.webpack-5-sources</a></li>
+      <li><a href="../html/26.webpack-6-loader.html">26.webpack-6-loader</a></li>
+      <li><a href="../html/26.webpack-7-plugin.html">26.webpack-7-plugin</a></li>
+      <li><a href="../html/26.webpack-8-hand.html">26.webpack-8-hand</a></li>
+      <li><a href="../html/28.redux.html">28.redux</a></li>
+      <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+      <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+      <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+      <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+      <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+      <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+      <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+      <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+      <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+      <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+      <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+      <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+      <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+      <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+      <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+      <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+      <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+      <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+      <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+      <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+      <li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+      <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+      <li><a href="../html/31.dva.html">31.dva</a></li>
+      <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+      <li><a href="../html/33.redis.html">33.redis</a></li>
+      <li><a href="../html/34.unittest.html">34.unittest</a></li>
+      <li><a href="../html/35.jwt.html">35.jwt</a></li>
+      <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+      <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+      <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+      <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+      <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+      <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+      <li><a href="../html/38.chat.html">38.chat</a></li>
+      <li><a href="../html/38.chat2.html">38.chat2</a></li>
+      <li><a href="../html/38.chat2.html">38.chat2</a></li>
+      <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+      <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+      <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+      <li><a href="../html/40.deploy.html">40.deploy</a></li>
+      <li><a href="../html/41.safe.html">41.safe</a></li>
+      <li><a href="../html/42.test.html">42.test</a></li>
+      <li><a href="../html/43.nginx.html">43.nginx</a></li>
+      <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+      <li><a href="../html/45.docker.html">45.docker</a></li>
+      <li><a href="../html/46.elastic.html">46.elastic</a></li>
+      <li><a href="../html/47.oauth.html">47.oauth</a></li>
+      <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+      <li><a href="../html/index.html">index</a></li>
+      <li><a href="../html/51.typescript.html">51.typescript</a></li>
+      <li><a href="../html/52.UML.html">52.UML</a></li>
+      <li><a href="../html/53.design.html">53.design</a></li>
+      <li><a href="../html/index.html">index</a></li>
+      <li><a href="../html/54.linux.html">54.linux</a></li>
+      <li><a href="../html/57.ts.html">57.ts</a></li>
+      <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+      <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+      <li><a href="../html/59.ketang.html">59.ketang</a></li>
+      <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+      <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+      <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+      <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+      <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+      <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+      <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+      <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+      <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+      <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+      <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+      <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+      <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+      <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+      <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+      <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+      <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+      <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+      <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+      <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+      <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+      <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+      <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+      <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+      <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+      <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+      <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+      <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+      <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+      <li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+      <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+      <li><a href="../html/64.1.router.html">64.1.router</a></li>
+      <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+      <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+      <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+      <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+      <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+      <li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+      <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+      <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+      <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+      <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+      <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+      <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+      <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+      <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+      <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+      <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+      <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+      <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+      <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+      <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+      <li><a href="../html/67-1-network.html">67-1-network</a></li>
+      <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+      <li><a href="../html/7.npm2.html">7.npm2</a></li>
+      <li><a href="../html/69-hooks.html">69-hooks</a></li>
+      <li><a href="../html/70-deploy.html">70-deploy</a></li>
+      <li><a href="../html/71-hmr.html">71-hmr</a></li>
+      <li><a href="../html/72.deploy.html">72.deploy</a></li>
+      <li><a href="../html/73.import.html">73.import</a></li>
+      <li><a href="../html/74.mobile.html">74.mobile</a></li>
+      <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+      <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+      <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+      <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+      <li><a href="../html/75.webpack-5.源码准备.html">75.webpack-5.源码准备</a></li>
+      <li class="active"><a href="../html/75.webpack-6.实现.html">75.webpack-6.实现</a></li>
+      <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+      <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+      <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+      <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+      <li><a href="../html/79.grammar.html">79.grammar</a></li>
+      <li><a href="../html/80.tree.html">80.tree</a></li>
+      <li><a href="../html/81.axios.html">81.axios</a></li>
+      <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+      <li><a href="../html/82.1.react.html">82.1.react</a></li>
+      <li><a href="../html/83.upload.html">83.upload</a></li>
+      <li><a href="../html/82.2.react.html">82.2.react</a></li>
+      <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+      <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+      <li><a href="../html/84.graphql.html">84.graphql</a></li>
+      <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+      <li><a href="../html/82.5.connected.html">82.5.connected</a></li>
+      <li><a href="../html/82.6.saga.html">82.6.saga</a></li>
+      <li><a href="../html/82.7.dva.html">82.7.dva</a></li>
+      <li><a href="../html/85.antpro.html">85.antpro</a></li>
+      <li><a href="../html/82.8.roadhog.html">82.8.roadhog</a></li>
+      <li><a href="../html/82.9.umi.html">82.9.umi</a></li>
+      <li><a href="../html/82.10.antdesign.html">82.10.antdesign</a></li>
+    </ul>
+  </div>
 
 
-<div class="warpper">
+  <div class="warpper">
 
     <div class="page-toc">
-        <ul><li><a href="#t01. 跑通webpack">1. 跑通webpack</a><ul><li><a href="#t11.1 webpack.config.js">1.1 webpack.config.js</a></li><li><a href="#t21.2 cli.js">1.2 cli.js</a></li><li><a href="#t31.3 index.js">1.3 index.js</a></li><li><a href="#t41.4 title.js">1.4 title.js</a></li><li><a href="#t51.5 main.js">1.5 main.js</a></li></ul></li><li><a href="#t62. 创建Compiler.js">2. 创建Compiler.js</a><ul><li><a href="#t72.1 webpack\index.js">2.1 webpack\index.js</a></li><li><a href="#t82.2 Compiler.js">2.2 Compiler.js</a></li><li><a href="#t92.3 NodeEnvironmentPlugin.js">2.3 NodeEnvironmentPlugin.js</a></li><li><a href="#t102.4 WebpackOptionsApply.js">2.4 WebpackOptionsApply.js</a></li></ul></li><li><a href="#t113. 监听make事件">3. 监听make事件</a><ul><li><a href="#t123.1 WebpackOptionsApply.js">3.1 WebpackOptionsApply.js</a></li><li><a href="#t133.2 EntryOptionPlugin.js">3.2 EntryOptionPlugin.js</a></li><li><a href="#t143.3 SingleEntryPlugin.js">3.3 SingleEntryPlugin.js</a></li></ul></li><li><a href="#t154. make">4. make</a><ul><li><a href="#t164.1 webpack\Compiler.js">4.1 webpack\Compiler.js</a></li><li><a href="#t174.2 Compilation.js">4.2 Compilation.js</a></li><li><a href="#t184.3 NormalModuleFactory.js">4.3 NormalModuleFactory.js</a></li><li><a href="#t194.4 NormalModule.js">4.4 NormalModule.js</a></li></ul></li><li><a href="#t205. build">5. build</a><ul><li><a href="#t215.1 Compilation.js">5.1 Compilation.js</a></li><li><a href="#t225.2 NormalModule.js">5.2 NormalModule.js</a></li></ul></li><li><a href="#t236. seal封装chunk">6. seal封装chunk</a><ul><li><a href="#t246.1 Compiler.js">6.1 Compiler.js</a></li><li><a href="#t256.2 Compilation.js">6.2 Compilation.js</a></li></ul></li><li><a href="#t267. emit">7. emit</a><ul><li><a href="#t277.1 Compiler.js">7.1 Compiler.js</a></li><li><a href="#t287.2 Compilation.js">7.2 Compilation.js</a></li><li><a href="#t297.3 main.ejs">7.3 main.ejs</a></li><li><a href="#t307.4 Stats.js">7.4 Stats.js</a></li></ul></li><li><a href="#t318. 支持loader">8. 支持loader</a><ul><li><a href="#t328.1 NormalModule.js">8.1 NormalModule.js</a></li><li><a href="#t338.2 index.js">8.2 index.js</a></li><li><a href="#t348.3 src\index.less">8.3 src\index.less</a></li><li><a href="#t358.4 less-loader.js">8.4 less-loader.js</a></li><li><a href="#t368.5 style-loader.js">8.5 style-loader.js</a></li></ul></li></ul>
+      <ul>
+        <li><a href="#t01. 跑通webpack">1. 跑通webpack</a>
+          <ul>
+            <li><a href="#t11.1 webpack.config.js">1.1 webpack.config.js</a></li>
+            <li><a href="#t21.2 cli.js">1.2 cli.js</a></li>
+            <li><a href="#t31.3 index.js">1.3 index.js</a></li>
+            <li><a href="#t41.4 title.js">1.4 title.js</a></li>
+            <li><a href="#t51.5 main.js">1.5 main.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t62. 创建Compiler.js">2. 创建Compiler.js</a>
+          <ul>
+            <li><a href="#t72.1 webpack\index.js">2.1 webpack\index.js</a></li>
+            <li><a href="#t82.2 Compiler.js">2.2 Compiler.js</a></li>
+            <li><a href="#t92.3 NodeEnvironmentPlugin.js">2.3 NodeEnvironmentPlugin.js</a></li>
+            <li><a href="#t102.4 WebpackOptionsApply.js">2.4 WebpackOptionsApply.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t113. 监听make事件">3. 监听make事件</a>
+          <ul>
+            <li><a href="#t123.1 WebpackOptionsApply.js">3.1 WebpackOptionsApply.js</a></li>
+            <li><a href="#t133.2 EntryOptionPlugin.js">3.2 EntryOptionPlugin.js</a></li>
+            <li><a href="#t143.3 SingleEntryPlugin.js">3.3 SingleEntryPlugin.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t154. make">4. make</a>
+          <ul>
+            <li><a href="#t164.1 webpack\Compiler.js">4.1 webpack\Compiler.js</a></li>
+            <li><a href="#t174.2 Compilation.js">4.2 Compilation.js</a></li>
+            <li><a href="#t184.3 NormalModuleFactory.js">4.3 NormalModuleFactory.js</a></li>
+            <li><a href="#t194.4 NormalModule.js">4.4 NormalModule.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t205. build">5. build</a>
+          <ul>
+            <li><a href="#t215.1 Compilation.js">5.1 Compilation.js</a></li>
+            <li><a href="#t225.2 NormalModule.js">5.2 NormalModule.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t236. seal封装chunk">6. seal封装chunk</a>
+          <ul>
+            <li><a href="#t246.1 Compiler.js">6.1 Compiler.js</a></li>
+            <li><a href="#t256.2 Compilation.js">6.2 Compilation.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t267. emit">7. emit</a>
+          <ul>
+            <li><a href="#t277.1 Compiler.js">7.1 Compiler.js</a></li>
+            <li><a href="#t287.2 Compilation.js">7.2 Compilation.js</a></li>
+            <li><a href="#t297.3 main.ejs">7.3 main.ejs</a></li>
+            <li><a href="#t307.4 Stats.js">7.4 Stats.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t318. 支持loader">8. 支持loader</a>
+          <ul>
+            <li><a href="#t328.1 NormalModule.js">8.1 NormalModule.js</a></li>
+            <li><a href="#t338.2 index.js">8.2 index.js</a></li>
+            <li><a href="#t348.3 src\index.less">8.3 src\index.less</a></li>
+            <li><a href="#t358.4 less-loader.js">8.4 less-loader.js</a></li>
+            <li><a href="#t368.5 style-loader.js">8.5 style-loader.js</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
-    
+
     <div class="content markdown-body">
-        <h2 id="t01. &#x8DD1;&#x901A;webpack">1. &#x8DD1;&#x901A;webpack <a href="#t01. &#x8DD1;&#x901A;webpack"> # </a></h2>
-<h3 id="t11.1 webpack.config.js">1.1 webpack.config.js <a href="#t11.1 webpack.config.js"> # </a></h3>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
+      <h2 id="t01. &#x8DD1;&#x901A;webpack">1. &#x8DD1;&#x901A;webpack <a href="#t01. &#x8DD1;&#x901A;webpack"> # </a>
+      </h2>
+      <h3 id="t11.1 webpack.config.js">1.1 webpack.config.js <a href="#t11.1 webpack.config.js"> # </a></h3>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
 <span class="hljs-built_in">module</span>.exports = {
     <span class="hljs-attr">context</span>:process.cwd(),
     <span class="hljs-attr">mode</span>:<span class="hljs-string">&apos;development&apos;</span>,
@@ -53,8 +340,8 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
     }
 }
 </code></pre>
-<h3 id="t21.2 cli.js">1.2 cli.js <a href="#t21.2 cli.js"> # </a></h3>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;webpack&quot;</span>);
+      <h3 id="t21.2 cli.js">1.2 cli.js <a href="#t21.2 cli.js"> # </a></h3>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;webpack&quot;</span>);
 <span class="hljs-keyword">const</span> webpackOptions = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;./webpack.config&quot;</span>);
 <span class="hljs-keyword">const</span> compiler = webpack(webpackOptions);
 compiler.run(<span class="hljs-function">(<span class="hljs-params">err, stats</span>) =&gt;</span> {
@@ -70,18 +357,18 @@ compiler.run(<span class="hljs-function">(<span class="hljs-params">err, stats</
   );
 });
 </code></pre>
-<h3 id="t31.3 index.js">1.3 index.js <a href="#t31.3 index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> title = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./title&apos;</span>);
+      <h3 id="t31.3 index.js">1.3 index.js <a href="#t31.3 index.js"> # </a></h3>
+      <p>src\index.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">let</span> title = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./title&apos;</span>);
 <span class="hljs-built_in">console</span>.log(title);
 </code></pre>
-<h3 id="t41.4 title.js">1.4 title.js <a href="#t41.4 title.js"> # </a></h3>
-<p>src\title.js</p>
-<pre><code class="lang-js">
+      <h3 id="t41.4 title.js">1.4 title.js <a href="#t41.4 title.js"> # </a></h3>
+      <p>src\title.js</p>
+      <pre><code class="lang-js">
 </code></pre>
-<h3 id="t51.5 main.js">1.5 main.js <a href="#t51.5 main.js"> # </a></h3>
-<p>dist\main.js</p>
-<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">modules</span>) </span>{ <span class="hljs-comment">// webpackBootstrap</span>
+      <h3 id="t51.5 main.js">1.5 main.js <a href="#t51.5 main.js"> # </a></h3>
+      <p>dist\main.js</p>
+      <pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">modules</span>) </span>{ <span class="hljs-comment">// webpackBootstrap</span>
     <span class="hljs-comment">// The module cache</span>
     <span class="hljs-keyword">var</span> installedModules = {};
 
@@ -173,9 +460,10 @@ compiler.run(<span class="hljs-function">(<span class="hljs-params">err, stats</
  })
 });
 </code></pre>
-<h2 id="t62. &#x521B;&#x5EFA;Compiler.js">2. &#x521B;&#x5EFA;Compiler.js <a href="#t62. &#x521B;&#x5EFA;Compiler.js"> # </a></h2>
-<h3 id="t72.1 webpack\index.js">2.1 webpack\index.js <a href="#t72.1 webpack\index.js"> # </a></h3>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> NodeEnvironmentPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;./plugins/NodeEnvironmentPlugin&quot;</span>);
+      <h2 id="t62. &#x521B;&#x5EFA;Compiler.js">2. &#x521B;&#x5EFA;Compiler.js <a
+          href="#t62. &#x521B;&#x5EFA;Compiler.js"> # </a></h2>
+      <h3 id="t72.1 webpack\index.js">2.1 webpack\index.js <a href="#t72.1 webpack\index.js"> # </a></h3>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> NodeEnvironmentPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;./plugins/NodeEnvironmentPlugin&quot;</span>);
 <span class="hljs-keyword">const</span> WebpackOptionsApply = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;./WebpackOptionsApply&quot;</span>);
 <span class="hljs-keyword">const</span> Compiler = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;./Compiler&quot;</span>);
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">webpack</span>(<span class="hljs-params">options</span>) </span>{
@@ -200,9 +488,9 @@ compiler.run(<span class="hljs-function">(<span class="hljs-params">err, stats</
 
 <span class="hljs-built_in">module</span>.exports = webpack;
 </code></pre>
-<h3 id="t82.2 Compiler.js">2.2 Compiler.js <a href="#t82.2 Compiler.js"> # </a></h3>
-<p>webpack\Compiler.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> {
+      <h3 id="t82.2 Compiler.js">2.2 Compiler.js <a href="#t82.2 Compiler.js"> # </a></h3>
+      <p>webpack\Compiler.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> {
   Tapable,
   SyncHook,
   SyncBailHook,
@@ -226,9 +514,10 @@ compiler.run(<span class="hljs-function">(<span class="hljs-params">err, stats</
 }
 <span class="hljs-built_in">module</span>.exports = Compiler;
 </code></pre>
-<h3 id="t92.3 NodeEnvironmentPlugin.js">2.3 NodeEnvironmentPlugin.js <a href="#t92.3 NodeEnvironmentPlugin.js"> # </a></h3>
-<p>webpack\plugins\NodeEnvironmentPlugin.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;fs&quot;</span>);
+      <h3 id="t92.3 NodeEnvironmentPlugin.js">2.3 NodeEnvironmentPlugin.js <a href="#t92.3 NodeEnvironmentPlugin.js"> #
+        </a></h3>
+      <p>webpack\plugins\NodeEnvironmentPlugin.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;fs&quot;</span>);
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NodeEnvironmentPlugin</span> </span>{
   apply(compiler) {
     compiler.inputFileSystem = fs; <span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x8BFB;&#x6587;&#x4EF6;&#x7684;&#x6A21;&#x5757;</span>
@@ -237,19 +526,22 @@ compiler.run(<span class="hljs-function">(<span class="hljs-params">err, stats</
 }
 <span class="hljs-built_in">module</span>.exports = NodeEnvironmentPlugin;
 </code></pre>
-<h3 id="t102.4 WebpackOptionsApply.js">2.4 WebpackOptionsApply.js <a href="#t102.4 WebpackOptionsApply.js"> # </a></h3>
-<p>webpack\WebpackOptionsApply.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WebpackOptionsApply</span> </span>{
+      <h3 id="t102.4 WebpackOptionsApply.js">2.4 WebpackOptionsApply.js <a href="#t102.4 WebpackOptionsApply.js"> # </a>
+      </h3>
+      <p>webpack\WebpackOptionsApply.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WebpackOptionsApply</span> </span>{
   process(options, compiler) {
     <span class="hljs-comment">//&#x63D2;&#x4EF6;&#x7ED1;&#x5B9A;&#x7ED3;&#x675F;</span>
     compiler.hooks.afterPlugins.call(compiler);
   }
 };
 </code></pre>
-<h2 id="t113. &#x76D1;&#x542C;make&#x4E8B;&#x4EF6;">3. &#x76D1;&#x542C;make&#x4E8B;&#x4EF6; <a href="#t113. &#x76D1;&#x542C;make&#x4E8B;&#x4EF6;"> # </a></h2>
-<h3 id="t123.1 WebpackOptionsApply.js">3.1 WebpackOptionsApply.js <a href="#t123.1 WebpackOptionsApply.js"> # </a></h3>
-<p>webpack\WebpackOptionsApply.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+const EntryOptionPlugin = require(&quot;./plugins/EntryOptionPlugin&quot;);</span>
+      <h2 id="t113. &#x76D1;&#x542C;make&#x4E8B;&#x4EF6;">3. &#x76D1;&#x542C;make&#x4E8B;&#x4EF6; <a
+          href="#t113. &#x76D1;&#x542C;make&#x4E8B;&#x4EF6;"> # </a></h2>
+      <h3 id="t123.1 WebpackOptionsApply.js">3.1 WebpackOptionsApply.js <a href="#t123.1 WebpackOptionsApply.js"> # </a>
+      </h3>
+      <p>webpack\WebpackOptionsApply.js</p>
+      <pre><code class="lang-diff"><span class="hljs-addition">+const EntryOptionPlugin = require(&quot;./plugins/EntryOptionPlugin&quot;);</span>
 module.exports = class WebpackOptionsApply {
   process(options, compiler) {
      //&#x6302;&#x8F7D;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x63D2;&#x4EF6;
@@ -262,9 +554,9 @@ module.exports = class WebpackOptionsApply {
 };
 
 </code></pre>
-<h3 id="t133.2 EntryOptionPlugin.js">3.2 EntryOptionPlugin.js <a href="#t133.2 EntryOptionPlugin.js"> # </a></h3>
-<p>webpack\plugins\EntryOptionPlugin.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> SingleEntryPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;./SingleEntryPlugin&quot;</span>);
+      <h3 id="t133.2 EntryOptionPlugin.js">3.2 EntryOptionPlugin.js <a href="#t133.2 EntryOptionPlugin.js"> # </a></h3>
+      <p>webpack\plugins\EntryOptionPlugin.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> SingleEntryPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;./SingleEntryPlugin&quot;</span>);
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EntryOptionPlugin</span> </span>{
   apply(compiler) {
     compiler.hooks.entryOption.tap(<span class="hljs-string">&quot;EntryOptionPlugin&quot;</span>, (context, entry) =&gt; {
@@ -275,9 +567,9 @@ module.exports = class WebpackOptionsApply {
 
 <span class="hljs-built_in">module</span>.exports = EntryOptionPlugin;
 </code></pre>
-<h3 id="t143.3 SingleEntryPlugin.js">3.3 SingleEntryPlugin.js <a href="#t143.3 SingleEntryPlugin.js"> # </a></h3>
-<p>webpack\plugins\SingleEntryPlugin.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EntryOptionPlugin</span> </span>{
+      <h3 id="t143.3 SingleEntryPlugin.js">3.3 SingleEntryPlugin.js <a href="#t143.3 SingleEntryPlugin.js"> # </a></h3>
+      <p>webpack\plugins\SingleEntryPlugin.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EntryOptionPlugin</span> </span>{
   <span class="hljs-keyword">constructor</span>(context, entry, name) {
     <span class="hljs-keyword">this</span>.context = context;
     <span class="hljs-keyword">this</span>.entry = entry;
@@ -295,9 +587,9 @@ module.exports = class WebpackOptionsApply {
   }
 };
 </code></pre>
-<h2 id="t154. make">4. make <a href="#t154. make"> # </a></h2>
-<h3 id="t164.1 webpack\Compiler.js">4.1 webpack\Compiler.js <a href="#t164.1 webpack\Compiler.js"> # </a></h3>
-<pre><code class="lang-diff"><span class="hljs-addition">+const {Tapable,SyncHook,SyncBailHook,AsyncSeriesHook,AsyncParallelHook} = require(&quot;tapable&quot;);</span>
+      <h2 id="t154. make">4. make <a href="#t154. make"> # </a></h2>
+      <h3 id="t164.1 webpack\Compiler.js">4.1 webpack\Compiler.js <a href="#t164.1 webpack\Compiler.js"> # </a></h3>
+      <pre><code class="lang-diff"><span class="hljs-addition">+const {Tapable,SyncHook,SyncBailHook,AsyncSeriesHook,AsyncParallelHook} = require(&quot;tapable&quot;);</span>
 <span class="hljs-addition">+const Compilation  = require(&apos;./Compilation&apos;);</span>
 class Compiler extends Tapable {
   constructor(context) {
@@ -352,9 +644,9 @@ class Compiler extends Tapable {
 }
 module.exports = Compiler;
 </code></pre>
-<h3 id="t174.2 Compilation.js">4.2 Compilation.js <a href="#t174.2 Compilation.js"> # </a></h3>
-<p>webpack\Compilation.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> normalModuleFactory = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./NormalModuleFactory&apos;</span>);
+      <h3 id="t174.2 Compilation.js">4.2 Compilation.js <a href="#t174.2 Compilation.js"> # </a></h3>
+      <p>webpack\Compilation.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> normalModuleFactory = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./NormalModuleFactory&apos;</span>);
 <span class="hljs-keyword">const</span> {Tapable,SyncHook,SyncBailHook,AsyncSeriesHook,AsyncParallelHook} = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;tapable&quot;</span>);
 <span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Compilation</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Tapable</span> </span>{
@@ -387,9 +679,10 @@ module.exports = Compiler;
 }
 <span class="hljs-built_in">module</span>.exports = Compilation;
 </code></pre>
-<h3 id="t184.3 NormalModuleFactory.js">4.3 NormalModuleFactory.js <a href="#t184.3 NormalModuleFactory.js"> # </a></h3>
-<p>webpack\NormalModuleFactory.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;path&quot;</span>);
+      <h3 id="t184.3 NormalModuleFactory.js">4.3 NormalModuleFactory.js <a href="#t184.3 NormalModuleFactory.js"> # </a>
+      </h3>
+      <p>webpack\NormalModuleFactory.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;path&quot;</span>);
 <span class="hljs-keyword">const</span> NormalModule = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./NormalModule&apos;</span>);
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NormalModuleFactory</span></span>{
   create(data) {
@@ -398,9 +691,9 @@ module.exports = Compiler;
 }
 <span class="hljs-built_in">module</span>.exports = <span class="hljs-keyword">new</span> NormalModuleFactory();
 </code></pre>
-<h3 id="t194.4 NormalModule.js">4.4 NormalModule.js <a href="#t194.4 NormalModule.js"> # </a></h3>
-<p>webpack\NormalModule.js</p>
-<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NormalModule</span></span>{
+      <h3 id="t194.4 NormalModule.js">4.4 NormalModule.js <a href="#t194.4 NormalModule.js"> # </a></h3>
+      <p>webpack\NormalModule.js</p>
+      <pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NormalModule</span></span>{
     <span class="hljs-keyword">constructor</span>({name,context,request}){
       <span class="hljs-keyword">this</span>.name = name;
       <span class="hljs-keyword">this</span>.context = context;
@@ -412,10 +705,10 @@ module.exports = Compiler;
 }
 <span class="hljs-built_in">module</span>.exports = NormalModule;
 </code></pre>
-<h2 id="t205. build">5. build <a href="#t205. build"> # </a></h2>
-<h3 id="t215.1 Compilation.js">5.1 Compilation.js <a href="#t215.1 Compilation.js"> # </a></h3>
-<p>webpack\Compilation.js</p>
-<pre><code class="lang-diff">const normalModuleFactory = require(&apos;./NormalModuleFactory&apos;);
+      <h2 id="t205. build">5. build <a href="#t205. build"> # </a></h2>
+      <h3 id="t215.1 Compilation.js">5.1 Compilation.js <a href="#t215.1 Compilation.js"> # </a></h3>
+      <p>webpack\Compilation.js</p>
+      <pre><code class="lang-diff">const normalModuleFactory = require(&apos;./NormalModuleFactory&apos;);
 const {Tapable,SyncHook,SyncBailHook,AsyncSeriesHook,AsyncParallelHook} = require(&quot;tapable&quot;);
 const path = require(&apos;path&apos;);
 class Compilation extends Tapable {
@@ -460,9 +753,9 @@ class Compilation extends Tapable {
 }
 module.exports = Compilation;
 </code></pre>
-<h3 id="t225.2 NormalModule.js">5.2 NormalModule.js <a href="#t225.2 NormalModule.js"> # </a></h3>
-<p>webpack\NormalModule.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+const fs = require(&apos;fs&apos;);</span>
+      <h3 id="t225.2 NormalModule.js">5.2 NormalModule.js <a href="#t225.2 NormalModule.js"> # </a></h3>
+      <p>webpack\NormalModule.js</p>
+      <pre><code class="lang-diff"><span class="hljs-addition">+const fs = require(&apos;fs&apos;);</span>
 <span class="hljs-addition">+const ejs = require(&apos;ejs&apos;);</span>
 <span class="hljs-addition">+const path = require(&apos;path&apos;);</span>
 <span class="hljs-addition">+const babylon = require(&apos;babylon&apos;);</span>
@@ -523,10 +816,11 @@ class NormalModule{
 }
 module.exports = NormalModule;
 </code></pre>
-<h2 id="t236. seal&#x5C01;&#x88C5;chunk">6. seal&#x5C01;&#x88C5;chunk <a href="#t236. seal&#x5C01;&#x88C5;chunk"> # </a></h2>
-<h3 id="t246.1 Compiler.js">6.1 Compiler.js <a href="#t246.1 Compiler.js"> # </a></h3>
-<p>webpack\Compiler.js</p>
-<pre><code class="lang-diff">this.hooks = {
+      <h2 id="t236. seal&#x5C01;&#x88C5;chunk">6. seal&#x5C01;&#x88C5;chunk <a href="#t236. seal&#x5C01;&#x88C5;chunk">
+          # </a></h2>
+      <h3 id="t246.1 Compiler.js">6.1 Compiler.js <a href="#t246.1 Compiler.js"> # </a></h3>
+      <p>webpack\Compiler.js</p>
+      <pre><code class="lang-diff">this.hooks = {
       compilation: new SyncHook([&quot;compilation&quot;, &quot;params&quot;]),
 <span class="hljs-addition">+      afterCompile:new SyncHook([&quot;params&quot;]),</span>
       done: new AsyncSeriesHook([&quot;stats&quot;])
@@ -546,9 +840,9 @@ compile(onCompiled){
     });
   }
 </code></pre>
-<h3 id="t256.2 Compilation.js">6.2 Compilation.js <a href="#t256.2 Compilation.js"> # </a></h3>
-<p>webpack\Compilation.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+ let Chunk = require(&apos;./Chunk&apos;);</span>
+      <h3 id="t256.2 Compilation.js">6.2 Compilation.js <a href="#t256.2 Compilation.js"> # </a></h3>
+      <p>webpack\Compilation.js</p>
+      <pre><code class="lang-diff"><span class="hljs-addition">+ let Chunk = require(&apos;./Chunk&apos;);</span>
 class Compilation extends Tapable {
     constructor(compiler) {
         super();
@@ -585,10 +879,10 @@ class Compilation extends Tapable {
 }
 module.exports = Compilation;
 </code></pre>
-<h2 id="t267. emit">7. emit <a href="#t267. emit"> # </a></h2>
-<h3 id="t277.1 Compiler.js">7.1 Compiler.js <a href="#t277.1 Compiler.js"> # </a></h3>
-<p>webpack\Compiler.js</p>
-<pre><code class="lang-diff">const {Tapable,SyncHook,SyncBailHook,AsyncSeriesHook,AsyncParallelHook} = require(&quot;tapable&quot;);
+      <h2 id="t267. emit">7. emit <a href="#t267. emit"> # </a></h2>
+      <h3 id="t277.1 Compiler.js">7.1 Compiler.js <a href="#t277.1 Compiler.js"> # </a></h3>
+      <p>webpack\Compiler.js</p>
+      <pre><code class="lang-diff">const {Tapable,SyncHook,SyncBailHook,AsyncSeriesHook,AsyncParallelHook} = require(&quot;tapable&quot;);
 const Compilation  = require(&apos;./Compilation&apos;);
 <span class="hljs-addition">+ const Stats = require(&apos;./Stats&apos;);</span>
 <span class="hljs-addition">+ const mkdirp = require(&apos;mkdirp&apos;);</span>
@@ -672,9 +966,9 @@ class Compiler extends Tapable {
 module.exports = Compiler;
 
 </code></pre>
-<h3 id="t287.2 Compilation.js">7.2 Compilation.js <a href="#t287.2 Compilation.js"> # </a></h3>
-<p>webpack\Compilation.js</p>
-<pre><code class="lang-diff">const normalModuleFactory = require(&apos;./NormalModuleFactory&apos;);
+      <h3 id="t287.2 Compilation.js">7.2 Compilation.js <a href="#t287.2 Compilation.js"> # </a></h3>
+      <p>webpack\Compilation.js</p>
+      <pre><code class="lang-diff">const normalModuleFactory = require(&apos;./NormalModuleFactory&apos;);
 const {Tapable,SyncHook,SyncBailHook,AsyncSeriesHook,AsyncParallelHook} = require(&quot;tapable&quot;);
 const path = require(&apos;path&apos;);
 <span class="hljs-addition">+ const Chunk = require(&apos;./Chunk&apos;);</span>
@@ -755,9 +1049,9 @@ class Compilation extends Tapable {
 }
 module.exports = Compilation;
 </code></pre>
-<h3 id="t297.3 main.ejs">7.3 main.ejs <a href="#t297.3 main.ejs"> # </a></h3>
-<p>webpack\main.ejs</p>
-<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">modules</span>) </span>{
+      <h3 id="t297.3 main.ejs">7.3 main.ejs <a href="#t297.3 main.ejs"> # </a></h3>
+      <p>webpack\main.ejs</p>
+      <pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">modules</span>) </span>{
     <span class="hljs-keyword">var</span> installedModules = {};
     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__webpack_require__</span>(<span class="hljs-params">moduleId</span>) </span>{
       <span class="hljs-keyword">if</span> (installedModules[moduleId]) {
@@ -787,9 +1081,9 @@ module.exports = Compilation;
         %&gt;
     });
 </code></pre>
-<h3 id="t307.4 Stats.js">7.4 Stats.js <a href="#t307.4 Stats.js"> # </a></h3>
-<p>webpack\Stats.js</p>
-<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Stats</span></span>{
+      <h3 id="t307.4 Stats.js">7.4 Stats.js <a href="#t307.4 Stats.js"> # </a></h3>
+      <p>webpack\Stats.js</p>
+      <pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Stats</span></span>{
     <span class="hljs-keyword">constructor</span>(compilation){
         <span class="hljs-keyword">this</span>.files = compilation.files;
         <span class="hljs-keyword">this</span>.modules = compilation.modules;
@@ -798,10 +1092,11 @@ module.exports = Compilation;
 }
 <span class="hljs-built_in">module</span>.exports = Stats;
 </code></pre>
-<h2 id="t318. &#x652F;&#x6301;loader">8. &#x652F;&#x6301;loader <a href="#t318. &#x652F;&#x6301;loader"> # </a></h2>
-<h3 id="t328.1 NormalModule.js">8.1 NormalModule.js <a href="#t328.1 NormalModule.js"> # </a></h3>
-<p>webpack\NormalModule.js</p>
-<pre><code class="lang-diff">const fs = require(&apos;fs&apos;);
+      <h2 id="t318. &#x652F;&#x6301;loader">8. &#x652F;&#x6301;loader <a href="#t318. &#x652F;&#x6301;loader"> # </a>
+      </h2>
+      <h3 id="t328.1 NormalModule.js">8.1 NormalModule.js <a href="#t328.1 NormalModule.js"> # </a></h3>
+      <p>webpack\NormalModule.js</p>
+      <pre><code class="lang-diff">const fs = require(&apos;fs&apos;);
 const ejs = require(&apos;ejs&apos;);
 const path = require(&apos;path&apos;);
 const babylon = require(&apos;babylon&apos;);
@@ -885,22 +1180,22 @@ class NormalModule{
 }
 module.exports = NormalModule;
 </code></pre>
-<h3 id="t338.2 index.js">8.2 index.js <a href="#t338.2 index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+require(&apos;./index.less&apos;);</span>
+      <h3 id="t338.2 index.js">8.2 index.js <a href="#t338.2 index.js"> # </a></h3>
+      <p>src\index.js</p>
+      <pre><code class="lang-diff"><span class="hljs-addition">+require(&apos;./index.less&apos;);</span>
 let title = require(&apos;./title&apos;);
 console.log(title);
 </code></pre>
-<h3 id="t348.3 src\index.less">8.3 src\index.less <a href="#t348.3 src\index.less"> # </a></h3>
-<p>index.less</p>
-<pre><code class="lang-less"><span class="hljs-variable">@color:</span>red;
+      <h3 id="t348.3 src\index.less">8.3 src\index.less <a href="#t348.3 src\index.less"> # </a></h3>
+      <p>index.less</p>
+      <pre><code class="lang-less"><span class="hljs-variable">@color:</span>red;
 <span class="hljs-selector-tag">body</span>{
     <span class="hljs-attribute">background-color</span>:<span class="hljs-variable">@color</span>;
 }
 </code></pre>
-<h3 id="t358.4 less-loader.js">8.4 less-loader.js <a href="#t358.4 less-loader.js"> # </a></h3>
-<p>loaders\less-loader.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> less = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;less&apos;</span>);
+      <h3 id="t358.4 less-loader.js">8.4 less-loader.js <a href="#t358.4 less-loader.js"> # </a></h3>
+      <p>loaders\less-loader.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">var</span> less = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;less&apos;</span>);
 <span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">source</span>) </span>{
     <span class="hljs-keyword">let</span> css;
     less.render(source, (err, output) =&gt; {
@@ -909,9 +1204,9 @@ console.log(title);
     <span class="hljs-keyword">return</span> css;
 }
 </code></pre>
-<h3 id="t368.5 style-loader.js">8.5 style-loader.js <a href="#t368.5 style-loader.js"> # </a></h3>
-<p>loaders\style-loader.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">source</span>) </span>{
+      <h3 id="t368.5 style-loader.js">8.5 style-loader.js <a href="#t368.5 style-loader.js"> # </a></h3>
+      <p>loaders\style-loader.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">source</span>) </span>{
     <span class="hljs-keyword">let</span> str = <span class="hljs-string">`
       let style = document.createElement(&apos;style&apos;);
       style.innerHTML = <span class="hljs-subst">${<span class="hljs-built_in">JSON</span>.stringify(source)}</span>;
@@ -921,28 +1216,29 @@ console.log(title);
 }
 </code></pre>
 
-        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org/">Node.js</a> run.</div>
+      <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>.
+        Dependence <a href="https://nodejs.org/">Node.js</a> run.</div>
     </div>
-    
-</div>
 
-<script src="../../../cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
-<script>
-$('.warpper .page-toc ul ul li a').on('click',function(){
-  $('.warpper .page-toc ul ul li a').removeClass('my-active')
-  $(this).addClass('my-active')
-})
+  </div>
 
-$('.logo').on('mouseenter',function(){
-  $('.nav').height('450px');
-})
-$('.nav').on('mouseleave',function(){
-  $('.nav').height('80px');
-})
-$('.logo').on('click',function(){
-  $('.nav').css('display','none');
- $('.warpper').css('padding','0px');
-})
+  <script src="../../../cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+  <script>
+    $('.warpper .page-toc ul ul li a').on('click', function () {
+      $('.warpper .page-toc ul ul li a').removeClass('my-active')
+      $(this).addClass('my-active')
+    })
+
+    $('.logo').on('mouseenter', function () {
+      $('.nav').height('450px');
+    })
+    $('.nav').on('mouseleave', function () {
+      $('.nav').height('80px');
+    })
+    $('.logo').on('click', function () {
+      $('.nav').css('display', 'none');
+      $('.warpper').css('padding', '0px');
+    })
 // if (!$('.understand-me').length) {
   //   var bar = $(window).height() - $('.navbar ').height() - $('.page-toc').position().top;
   //   var count = bar / 26 / 2;
@@ -975,28 +1271,23 @@ $('.logo').on('click',function(){
 
   //   $('.content').on('scroll', dark);
   // }
-</script>
-<style>
-
+  </script>
+  <style>
     /* ::-webkit-scrollbar{width:14px;}
     ::-webkit-scrollbar-track{background-color:transparent;}
     ::-webkit-scrollbar-thumb{background-color:transparent;}
     ::-webkit-scrollbar-thumb:hover {background-color:transparent}
     ::-webkit-scrollbar-thumb:active {background-color:transparent} */
 
-    .page-toc > ul .red {
-        background: #f3f3f3;
-        z-index: 1;
-        border-left: 3px solid #009a61;
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        color: #000
+    .page-toc>ul .red {
+      background: #f3f3f3;
+      z-index: 1;
+      border-left: 3px solid #009a61;
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      color: #000
     }
-
-
-
-
-
-</style>
+  </style>
 </body>
+
 </html>
